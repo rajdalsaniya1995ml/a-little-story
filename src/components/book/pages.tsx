@@ -743,60 +743,54 @@ function MomentsPage() {
         </div>
 
         {/* Intro */}
-        <div className="mx-auto mt-4 max-w-[34ch] text-center max-sm:mt-3">
-          <p className="font-hand text-lg leading-relaxed text-ink max-sm:text-base">
+        <div className="mx-auto mt-3 max-w-[34ch] shrink-0 text-center max-sm:mt-2">
+          <p className="font-hand text-lg text-ink max-sm:text-base">
             Some moments are small.
           </p>
 
-          <p className="font-display mt-1.5 text-[0.66rem] leading-relaxed text-ink-soft max-sm:mt-1 max-sm:text-[0.58rem]">
+          <p className="font-display mt-1 text-[0.64rem] text-ink-soft max-sm:text-[0.56rem]">
             But somehow, they become the ones we remember.
           </p>
         </div>
 
-        {/* Timeline */}
-        <div className="relative mx-auto mt-5 min-h-0 w-full max-w-[38rem] flex-1 px-2 max-sm:mt-4">
-          {/* Timeline line */}
-          <div className="absolute top-2 bottom-2 left-1/2 w-px -translate-x-1/2 bg-paper-edge" />
-
-          <div className="relative flex h-full flex-col justify-between py-1">
-            {moments.map((moment, index) => (
-              <article
-                key={index}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? "justify-start pr-[50%]" : "justify-end pl-[50%]"
-                }`}
+        {/* 2 × 2 memory grid */}
+        <div className="mx-auto mt-4 grid min-h-0 w-full max-w-[38rem] flex-1 grid-cols-2 grid-rows-2 gap-3 px-2 max-sm:mt-3 max-sm:gap-2">
+          {moments.map((moment, index) => (
+            <article
+              key={index}
+              className="flex min-h-0 items-center justify-center"
+            >
+              <div
+                className="relative w-full bg-paper-deep/70 px-4 py-3 shadow-[0_7px_18px_-12px_oklch(0_0_0/0.5)] max-sm:px-2.5 max-sm:py-2"
+                style={{ transform: `rotate(${moment.rotate})` }}
               >
-                {/* Timeline dot */}
-                <span className="absolute left-1/2 z-10 h-3 w-3 -translate-x-1/2 rounded-full border border-gold bg-paper" />
+                {/* Small scrapbook mark */}
+                <span className="absolute -top-1.5 left-1/2 h-2.5 w-8 -translate-x-1/2 rotate-[-2deg] bg-saffron/30" />
 
-                {/* Moment card */}
-                <div
-                  className="relative w-[92%] bg-paper-deep/70 px-3 py-3 shadow-[0_6px_18px_-12px_oklch(0_0_0/0.5)] max-sm:px-2.5 max-sm:py-2.5"
-                  style={{ transform: `rotate(${moment.rotate})` }}
-                >
-                  <p className="font-display text-[0.55rem] tracking-[0.18em] text-gold uppercase max-sm:text-[0.48rem]">
-                    {moment.date}
-                  </p>
+                <p className="font-display text-[0.55rem] tracking-[0.16em] text-gold uppercase max-sm:text-[0.46rem]">
+                  {moment.date}
+                </p>
 
-                  <p className="font-hand mt-1 text-base text-maroon max-sm:text-sm">
-                    {moment.title}
-                  </p>
+                <p className="font-hand mt-1 text-base text-maroon max-sm:text-sm">
+                  {moment.title}
+                </p>
 
-                  <p className="font-display mt-1.5 text-[0.62rem] leading-relaxed text-ink-soft max-sm:mt-1 max-sm:text-[0.55rem]">
-                    {moment.text}
-                  </p>
+                <p className="font-display mt-1.5 text-[0.62rem] leading-relaxed text-ink-soft max-sm:mt-1 max-sm:text-[0.54rem]">
+                  {moment.text}
+                </p>
 
-                  <p className="font-hand mt-2 text-sm italic text-ink max-sm:mt-1.5 max-sm:text-xs">
+                <div className="mt-2 border-t border-paper-edge/70 pt-1.5 max-sm:mt-1.5 max-sm:pt-1">
+                  <p className="font-hand text-sm italic text-ink max-sm:text-xs">
                     {moment.note}
                   </p>
                 </div>
-              </article>
-            ))}
-          </div>
+              </div>
+            </article>
+          ))}
         </div>
 
         {/* Closing line */}
-        <div className="shrink-0 pb-1 pt-4 text-center max-sm:pt-3">
+        <div className="shrink-0 pb-1 pt-3 text-center max-sm:pt-2">
           <OrnamentDivider
             className="mb-2 max-sm:mb-1.5"
             width="w-20 max-sm:w-16"
