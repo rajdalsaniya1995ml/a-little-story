@@ -254,10 +254,55 @@ function BeginningPage() {
   return (
     <PageShell>
       <PageBorder />
-      <div className="flex h-full min-h-0 flex-col justify-center gap-6 max-sm:gap-4">
+
+      <div className="flex h-full min-h-0 flex-col justify-center">
         <ChapterMark {...markProps(0)} />
-        <p className="font-hand text-xl leading-snug text-ink max-sm:text-lg">How it started — placeholder line.</p>
-        <Placeholder lines={2} />
+
+        <div className="mx-auto mt-5 max-w-[38ch] text-center max-sm:mt-3">
+          <p className="font-display text-[0.72rem] tracking-[0.22em] text-gold uppercase">
+            For you
+          </p>
+
+          <OrnamentDivider
+            className="my-4 max-sm:my-2.5"
+            width="w-24 max-sm:w-20"
+          />
+
+          <div className="font-display text-[0.82rem] leading-[1.8] text-ink/90 max-sm:text-[0.7rem] max-sm:leading-[1.6]">
+            <p>
+              I still remember how unexpectedly our story began.
+            </p>
+
+            <p className="mt-3 max-sm:mt-2">
+              It wasn&apos;t a movie-like meeting or some extraordinary moment.
+              It started with something as simple as a biodata.
+            </p>
+
+            <p className="mt-3 max-sm:mt-2">
+              One of my relatives shared your biodata with my parents, and mine
+              was shared with your parents. My parents already knew your family
+              quite well, but I didn&apos;t know you.
+            </p>
+
+            <p className="mt-3 max-sm:mt-2">
+              At that time, you were just a name on a biodata.
+            </p>
+
+            <p className="mt-3 max-sm:mt-2">
+              I had no idea who you were, what you were like, or what it would
+              feel like to actually meet you.
+            </p>
+
+            <p className="mt-3 max-sm:mt-2 font-hand text-base leading-relaxed text-maroon max-sm:text-[0.9rem]">
+              Then came <span className="font-display">17 May 2026.</span>
+            </p>
+
+            <p className="mt-3 max-sm:mt-2">
+              You and your parents came to Pune, and we met at your
+              relative&apos;s place.
+            </p>
+          </div>
+        </div>
       </div>
     </PageShell>
   );
