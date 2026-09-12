@@ -649,7 +649,7 @@ function EndPage() {
 
 export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <CoverPage />, cover: true },
-  { node: <TitlePage /> },
+  { node: <BlessingPage /> },
   { node: <ContentsPage /> },
   { node: <BeginningPage /> },
   { node: <BeginningPhotosPage /> },
