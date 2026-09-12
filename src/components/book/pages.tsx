@@ -528,11 +528,11 @@ function ConversationsQuotePage() {
 /* ---------------------things we offen say -------------- */
 function LittleThingsPage() {
   const phrases = [
-    "Good morning 😊",
-    "placeholder reply",
-    "placeholder phrase",
-    "placeholder inside joke",
-    "placeholder — something we often said",
+    "Good morning 😊☀️",
+    "Good morning 😊😊",
+    "How did your day go?",
+    "Acha tha , and yours?",
+    "Had dinner?",
   ];
 
   return (
