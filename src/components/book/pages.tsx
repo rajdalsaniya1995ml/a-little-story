@@ -528,7 +528,7 @@ function ConversationsQuotePage() {
 /* ---------------------things we offen say -------------- */
 function LittleThingsPage() {
   const phrases = [
-    "placeholder message",
+    "Good morning 😊",
     "placeholder reply",
     "placeholder phrase",
     "placeholder inside joke",
