@@ -374,32 +374,121 @@ function BeginningPhotosPage() {
 /* ---------------- 02 बातें — folded notes ---------------- */
 
 function ConversationsPage() {
-  const lines = [
-    { side: "l", text: "placeholder message" },
-    { side: "r", text: "placeholder reply" },
-    { side: "l", text: "placeholder — a long one" },
-    { side: "r", text: "placeholder :)" },
-  ];
   return (
     <PageShell>
       <PageBorder />
-      <div className="flex h-full flex-col justify-center gap-5">
+
+      <div className="flex h-full min-h-0 flex-col justify-center px-1 sm:px-2">
+        {/* Chapter heading */}
         <ChapterMark {...markProps(1)} />
-        <ul className="space-y-2.5">
-          {lines.map((l, i) => (
-            <li key={i} className={l.side === "r" ? "flex justify-end" : "flex justify-start"}>
-              <span
-                className={`font-hand max-w-[78%] px-3 py-2 text-base ${
-                  l.side === "r"
-                    ? "rounded-t-lg rounded-bl-lg bg-maroon/10 text-ink"
-                    : "rounded-t-lg rounded-br-lg bg-paper-deep text-ink"
-                }`}
-              >
-                {l.text}
-              </span>
-            </li>
-          ))}
-        </ul>
+
+        {/* Story */}
+        <div className="mt-5 min-h-0 overflow-hidden max-sm:mt-3">
+          <div className="mx-auto max-w-[38ch] space-y-3.5 max-sm:space-y-2">
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              I still remember that first meeting.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              I was a little nervous.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              After all, we were meeting for the first time, and neither of us
+              really knew what to expect.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              But somehow, you made those first few conversations feel
+              effortless.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              There was something easy about talking to you.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              We talked, we asked each other questions, and slowly, that
+              initial nervousness began to fade.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              I remember leaving that meeting with a genuinely good feeling.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              Nothing dramatic had happened.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              It was simply a good conversation with someone I had just met.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              But somehow, it felt like things had gone well.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              And maybe that was the first little sign —
+              <br />
+              that getting to know you might not be as difficult as I had
+              imagined.
+            </p>
+
+            {/* Date transition */}
+            <div className="py-1 text-center">
+              <OrnamentDivider
+                className="my-2 max-sm:my-1"
+                width="w-20 max-sm:w-16"
+                tone="gold"
+              />
+
+              <p className="font-display text-[0.68rem] tracking-[0.18em] text-maroon uppercase max-sm:text-[0.56rem]">
+                20 May 2026
+              </p>
+            </div>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              A few days later, our conversation continued.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              We started talking on WhatsApp, and gradually, our conversations
+              found their own little rhythm.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              A few days later, we started talking on calls too.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              Sometimes it was just a few messages.
+              <br />
+              Sometimes we ended up talking a little longer on a call.
+              <br />
+              Sometimes it was simply a conversation about how our day had
+              been.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              We didn't talk for hours every day, and we didn't always have
+              something important to say.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              We were simply getting to know each other, one conversation at a
+              time.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-ink max-sm:text-[0.88rem] max-sm:leading-snug">
+              And little by little, you became less of a stranger.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-maroon max-sm:text-[0.88rem] max-sm:leading-snug">
+              And I think that's where our conversations really began.
+            </p>
+          </div>
+        </div>
       </div>
     </PageShell>
   );
