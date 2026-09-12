@@ -76,19 +76,94 @@ function CoverPage() {
 
 /* ---------------- front matter ---------------- */
 
+function GaneshaIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 80 80"
+      className={className}
+      fill="none"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* crown / tilak base */}
+      <path
+        d="M40 6c-8 0-14 4-16 10 4-2 8-3 16-3s12 1 16 3C54 10 48 6 40 6Z"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* head outline */}
+      <path
+        d="M24 20c-6 4-10 12-10 22 0 14 10 26 26 26s26-12 26-26c0-10-4-18-10-22"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* ear */}
+      <path
+        d="M24 26c-8 2-14 10-14 18 0 6 4 10 10 10"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M56 26c8 2 14 10 14 18 0 6-4 10-10 10"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      {/* trunk */}
+      <path
+        d="M40 42c0 6-2 10-6 14-2 2-2 6 2 8 4 2 10 0 12-4"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* tusk */}
+      <path
+        d="M44 46c4 2 8 2 10-2"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      {/* eye */}
+      <path
+        d="M34 34c2-1 6-1 8 0"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      <circle cx="38" cy="36" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
+
 function TitlePage() {
   return (
     <PageShell>
       <PageBorder />
       <div className="flex h-full flex-col items-center justify-center text-center">
+        <p className="font-deva text-2xl text-maroon" aria-label="Om">ॐ</p>
+        <GaneshaIcon className="mx-auto mt-3 h-12 w-12 text-gold" />
+        <p className="font-deva mt-4 text-base leading-snug text-ink">
+          ॐ गं गणपतये नमः
+        </p>
+        <p className="font-display mt-1 max-w-[28ch] text-xs leading-relaxed italic text-ink-soft/80">
+          for a beginning free of obstacles
+        </p>
+        <OrnamentDivider className="my-5" width="w-32" />
+
         <p className="font-sans text-[0.55rem] tracking-[0.42em] text-ink-soft uppercase">
           handmade paper · edition of one
         </p>
-        <h2 className="font-deva mt-8 text-[1.6rem] text-maroon">एक छोटी सी कहानी</h2>
+        <h2 className="font-deva mt-7 text-[1.6rem] text-maroon">एक छोटी सी कहानी</h2>
         <p className="font-display mt-3 text-sm tracking-[0.3em] text-ink-soft uppercase">
           Ek Chhoti Si Kahaani
         </p>
-        <OrnamentDivider className="my-7" width="w-36" />
+        <OrnamentDivider className="my-6" width="w-36" />
         <p className="font-hand max-w-[26ch] text-xl text-ink">kept quietly, page by page</p>
         <p className="font-guj mt-10 text-[0.7rem] tracking-[0.18em] text-ink-soft/70">
           એક નાની યાદોની ડાયરી
