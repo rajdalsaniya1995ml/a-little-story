@@ -254,9 +254,9 @@ function BeginningPage() {
   return (
     <PageShell>
       <PageBorder />
-      <div className="flex h-full flex-col justify-center gap-6">
+      <div className="flex h-full min-h-0 flex-col justify-center gap-6 max-sm:gap-4">
         <ChapterMark {...markProps(0)} />
-        <p className="font-hand text-xl leading-snug text-ink">How it started — placeholder line.</p>
+        <p className="font-hand text-xl leading-snug text-ink max-sm:text-lg">How it started — placeholder line.</p>
         <Placeholder lines={2} />
       </div>
     </PageShell>
