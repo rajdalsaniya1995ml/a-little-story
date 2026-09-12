@@ -615,18 +615,81 @@ function LittleThingsPage() {
 }
 
 /* ---------------- 03 यादें — flip photos ---------------- */
-
 function MemoriesPage() {
+  const memories = [
+    {
+      date: "23 May 2026 · 2:00 PM",
+      title: "The CCD Afternoon",
+      place: "Café Coffee Day, Navi Mumbai",
+      image: null,
+      text: "Almost two hours together. So many thoughts shared, so many things spoken. Time moved so quietly that it didn't feel like two hours at all.",
+      rotate: "-1.5deg",
+    },
+    {
+      date: "A little birthday surprise",
+      title: "Made just for you",
+      place: "A small website, made with a lot of thought",
+      image: null,
+      text: "For your birthday, I wanted to do something a little different. So I made a little website especially for you. And knowing that you loved it made it all worth it.",
+      rotate: "1.5deg",
+    },
+  ];
+
   return (
     <PageShell>
-      <div className="flex h-full flex-col justify-center gap-4">
-        <ChapterMark {...markProps(2)} />
-        <p className="font-sans text-center text-[0.62rem] tracking-[0.2em] text-ink-soft uppercase">
-          tap a photo to read its back
-        </p>
-        <div className="grid grid-cols-2 gap-4 px-2">
-          <FlipPhoto caption="placeholder" back="placeholder note" tone="sepia" rotate="-2deg" />
-          <FlipPhoto caption="placeholder" back="placeholder note" tone="green" rotate="1.6deg" />
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col">
+        {/* Chapter heading */}
+        <div className="shrink-0">
+          <ChapterMark {...markProps(2)} />
+        </div>
+
+        {/* Memories */}
+        <div className="mx-auto mt-5 grid min-h-0 w-full max-w-[38rem] flex-1 grid-cols-2 items-center gap-5 px-1 max-sm:mt-4 max-sm:gap-3">
+          {memories.map((memory, index) => (
+            <article
+              key={index}
+              className="flex min-h-0 flex-col"
+              style={{ transform: `rotate(${memory.rotate})` }}
+            >
+              {/* Photo / visual */}
+              <div className="bg-paper p-2 pb-3 shadow-[0_10px_24px_-14px_oklch(0_0_0/0.5)] max-sm:p-1.5 max-sm:pb-2.5">
+                {memory.image ? (
+                  <img
+                    src={memory.image}
+                    alt={memory.title}
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                ) : (
+                  <div className="flex aspect-[4/3] items-center justify-center bg-paper-deep">
+                    <p className="px-3 text-center font-hand text-sm text-ink-soft max-sm:text-xs">
+                      Photo / website screenshot
+                    </p>
+                  </div>
+                )}
+
+                <p className="font-hand mt-2 text-center text-base text-maroon max-sm:mt-1.5 max-sm:text-sm">
+                  {memory.title}
+                </p>
+              </div>
+
+              {/* Memory text */}
+              <div className="mt-4 text-center max-sm:mt-3">
+                <p className="font-display text-[0.58rem] tracking-[0.16em] text-gold uppercase max-sm:text-[0.5rem]">
+                  {memory.date}
+                </p>
+
+                <p className="font-display mt-1 text-[0.62rem] italic text-ink-soft max-sm:text-[0.55rem]">
+                  {memory.place}
+                </p>
+
+                <p className="font-hand mt-2 text-sm leading-relaxed text-ink max-sm:mt-1.5 max-sm:text-[0.78rem] max-sm:leading-snug">
+                  {memory.text}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </PageShell>
