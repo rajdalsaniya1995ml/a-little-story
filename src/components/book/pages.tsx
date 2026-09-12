@@ -148,19 +148,34 @@ function BlessingPage() {
   return (
     <PageShell>
       <PageBorder tone="gold" />
-      <div className="flex h-full flex-col items-center justify-center px-2 text-center">
-        <p className="font-deva text-[2rem] leading-none text-maroon" aria-label="Om">
+
+      <div className="flex h-full min-h-0 flex-col items-center justify-center px-2 text-center">
+        <p
+          className="font-deva text-[2rem] leading-none text-maroon max-sm:text-[1.6rem]"
+          aria-label="Om"
+        >
           ॐ
         </p>
 
-        <div className="relative mt-4">
-          <GaneshaIcon className="mx-auto h-14 w-14 text-gold" />
-          <div className="absolute -inset-3 rounded-full border border-gold/20" aria-hidden="true" />
+        <div className="relative mt-4 max-sm:mt-2">
+          <GaneshaIcon className="mx-auto h-14 w-14 text-gold max-sm:h-11 max-sm:w-11" />
+
+          <div
+            className="absolute -inset-3 rounded-full border border-gold/20 max-sm:-inset-2"
+            aria-hidden="true"
+          />
         </div>
 
-        <OrnamentDivider className="my-6" width="w-36" tone="gold" />
+        <OrnamentDivider
+          className="my-6 max-sm:my-3"
+          width="w-36 max-sm:w-24"
+          tone="gold"
+        />
 
-        <p className="font-deva max-w-[24ch] text-[1.15rem] leading-[1.9] text-ink">
+        <p
+          className="font-deva max-w-[24ch] text-[1.15rem] leading-[1.9] text-ink
+                     max-sm:text-[0.88rem] max-sm:leading-[1.55]"
+        >
           ॐ सर्वे भवन्तु सुखिनः
           <br />
           सर्वे सन्तु निरामयाः।
@@ -170,14 +185,24 @@ function BlessingPage() {
           मा कश्चिद् दुःखभाग्भवेत्॥
         </p>
 
-        <p className="font-display mt-5 max-w-[34ch] text-xs leading-relaxed italic text-ink-soft/85">
-          May everyone be happy, may everyone be free from illness, may everyone see goodness,
-          and may no one suffer.
+        <p
+          className="font-display mt-5 max-w-[34ch] text-xs leading-relaxed italic text-ink-soft/85
+                     max-sm:mt-2 max-sm:text-[0.62rem]"
+        >
+          May everyone be happy, may everyone be free from illness, may everyone
+          see goodness, and may no one suffer.
         </p>
 
-        <OrnamentDivider className="my-6" width="w-28" tone="gold" />
+        <OrnamentDivider
+          className="my-6 max-sm:my-3"
+          width="w-28 max-sm:w-20"
+          tone="gold"
+        />
 
-        <p className="font-hand max-w-[26ch] text-lg leading-relaxed text-ink/90">
+        <p
+          className="font-hand max-w-[26ch] text-lg leading-relaxed text-ink/90
+                     max-sm:text-[0.95rem] max-sm:leading-snug"
+        >
           Some stories aren&apos;t written; they simply unfold, little by little.
         </p>
       </div>
