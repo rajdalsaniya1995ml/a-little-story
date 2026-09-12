@@ -9,6 +9,7 @@ import {
   Polaroid,
   WashiTape,
 } from "./ornaments";
+import firstMeetingPlace from "@/assets/First_Meeting_Place.jpg";
 
 const CHAPTERS = [
   { n: "01", deva: "शुरुआत", en: "The beginning" },
@@ -326,7 +327,7 @@ function BeginningPhotosPage() {
 
           <div className="rotate-[-1.5deg] bg-paper p-2 pb-4 shadow-[0_10px_24px_-14px_oklch(0_0_0/0.5)] max-sm:p-1.5 max-sm:pb-3">
             <img
-              src="/images/first-meeting-place.jpg"
+              src={firstMeetingPlace}
               alt="The place where we first met"
               className="aspect-[4/3] w-full object-cover"
             />
