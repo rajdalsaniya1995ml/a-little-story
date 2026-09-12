@@ -213,18 +213,33 @@ function ContentsPage() {
   return (
     <PageShell>
       <PageBorder tone="maroon" />
-      <div className="flex h-full flex-col justify-center px-2">
-        <h2 className="font-display text-center text-xl tracking-[0.32em] text-maroon uppercase">
+
+      <div className="flex h-full min-h-0 flex-col justify-center px-1 sm:px-2">
+        <h2 className="font-display text-center text-xl tracking-[0.32em] text-maroon uppercase max-sm:text-lg">
           Contents
         </h2>
-        <OrnamentDivider className="mt-3 mb-5" width="w-32" />
-        <ol className="space-y-2.5">
+
+        <OrnamentDivider
+          className="mt-3 mb-5 max-sm:mt-2 max-sm:mb-3"
+          width="w-32 max-sm:w-24"
+        />
+
+        <ol className="space-y-2.5 max-sm:space-y-1.5">
           {CHAPTERS.map((c) => (
-            <li key={c.n} className="flex items-baseline gap-3">
-              <span className="font-sans text-[0.6rem] tracking-[0.2em] text-gold">{c.n}</span>
-              <span className="font-deva text-base text-maroon">{c.deva}</span>
-              <span className="mx-1 h-px flex-1 bg-paper-edge" />
-              <span className="font-display text-xs text-ink-soft italic">{c.en}</span>
+            <li key={c.n} className="flex min-w-0 items-baseline gap-2">
+              <span className="font-sans shrink-0 text-[0.6rem] tracking-[0.2em] text-gold max-sm:text-[0.5rem]">
+                {c.n}
+              </span>
+
+              <span className="font-deva shrink-0 text-base text-maroon max-sm:text-[0.78rem]">
+                {c.deva}
+              </span>
+
+              <span className="mx-1 h-px min-w-2 flex-1 bg-paper-edge" />
+
+              <span className="font-display shrink-0 text-xs text-ink-soft italic max-sm:text-[0.58rem]">
+                {c.en}
+              </span>
             </li>
           ))}
         </ol>
