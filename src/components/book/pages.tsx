@@ -701,35 +701,112 @@ function MemoriesPage() {
 /* ---------------- 04 पल — timeline ---------------- */
 
 function MomentsPage() {
-  const [active, setActive] = useState(0);
-  const moments = ["placeholder moment", "placeholder moment", "placeholder moment", "placeholder moment"];
+  const moments = [
+    {
+      date: "23 May 2026",
+      title: "The CCD Meet",
+      text: "A small afternoon that somehow became one of those moments I still remember.",
+      note: "A little time together.",
+      rotate: "-1.5deg",
+    },
+    {
+      date: "4 July 2026",
+      title: "Your Birthday",
+      text: "I wanted to make your birthday a little different, so I made something especially for you.",
+      note: "Made with a lot of thought.",
+      rotate: "1.5deg",
+    },
+    {
+      date: "Friendship Day",
+      title: "A Little Surprise",
+      text: "I had a small surprise planned for you. Seeing your reaction made the whole thing worth it.",
+      note: "A surprise from me to you.",
+      rotate: "-1deg",
+    },
+    {
+      date: "One More Moment",
+      title: "Something to Remember",
+      text: "Some moments don't need a big reason to stay memorable. They simply become part of the story.",
+      note: "And this one stayed.",
+      rotate: "1.5deg",
+    },
+  ];
+
   return (
     <PageShell>
-      <div className="flex h-full flex-col justify-center gap-6">
-        <ChapterMark {...markProps(3)} />
-        <div className="relative px-2" onClick={stop}>
-          <span className="absolute top-2.5 right-3 left-3 h-px bg-paper-edge" />
-          <div className="relative flex justify-between">
-            {moments.map((_, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => setActive(i)}
-                aria-label={`moment ${i + 1}`}
-                className={`h-5 w-5 rounded-full border transition-all ${
-                  active === i
-                    ? "scale-110 border-maroon bg-maroon"
-                    : "border-brown/40 bg-paper hover:border-gold"
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col">
+        {/* Chapter heading */}
+        <div className="shrink-0">
+          <ChapterMark {...markProps(3)} />
+        </div>
+
+        {/* Intro */}
+        <div className="mx-auto mt-4 max-w-[34ch] text-center max-sm:mt-3">
+          <p className="font-hand text-lg leading-relaxed text-ink max-sm:text-base">
+            Some moments are small.
+          </p>
+
+          <p className="font-display mt-1.5 text-[0.66rem] leading-relaxed text-ink-soft max-sm:mt-1 max-sm:text-[0.58rem]">
+            But somehow, they become the ones we remember.
+          </p>
+        </div>
+
+        {/* Timeline */}
+        <div className="relative mx-auto mt-5 min-h-0 w-full max-w-[38rem] flex-1 px-2 max-sm:mt-4">
+          {/* Timeline line */}
+          <div className="absolute top-2 bottom-2 left-1/2 w-px -translate-x-1/2 bg-paper-edge" />
+
+          <div className="relative flex h-full flex-col justify-between py-1">
+            {moments.map((moment, index) => (
+              <article
+                key={index}
+                className={`relative flex items-center ${
+                  index % 2 === 0 ? "justify-start pr-[50%]" : "justify-end pl-[50%]"
                 }`}
-              />
+              >
+                {/* Timeline dot */}
+                <span className="absolute left-1/2 z-10 h-3 w-3 -translate-x-1/2 rounded-full border border-gold bg-paper" />
+
+                {/* Moment card */}
+                <div
+                  className="relative w-[92%] bg-paper-deep/70 px-3 py-3 shadow-[0_6px_18px_-12px_oklch(0_0_0/0.5)] max-sm:px-2.5 max-sm:py-2.5"
+                  style={{ transform: `rotate(${moment.rotate})` }}
+                >
+                  <p className="font-display text-[0.55rem] tracking-[0.18em] text-gold uppercase max-sm:text-[0.48rem]">
+                    {moment.date}
+                  </p>
+
+                  <p className="font-hand mt-1 text-base text-maroon max-sm:text-sm">
+                    {moment.title}
+                  </p>
+
+                  <p className="font-display mt-1.5 text-[0.62rem] leading-relaxed text-ink-soft max-sm:mt-1 max-sm:text-[0.55rem]">
+                    {moment.text}
+                  </p>
+
+                  <p className="font-hand mt-2 text-sm italic text-ink max-sm:mt-1.5 max-sm:text-xs">
+                    {moment.note}
+                  </p>
+                </div>
+              </article>
             ))}
           </div>
         </div>
-        <div className="relative mx-2 border border-dashed border-brown/35 bg-paper-deep/50 px-4 py-5">
-          <WashiTape className="-top-2 left-4" tone="green" rotate="4deg" />
-          <p className="font-hand text-lg text-ink">{moments[active]}</p>
-          <p className="font-sans mt-1 text-[0.55rem] tracking-[0.3em] text-brown/70 uppercase">
-            no. {active + 1} of {moments.length}
+
+        {/* Closing line */}
+        <div className="shrink-0 pb-1 pt-4 text-center max-sm:pt-3">
+          <OrnamentDivider
+            className="mb-2 max-sm:mb-1.5"
+            width="w-20 max-sm:w-16"
+            tone="gold"
+          />
+
+          <p className="font-hand text-base text-maroon max-sm:text-sm">
+            Little moments.
+            <br />
+            Part of our story.
           </p>
         </div>
       </div>
