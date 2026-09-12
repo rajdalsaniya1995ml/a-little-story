@@ -231,11 +231,11 @@ function ContentsPage() {
                 {c.n}
               </span>
 
-              <span className="font-deva w-28 shrink-0 text-base text-maroon max-sm:text-[0.78rem]">
+              <span className="font-deva w-20 shrink-0 text-base text-maroon max-sm:w-16 max-sm:text-[0.78rem]">
                 {c.deva}
               </span>
 
-              <span className="mx-1 h-px w-10 bg-paper-edge" />
+              <span className="mx-1 h-px w-6 bg-paper-edge" />
 
               <span className="font-display shrink-0 text-xs text-ink-soft italic max-sm:text-[0.58rem]">
                 {c.en}
