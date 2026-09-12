@@ -39,7 +39,6 @@ export function PageShell({ children }: { children: ReactNode }) {
     </div>
   );
 }
-}
 
 /* ---------------- cover ---------------- */
 
