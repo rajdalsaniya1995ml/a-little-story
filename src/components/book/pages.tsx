@@ -372,70 +372,82 @@ function BeginningPhotosPage() {
 }
 
 /* ---------------- 02 बातें — folded notes ---------------- */
-
 function ConversationsPage() {
   return (
     <PageShell>
       <PageBorder />
 
-      <div className="flex h-full min-h-0 flex-col justify-center px-1 sm:px-2">
-        <ChapterMark {...markProps(1)} />
+      <div className="flex h-full min-h-0 flex-col">
+        {/* Chapter title */}
+        <div className="shrink-0">
+          <ChapterMark {...markProps(1)} />
+        </div>
 
-        <div className="mx-auto mt-6 max-w-[38ch] space-y-4 max-sm:mt-4 max-sm:space-y-2.5">
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            I still remember that first meeting.
-          </p>
+        {/* Story */}
+        <div className="mx-auto mt-5 min-h-0 max-w-[37ch] overflow-hidden max-sm:mt-3">
+          <div className="space-y-3 max-sm:space-y-2">
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              I still remember that first meeting.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            I was a little nervous.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              I was a little nervous.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            After all, we were meeting for the first time, and neither of us
-            really knew what to expect.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              After all, we were meeting for the first time, and neither of us
+              really knew what to expect.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            But somehow, you made those first few conversations feel
-            effortless.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              But somehow, you made those first few conversations feel
+              effortless.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            There was something easy about talking to you.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              There was something easy about talking to you.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            We talked, we asked each other questions, and slowly, that initial
-            nervousness began to fade.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              We talked, we asked each other questions, and slowly, that
+              initial nervousness began to fade.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            I remember leaving that meeting with a genuinely good feeling.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              I remember leaving that meeting with a genuinely good feeling.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            Nothing dramatic had happened.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              Nothing dramatic had happened. It was simply a good conversation
+              with someone I had just met.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            It was simply a good conversation with someone I had just met.
-          </p>
+            <p className="font-hand text-[1.02rem] leading-[1.55] text-maroon max-sm:text-[0.86rem] max-sm:leading-[1.4]">
+              But somehow, it felt like things had gone well.
+            </p>
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-ink max-sm:text-[0.9rem] max-sm:leading-snug">
-            But somehow, it felt like things had gone well.
-          </p>
+            <div className="pt-1 text-center">
+              <OrnamentDivider
+                width="w-20 max-sm:w-16"
+                tone="gold"
+              />
 
-          <p className="font-hand text-[1.1rem] leading-relaxed text-maroon max-sm:text-[0.9rem] max-sm:leading-snug">
-            And maybe that was the first little sign —
-            <br />
-            that getting to know you might not be as difficult as I had
-            imagined.
-          </p>
+              <p className="font-hand mt-2 text-base text-maroon max-sm:mt-1.5 max-sm:text-sm">
+                Maybe that was the first little sign —
+              </p>
+
+              <p className="font-hand text-base leading-snug text-ink max-sm:text-sm">
+                that getting to know you might not be as difficult
+                as I had imagined.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </PageShell>
   );
 }
+
 
 function ConversationsQuotePage() {
   return (
