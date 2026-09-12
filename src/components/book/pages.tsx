@@ -231,7 +231,7 @@ function ContentsPage() {
                 {c.n}
               </span>
 
-              <span className="font-deva w-20 shrink-0 text-base text-maroon max-sm:w-16 max-sm:text-[0.78rem]">
+              <span className="font-deva w-24 shrink-0 text-base text-maroon max-sm:w-16 max-sm:text-[0.78rem]">
                 {c.deva}
               </span>
 
