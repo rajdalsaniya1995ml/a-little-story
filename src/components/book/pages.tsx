@@ -141,32 +141,41 @@ function GaneshaIcon({ className = "" }: { className?: string }) {
   );
 }
 
-function TitlePage() {
+function BlessingPage() {
   return (
     <PageShell>
-      <PageBorder />
-      <div className="flex h-full flex-col items-center justify-center text-center">
-        <p className="font-deva text-2xl text-maroon" aria-label="Om">ॐ</p>
-        <GaneshaIcon className="mx-auto mt-3 h-12 w-12 text-gold" />
-        <p className="font-deva mt-4 text-base leading-snug text-ink">
-          ॐ गं गणपतये नमः
+      <PageBorder tone="gold" />
+      <div className="flex h-full flex-col items-center justify-center px-2 text-center">
+        <p className="font-deva text-[2rem] leading-none text-maroon" aria-label="Om">
+          ॐ
         </p>
-        <p className="font-display mt-1 max-w-[28ch] text-xs leading-relaxed italic text-ink-soft/80">
-          for a beginning free of obstacles
-        </p>
-        <OrnamentDivider className="my-5" width="w-32" />
 
-        <p className="font-sans text-[0.55rem] tracking-[0.42em] text-ink-soft uppercase">
-          handmade paper · edition of one
+        <div className="relative mt-4">
+          <GaneshaIcon className="mx-auto h-14 w-14 text-gold" />
+          <div className="absolute -inset-3 rounded-full border border-gold/20" aria-hidden="true" />
+        </div>
+
+        <OrnamentDivider className="my-6" width="w-36" tone="gold" />
+
+        <p className="font-deva max-w-[24ch] text-[1.15rem] leading-[1.9] text-ink">
+          ॐ सर्वे भवन्तु सुखिनः
+          <br />
+          सर्वे सन्तु निरामयाः।
+          <br />
+          सर्वे भद्राणि पश्यन्तु
+          <br />
+          मा कश्चिद् दुःखभाग्भवेत्॥
         </p>
-        <h2 className="font-deva mt-7 text-[1.6rem] text-maroon">एक छोटी सी कहानी</h2>
-        <p className="font-display mt-3 text-sm tracking-[0.3em] text-ink-soft uppercase">
-          Ek Chhoti Si Kahaani
+
+        <p className="font-display mt-5 max-w-[34ch] text-xs leading-relaxed italic text-ink-soft/85">
+          May everyone be happy, may everyone be free from illness, may everyone see goodness,
+          and may no one suffer.
         </p>
-        <OrnamentDivider className="my-6" width="w-36" />
-        <p className="font-hand max-w-[26ch] text-xl text-ink">kept quietly, page by page</p>
-        <p className="font-guj mt-10 text-[0.7rem] tracking-[0.18em] text-ink-soft/70">
-          એક નાની યાદોની ડાયરી
+
+        <OrnamentDivider className="my-6" width="w-28" tone="gold" />
+
+        <p className="font-hand max-w-[26ch] text-lg leading-relaxed text-ink/90">
+          Some stories aren&apos;t written; they simply unfold, little by little.
         </p>
       </div>
     </PageShell>
