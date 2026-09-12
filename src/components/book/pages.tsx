@@ -619,7 +619,7 @@ function MemoriesPage() {
   const memories = [
     {
       date: "23 May 2026 · 2:00 PM",
-      title: "The CCD Afternoon",
+      title: "Our First Meet at Mumbai",
       place: "Café Coffee Day, Navi Mumbai",
       image: null,
       text: "Almost two hours together. So many thoughts shared, so many things spoken. Time moved so quietly that it didn't feel like two hours at all.",
