@@ -235,7 +235,7 @@ function ContentsPage() {
                 {c.deva}
               </span>
 
-              <span className="mx-1 h-px w-4 bg-paper-edge" />
+              <span className="mx-1 h-px w-3 bg-paper-edge" />
 
               <span className="font-display shrink-0 text-xs text-ink-soft italic max-sm:text-[0.58rem]">
                 {c.en}
