@@ -525,6 +525,95 @@ function ConversationsQuotePage() {
   );
 }
 
+/* ---------------------things we offen say -------------- */
+function LittleThingsPage() {
+  const phrases = [
+    "placeholder message",
+    "placeholder reply",
+    "placeholder phrase",
+    "placeholder inside joke",
+    "placeholder — something we often said",
+  ];
+
+  return (
+    <PageShell>
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col px-1 sm:px-2">
+        {/* Page heading */}
+        <div className="shrink-0 text-center">
+          <p className="font-display text-[0.68rem] tracking-[0.28em] text-gold uppercase max-sm:text-[0.58rem]">
+            The little things we said
+          </p>
+
+          <p className="font-deva mt-2 text-base text-maroon max-sm:mt-1.5 max-sm:text-sm">
+            छोटी छोटी बातें
+          </p>
+
+          <OrnamentDivider
+            className="mt-4 mb-6 max-sm:mt-3 max-sm:mb-5"
+            width="w-24 max-sm:w-20"
+            tone="gold"
+          />
+        </div>
+
+        {/* Intro */}
+        <div className="mx-auto max-w-[34ch] text-center">
+          <p className="font-hand text-lg leading-relaxed text-ink max-sm:text-base">
+            Some conversations are remembered in the smallest things.
+          </p>
+
+          <p className="font-display mt-2 text-[0.68rem] leading-relaxed text-ink-soft max-sm:mt-1.5 max-sm:text-[0.6rem]">
+            A few words, repeated often, somehow become familiar.
+          </p>
+        </div>
+
+        {/* Little message fragments */}
+        <div className="mx-auto mt-7 w-full max-w-[34ch] flex-1 max-sm:mt-5">
+          <div className="space-y-3 max-sm:space-y-2.5">
+            {phrases.map((phrase, index) => (
+              <div
+                key={index}
+                className={`flex ${
+                  index % 2 === 0 ? "justify-start" : "justify-end"
+                }`}
+              >
+                <div
+                  className={`max-w-[78%] px-4 py-2.5 shadow-[0_3px_10px_-7px_oklch(0_0_0/0.45)]
+                    max-sm:px-3 max-sm:py-2 ${
+                    index % 2 === 0
+                      ? "rounded-t-xl rounded-br-xl bg-paper-deep"
+                      : "rounded-t-xl rounded-bl-xl bg-maroon/10"
+                  }`}
+                >
+                  <p className="font-hand text-base leading-snug text-ink max-sm:text-sm">
+                    “{phrase}”
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Closing */}
+        <div className="shrink-0 pb-1 pt-6 text-center max-sm:pt-5">
+          <OrnamentDivider
+            className="mb-3 max-sm:mb-2"
+            width="w-20 max-sm:w-16"
+            tone="gold"
+          />
+
+          <p className="font-hand text-base leading-relaxed text-maroon max-sm:text-sm">
+            Funny how the smallest things
+            <br />
+            can become part of a story.
+          </p>
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
 /* ---------------- 03 यादें — flip photos ---------------- */
 
 function MemoriesPage() {
@@ -891,6 +980,7 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <BeginningPhotosPage /> },
   { node: <ConversationsPage /> },
   { node: <ConversationsQuotePage /> },
+   { node: <LittleThingsPage  /> },
   { node: <MemoriesPage /> },
   { node: <MomentsPage /> },
   { node: <SmilePage /> },
