@@ -743,31 +743,27 @@ function MomentsPage() {
         </div>
 
         {/* Intro */}
-        <div className="mx-auto mt-3 max-w-[34ch] shrink-0 text-center max-sm:mt-2">
+        <div className="mx-auto mt-2 max-w-[34ch] shrink-0 text-center max-sm:mt-1">
           <p className="font-hand text-lg text-ink max-sm:text-base">
             Some moments are small.
-          </p>
-
-          <p className="font-display mt-1 text-[0.64rem] text-ink-soft max-sm:text-[0.56rem]">
-            But somehow, they become the ones we remember.
           </p>
         </div>
 
         {/* 2 × 2 memory grid */}
-        <div className="mx-auto mt-4 grid min-h-0 w-full max-w-[38rem] flex-1 grid-cols-2 grid-rows-2 gap-3 px-2 max-sm:mt-3 max-sm:gap-2">
+        <div className="mx-auto mt-3 grid min-h-0 w-full max-w-[38rem] flex-1 grid-cols-2 grid-rows-2 gap-3 px-2 max-sm:mt-2 max-sm:gap-2">
           {moments.map((moment, index) => (
             <article
               key={index}
               className="flex min-h-0 items-center justify-center"
             >
               <div
-                className="relative w-full bg-paper-deep/70 px-4 py-3 shadow-[0_7px_18px_-12px_oklch(0_0_0/0.5)] max-sm:px-2.5 max-sm:py-2"
+                className="relative flex h-full min-h-0 w-full flex-col justify-center overflow-hidden bg-paper-deep/70 px-4 py-2.5 shadow-[0_7px_18px_-12px_oklch(0_0_0/0.5)] max-sm:px-2.5 max-sm:py-2"
                 style={{ transform: `rotate(${moment.rotate})` }}
               >
-                {/* Small scrapbook mark */}
+                {/* Tape */}
                 <span className="absolute -top-1.5 left-1/2 h-2.5 w-8 -translate-x-1/2 rotate-[-2deg] bg-saffron/30" />
 
-                <p className="font-display text-[0.55rem] tracking-[0.16em] text-gold uppercase max-sm:text-[0.46rem]">
+                <p className="font-display text-[0.5rem] tracking-[0.16em] text-gold uppercase max-sm:text-[0.43rem]">
                   {moment.date}
                 </p>
 
@@ -775,12 +771,12 @@ function MomentsPage() {
                   {moment.title}
                 </p>
 
-                <p className="font-display mt-1.5 text-[0.62rem] leading-relaxed text-ink-soft max-sm:mt-1 max-sm:text-[0.54rem]">
+                <p className="font-display mt-1 text-[0.59rem] leading-[1.45] text-ink-soft max-sm:text-[0.52rem] max-sm:leading-[1.4]">
                   {moment.text}
                 </p>
 
-                <div className="mt-2 border-t border-paper-edge/70 pt-1.5 max-sm:mt-1.5 max-sm:pt-1">
-                  <p className="font-hand text-sm italic text-ink max-sm:text-xs">
+                <div className="mt-1.5 border-t border-paper-edge/70 pt-1 max-sm:mt-1 max-sm:pt-1">
+                  <p className="font-hand text-sm italic leading-snug text-ink max-sm:text-xs">
                     {moment.note}
                   </p>
                 </div>
@@ -790,17 +786,15 @@ function MomentsPage() {
         </div>
 
         {/* Closing line */}
-        <div className="shrink-0 pb-1 pt-3 text-center max-sm:pt-2">
+        <div className="shrink-0 pb-0 pt-2 text-center max-sm:pt-1.5">
           <OrnamentDivider
-            className="mb-2 max-sm:mb-1.5"
-            width="w-20 max-sm:w-16"
+            className="mb-1.5 max-sm:mb-1"
+            width="w-16 max-sm:w-14"
             tone="gold"
           />
 
-          <p className="font-hand text-base text-maroon max-sm:text-sm">
-            Little moments.
-            <br />
-            Part of our story.
+          <p className="font-hand text-sm text-maroon max-sm:text-xs">
+            Little moments. Part of our story.
           </p>
         </div>
       </div>
