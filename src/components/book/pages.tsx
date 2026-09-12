@@ -224,7 +224,7 @@ function ContentsPage() {
           width="w-32 max-sm:w-24"
         />
 
-        <ol className="space-y-2.5 max-sm:space-y-1.5">
+        <ol className="space-y-3.5 max-sm:space-y-1.5">
           {CHAPTERS.map((c) => (
             <li key={c.n} className="flex min-w-0 items-baseline gap-4">
               <span className="font-sans shrink-0 text-[0.6rem] tracking-[0.2em] text-gold max-sm:text-[0.5rem]">
