@@ -32,7 +32,7 @@ const stop = (e: React.MouseEvent) => e.stopPropagation();
 
 export function PageShell({ children }: { children: ReactNode }) {
   return (
-    <div className="page-imperfections deckle-edge relative h-full min-h-0 overflow-hidden px-7 py-8 sm:px-9">
+    <div className="page-imperfections deckle-edge relative h-full min-h-0 overflow-hidden px-4 py-6 sm:px-7 sm:py-8">
       <div className="relative z-10 h-full min-h-0">
         {children}
       </div>
