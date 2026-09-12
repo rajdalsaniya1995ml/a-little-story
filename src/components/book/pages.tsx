@@ -311,15 +311,60 @@ function BeginningPage() {
 function BeginningPhotosPage() {
   return (
     <PageShell>
-      <div className="flex h-full flex-col justify-center gap-6 px-2">
-        <div className="relative mx-auto w-3/4">
-          <WashiTape className="-top-2 left-1/2 -translate-x-1/2" tone="saffron" />
-          <Polaroid caption="placeholder photo" rotate="-2deg" develop delay={250} />
-        </div>
-        <p className="font-sans text-center text-[0.68rem] leading-relaxed text-ink-soft">
-          The first picture develops as the page opens.
+      <div className="flex h-full min-h-0 flex-col items-center justify-center px-2">
+        {/* Date */}
+        <p className="font-display text-[0.68rem] tracking-[0.28em] text-gold uppercase max-sm:text-[0.58rem]">
+          17 May 2026 · Pune
         </p>
-        <OrnamentDivider width="w-28" />
+
+        {/* Place photo */}
+        <div className="relative mt-4 w-[78%] max-sm:mt-3 max-sm:w-[82%]">
+          <WashiTape
+            className="-top-2 left-1/2 -translate-x-1/2"
+            tone="saffron"
+          />
+
+          <div className="rotate-[-1.5deg] bg-paper p-2 pb-4 shadow-[0_10px_24px_-14px_oklch(0_0_0/0.5)] max-sm:p-1.5 max-sm:pb-3">
+            <img
+              src="/images/first-meeting-place.jpg"
+              alt="The place where we first met"
+              className="aspect-[4/3] w-full object-cover"
+            />
+
+            <p className="font-hand mt-2 text-center text-base text-ink max-sm:mt-1.5 max-sm:text-sm">
+              The place where we first met.
+            </p>
+          </div>
+        </div>
+
+        {/* Story */}
+        <div className="mt-5 max-w-[34ch] text-center max-sm:mt-3">
+          <p className="font-hand text-lg leading-relaxed text-ink max-sm:text-base">
+            You came with your parents, and I came knowing almost nothing
+            about the person I was about to meet.
+          </p>
+
+          <p className="font-display mt-3 text-[0.68rem] leading-relaxed text-ink-soft max-sm:mt-2 max-sm:text-[0.6rem]">
+            Until that day, we were just two names connected by a biodata.
+            That afternoon, for the first time, we became two people sitting
+            across from each other.
+          </p>
+        </div>
+
+        {/* Ending */}
+        <div className="mt-4 text-center max-sm:mt-3">
+          <p className="font-hand text-base text-maroon max-sm:text-sm">
+            Two strangers.
+          </p>
+
+          <p className="font-hand text-base text-maroon max-sm:text-sm">
+            One meeting.
+          </p>
+
+          <p className="font-display mt-1 text-[0.58rem] tracking-[0.2em] text-gold uppercase">
+            And somehow, our story began here.
+          </p>
+        </div>
       </div>
     </PageShell>
   );
