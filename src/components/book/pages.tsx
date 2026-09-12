@@ -10,6 +10,8 @@ import {
   WashiTape,
 } from "./ornaments";
 import firstMeetingPlace from "@/assets/First_Meeting_Place.jpg";
+import ccdAfternoon from "@/assets/CCD_Afternoon.jpg";
+import birthdayWebsite from "@/assets/Birthday_Website.png";
 
 const CHAPTERS = [
   { n: "01", deva: "शुरुआत", en: "The beginning" },
@@ -621,7 +623,7 @@ function MemoriesPage() {
       date: "23 May 2026 · 2:00 PM",
       title: "Our First Meet at Mumbai",
       place: "Café Coffee Day, Navi Mumbai",
-      image: null,
+      image: ccdAfternoon,
       text: "Almost two hours together. So many thoughts shared, so many things spoken. Time moved so quietly that it didn't feel like two hours at all.",
       rotate: "-1.5deg",
     },
@@ -629,7 +631,7 @@ function MemoriesPage() {
       date: "4th July 2026",
       title: "Made just for you",
       place: "A small website, made with a lot of thought",
-      image: null,
+      image: birthdayWebsite,
       text: "For your birthday, I wanted to do something a little different. So I made a little website especially for you. And knowing that you loved it made it all worth it.",
       rotate: "1.5deg",
     },
