@@ -626,7 +626,7 @@ function MemoriesPage() {
       rotate: "-1.5deg",
     },
     {
-      date: "A little birthday surprise",
+      date: "4th July 2026",
       title: "Made just for you",
       place: "A small website, made with a lot of thought",
       image: null,
