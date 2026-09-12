@@ -452,15 +452,74 @@ function ConversationsPage() {
 function ConversationsQuotePage() {
   return (
     <PageShell>
-      <div className="flex h-full flex-col justify-center gap-6 px-1">
-        <p className="font-display text-center text-2xl leading-9 text-maroon italic">
-          “a line we said often — placeholder”
-        </p>
-        <OrnamentDivider width="w-28" />
-        <FoldedNote className="mx-auto w-11/12">
-          <p className="font-hand text-lg text-ink">placeholder — what it actually meant</p>
-          <p className="font-sans mt-1 text-[0.62rem] text-ink-soft">replace with the real thing</p>
-        </FoldedNote>
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col px-1 sm:px-2">
+        {/* Page heading */}
+        <div className="shrink-0 text-center">
+          <p className="font-display text-[0.68rem] tracking-[0.28em] text-gold uppercase max-sm:text-[0.58rem]">
+            20 May onward
+          </p>
+
+          <OrnamentDivider
+            className="mt-4 mb-6 max-sm:mt-3 max-sm:mb-4"
+            width="w-24 max-sm:w-20"
+            tone="gold"
+          />
+        </div>
+
+        {/* Story */}
+        <div className="mx-auto min-h-0 max-w-[36ch] flex-1">
+          <div className="space-y-4 max-sm:space-y-3">
+            <p className="font-hand text-[1.05rem] leading-[1.6] text-ink max-sm:text-[0.9rem] max-sm:leading-[1.45]">
+              A few days later, on 20 May, our conversation continued.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-[1.6] text-ink max-sm:text-[0.9rem] max-sm:leading-[1.45]">
+              From that day onward, we started talking on WhatsApp.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-[1.6] text-ink max-sm:text-[0.9rem] max-sm:leading-[1.45]">
+              A few days later, our conversations slowly moved to phone calls
+              too.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-[1.6] text-ink max-sm:text-[0.9rem] max-sm:leading-[1.45]">
+              Sometimes it was just a few messages.
+              Sometimes we ended up talking a little longer on a call.
+              Sometimes it was simply a conversation about how our day had been.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-[1.6] text-ink max-sm:text-[0.9rem] max-sm:leading-[1.45]">
+              We didn&apos;t talk for hours every day, and we didn&apos;t always
+              have something important to say.
+            </p>
+
+            <p className="font-hand text-[1.05rem] leading-[1.6] text-ink max-sm:text-[0.9rem] max-sm:leading-[1.45]">
+              We were simply getting to know each other, one conversation at a
+              time.
+            </p>
+          </div>
+
+          {/* Closing thought */}
+          <div className="mt-7 text-center max-sm:mt-5">
+            <OrnamentDivider
+              className="mb-4 max-sm:mb-3"
+              width="w-20 max-sm:w-16"
+              tone="gold"
+            />
+
+            <p className="font-hand text-[1.05rem] leading-relaxed text-maroon max-sm:text-[0.9rem]">
+              And little by little,
+              <br />
+              you became less of a stranger.
+            </p>
+
+            <p className="font-hand mt-4 text-[1.05rem] leading-relaxed text-ink max-sm:mt-3 max-sm:text-[0.9rem]">
+              And I think that&apos;s where our conversations really began.
+            </p>
+          </div>
+        </div>
       </div>
     </PageShell>
   );
