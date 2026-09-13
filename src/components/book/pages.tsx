@@ -73,10 +73,10 @@ function CoverPage() {
       </p>
 
       <p className="font-hand mt-5 text-[0.92rem] leading-relaxed text-gold/90 max-sm:text-[0.78rem]">
-        for <span className="font-display not-italic tracking-[0.12em]">[Her Name]</span>
+        for <span className="font-display not-italic tracking-[0.12em]">Urvi</span>
       </p>
       <p className="font-hand mt-0.5 text-[0.78rem] italic text-gold/60 max-sm:text-[0.68rem]">
-        from [Your Name]
+        from Raj
       </p>
     
       <p className="gold-foil font-guj mt-8 text-[0.72rem] tracking-[0.16em] opacity-80 max-sm:mt-6">
@@ -107,7 +107,7 @@ function BlessingPage() {
           className="font-display mt-2 text-sm tracking-[0.22em] text-gold-soft/80 uppercase max-sm:text-[0.65rem]"
           aria-label="For her name"
         >
-          [Her Name]
+          Urvi
         </p>
 
         <div className="relative mt-4 max-sm:mt-2">
@@ -167,7 +167,7 @@ function BlessingPage() {
           className="font-hand mt-8 text-sm italic text-ink-soft/70 max-sm:mt-5 max-sm:text-xs"
           aria-label="Written by your name"
         >
-          written by [Your Name]
+          written by Raj
         </p>
       </div>
     </PageShell>
