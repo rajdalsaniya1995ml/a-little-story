@@ -22,7 +22,7 @@ import firstMeetingPlace from "@/assets/First_Meeting_Place.jpg";
 import ccdAfternoon from "@/assets/CCD_Afternoon.jpeg";
 import birthdayWebsite from "@/assets/Birthday_Website.png";
 import ganpatiBlessing from "@/assets/ganpati-blessing.png";
-import friendshipDay from "@/assets/Friendship_Day.jpg";
+import friendshipDay from "@/assets/friendship-day.jpg";
 
 const CHAPTERS = [
   { n: "01", deva: "शुरुआत", en: "The beginning" },
