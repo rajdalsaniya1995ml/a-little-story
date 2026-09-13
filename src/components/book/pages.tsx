@@ -872,12 +872,11 @@ function MomentsPage() {
                       max-sm:leading-[1.6]
                     "
                   >
-                  23 May 2026 was one of those simple days that didn't
-                  seem very important while it was happening, but somehow
-                  stayed with me afterwards. When I came to Mumbai for
-                  the annual meet at my company, we planned to meet. We
-                  met at CCD and spent some time together, talking about
-                  little things, laughing, and just enjoying the
+                  23 May 2026 was one of those simple days that didn't seem
+                  very important while it was happening, but somehow stayed
+                  with me afterwards. When I came to Mumbai for my company's
+                  annual meet, we planned to meet. We met at CCD and spent some
+                  time together, talking, laughing, and simply enjoying the
                   afternoon.
                   <br />
                   There wasn't anything extraordinary about it, and maybe
