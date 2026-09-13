@@ -686,14 +686,6 @@ function MomentsPage() {
         <div className="shrink-0 text-center">
           <ChapterMark {...markProps(3)} />
 
-          <h1 className="font-hand text-[2rem] leading-none text-maroon max-sm:text-[1.5rem]">
-            पल
-          </h1>
-
-          <p className="mt-0.5 font-display text-[0.8rem] italic text-ink max-sm:text-[0.65rem]">
-            Little moments
-          </p>
-
           <p className="mt-1.5 font-hand text-[0.8rem] leading-tight text-ink-soft max-sm:text-[0.63rem]">
             Some moments are small,
             <br />
