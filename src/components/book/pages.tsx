@@ -32,7 +32,6 @@ const CHAPTERS = [
   { n: "05", deva: "मुस्कान", en: "Things that made me smile" },
   { n: "06", deva: "दोस्ती का दिन", en: "Friendship Day" },
   { n: "07", deva: "एक याद खोलो", en: "Hidden memories" },
-  { n: "08", deva: "Mumbai", en: "A postcard" },
   { n: "09", deva: "थोड़ा सा मज़ा", en: "A playful quiz" },
   { n: "10", deva: "ख़ास", en: "Things I remember about you" },
   { n: "11", deva: "आगे...", en: "A letter" },
