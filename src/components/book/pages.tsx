@@ -685,7 +685,7 @@ function MomentsPage() {
 
           {/* ================= CCD ================= */}
           <div
-            className="relative h-[45%] w-[92%] max-w-[34rem] max-sm:w-[94%]"
+            className="relative min-h-[210px] w-[92%] max-w-[34rem] sm:min-h-[235px] max-sm:w-[94%]"
             style={{ transform: "rotate(-1.2deg)" }}
           >
             <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-6 py-5 shadow-[0_8px_18px_-12px_oklch(0_0_0/0.55)] max-sm:px-4 max-sm:py-3.5">
@@ -732,7 +732,7 @@ function MomentsPage() {
 
           {/* ================= BIRTHDAY ================= */}
           <div
-            className="relative h-[37%] w-[92%] max-w-[34rem] max-sm:w-[94%]"
+            className="relative min-h-[190px] w-[92%] max-w-[34rem] sm:min-h-[215px] max-sm:w-[94%]"
             style={{ transform: "rotate(1.2deg)" }}
           >
             <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-6 py-5 shadow-[0_8px_18px_-12px_oklch(0_0_0/0.55)] max-sm:px-4 max-sm:py-3.5">
