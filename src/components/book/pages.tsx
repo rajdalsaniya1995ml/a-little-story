@@ -138,22 +138,11 @@ function BlessingPage() {
                      max-sm:text-[0.88rem] max-sm:leading-[1.55]"
         >
           ॐ सर्वे भवन्तु सुखिनः
-          <br />
           सर्वे सन्तु निरामयाः।
-          <br />
           सर्वे भद्राणि पश्यन्तु
-          <br />
           मा कश्चिद् दुःखभाग्भवेत्॥
         </p>
-
-        <p
-          className="font-display mt-5 max-w-[34ch] text-xs leading-relaxed italic text-ink-soft/85
-                     max-sm:mt-2 max-sm:text-[0.62rem]"
-        >
-          May everyone be happy, may everyone be free from illness, may everyone
-          see goodness, and may no one suffer.
-        </p>
-
+        
         <OrnamentDivider
           className="my-6 max-sm:my-3"
           width="w-28 max-sm:w-20"
