@@ -1965,6 +1965,77 @@ function FriendshipDayPhotoPage() {
     </PageShell>
   );
 }
+/* ---- Visit to YOur Home ---- */
+function VisitYourHomePage() {
+  return (
+    <PageShell>
+      <PageBorder />
+
+      <div className="relative flex h-full min-h-0 flex-col overflow-hidden">
+
+        <header className="relative z-10 shrink-0 text-center">
+          <p className="font-display text-[0.62rem] tracking-[0.28em] text-gold uppercase">
+            A little visit
+          </p>
+
+          <h2 className="mt-2 font-hand text-2xl text-maroon max-sm:text-xl">
+            Visiting Your Home
+          </h2>
+
+          <p className="mt-1 font-deva text-base text-maroon/80 max-sm:text-sm">
+            तुम्हारे घर की एक याद
+          </p>
+
+          <OrnamentDivider
+            className="mt-3"
+            width="w-20 max-sm:w-14"
+            tone="gold"
+          />
+        </header>
+
+        <main className="flex flex-1 items-center justify-center px-5 py-4">
+          <div className="max-w-[40ch] text-center">
+
+            <p className="font-hand text-[1.05rem] leading-[1.65] text-ink max-sm:text-[0.82rem]">
+              One day, I got the chance to visit your home.
+            </p>
+
+            <p className="mt-4 font-hand text-[1.05rem] leading-[1.65] text-ink max-sm:mt-3 max-sm:text-[0.82rem]">
+              It was a simple visit, but somehow,
+              being there felt a little different.
+            </p>
+
+            <p className="mt-4 font-hand text-[1.05rem] leading-[1.65] text-ink max-sm:mt-3 max-sm:text-[0.82rem]">
+              Your home, your family, the little things around you —
+              it gave me another glimpse into your world.
+            </p>
+
+            <OrnamentDivider
+              className="my-5 max-sm:my-4"
+              width="w-16 max-sm:w-12"
+              tone="gold"
+            />
+
+            <p className="font-hand text-[1.1rem] italic leading-relaxed text-maroon max-sm:text-[0.86rem]">
+              Another little memory,
+              <br />
+              another step closer to knowing you.
+            </p>
+
+          </div>
+        </main>
+
+        <footer className="relative z-10 shrink-0 pb-1 text-center">
+          <p className="font-hand text-[0.68rem] text-maroon max-sm:text-[0.52rem]">
+            A visit worth remembering.
+          </p>
+        </footer>
+
+      </div>
+    </PageShell>
+  );
+}
+
 
 /* ---------------- 05 मुस्कान — tick list ---------------- */
 
@@ -2280,6 +2351,7 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <BirthdayPage />},
   { node: <FriendshipDayPage /> },
   { node: <FriendshipDayPhotoPage /> },
+  { node: <VisitYourHomePage /> },
   { node: <SmilePage /> },
   { node: <HiddenMemoriesPage /> },
   { node: <PostcardPage /> },
