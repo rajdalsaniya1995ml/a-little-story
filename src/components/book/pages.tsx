@@ -2537,6 +2537,25 @@ function FutureMemoriesPage() {
   );
 }
 
+function ClosingBlankPage() {
+  return (
+    <PageShell>
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col items-center justify-center px-6 text-center">
+        <OrnamentDivider
+          width="w-20 max-sm:w-16"
+          tone="gold"
+        />
+
+        <p className="mt-5 font-hand text-base italic text-ink-soft/60 max-sm:text-sm">
+          Some stories are better left open...
+        </p>
+      </div>
+    </PageShell>
+  );
+}
+
 function EndPage() {
   return (
     <div className="cover-surface relative flex h-full flex-col items-center justify-center px-10 text-center">
@@ -2572,7 +2591,7 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <AboutYouPage /> },
   { node: <LetterPage /> },
   { node: <FutureMemoriesPage /> },
-  
+   { node: <ClosingBlankPage /> },
   { node: <EndPage /> },
   
 ];
