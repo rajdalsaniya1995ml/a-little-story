@@ -96,6 +96,13 @@ function BlessingPage() {
           ॐ
         </p>
 
+        <p
+          className="font-display mt-2 text-sm tracking-[0.22em] text-gold-soft/80 uppercase max-sm:text-[0.65rem]"
+          aria-label="For her name"
+        >
+          [Her Name]
+        </p>
+
         <div className="relative mt-4 max-sm:mt-2">
           <img
             src={ganpatiBlessing}
@@ -147,6 +154,13 @@ function BlessingPage() {
                      max-sm:text-[0.95rem] max-sm:leading-snug"
         >
           Some stories aren&apos;t written; they simply unfold, little by little.
+        </p>
+
+        <p
+          className="font-hand mt-8 text-sm italic text-ink-soft/70 max-sm:mt-5 max-sm:text-xs"
+          aria-label="Written by your name"
+        >
+          written by [Your Name]
         </p>
       </div>
     </PageShell>
