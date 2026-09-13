@@ -209,7 +209,7 @@ function BeginningPage() {
       <div className="flex h-full min-h-0 flex-col justify-center">
         <ChapterMark {...markProps(0)} />
 
-        <div className="mx-auto mt-5 max-w-[38ch] text-center max-sm:mt-3">
+        <div className="mx-auto mt-2 max-w-[38ch] text-center max-sm:mt-1">
           <p className="font-display text-[0.72rem] tracking-[0.22em] text-gold uppercase">
             For you
           </p>
