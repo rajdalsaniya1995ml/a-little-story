@@ -1,5 +1,14 @@
 import { useState, type ReactNode } from "react";
 import {
+  Coffee,
+  Cake,
+  Gift,
+  House,
+  Heart,
+  Leaf,
+  Paperclip,
+} from "lucide-react";
+import {
   ChapterMark,
   FlipPhoto,
   FoldedNote,
