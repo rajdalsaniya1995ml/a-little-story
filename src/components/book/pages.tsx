@@ -2219,29 +2219,63 @@ function SmilePage() {
   );
 }
 /* ---------------- 08 थोड़ा सा मज़ा — quiz ---------------- */
-
 function QuizPage() {
   const [picked, setPicked] = useState<Record<number, number>>({});
+
   const questions = [
-    { q: "placeholder question one?", a: ["placeholder", "placeholder", "placeholder"] },
-    { q: "placeholder question two?", a: ["placeholder", "placeholder", "placeholder"] },
+    {
+      q: "What did you call me after the Friendship Day gift? 😂",
+      a: ["Gadhedo 🫏", "Hero 😎", "Bhai 😂"],
+    },
+    {
+      q: "Who is more likely to disappear in the middle of a conversation? 😂",
+      a: ["You 👀", "Me 😭", "Both of us"],
+    },
+    {
+      q: "What describes our conversations best? 😂",
+      a: ["Random", "Funny", "A little bit of everything"],
+    },
+    {
+      q: "Who is more dramatic? 👀",
+      a: ["You 😂", "Me 😂", "Let's not start this debate"],
+    },
+    {
+      q: "If our chats had a title, what would it be? 😂",
+      a: [
+        "One more message",
+        "Random conversations",
+        "Why are we still talking?",
+      ],
+    },
   ];
+
   const notes = ["शायद!", "hmm...", "बिल्कुल!"];
+
   return (
     <PageShell>
       <PageBorder />
+
       <div className="flex h-full flex-col justify-center gap-5">
         <ChapterMark {...markProps(7)} />
+
         <div className="space-y-5 px-1" onClick={stop}>
           {questions.map((item, qi) => (
             <div key={qi}>
-              <p className="font-display text-base text-maroon">{item.q}</p>
+              <p className="font-display text-base text-maroon">
+                {item.q}
+              </p>
+
               <div className="mt-2 flex flex-wrap items-center gap-2">
                 {item.a.map((opt, oi) => (
                   <button
                     key={oi}
                     type="button"
-                    onClick={() => setPicked({ ...picked, [qi]: oi })}
+                    onClick={() =>
+                      setPicked({
+                        ...picked,
+                        [qi]: oi,
+                      })
+                    }
                     className={`font-hand border px-3 py-1 text-base transition-colors ${
                       picked[qi] === oi
                         ? "border-maroon bg-maroon/10 text-maroon"
@@ -2251,6 +2285,7 @@ function QuizPage() {
                     {opt}
                   </button>
                 ))}
+
                 {picked[qi] !== undefined && (
                   <span className="font-hand -rotate-6 text-lg text-leafgreen">
                     {notes[picked[qi]! % notes.length]}
@@ -2260,8 +2295,9 @@ function QuizPage() {
             </div>
           ))}
         </div>
+
         <p className="font-sans text-center text-[0.6rem] text-ink-soft italic">
-          answers are placeholders for now
+          No right answers… probably. 😂
         </p>
       </div>
     </PageShell>
