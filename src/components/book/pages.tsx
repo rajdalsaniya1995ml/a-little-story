@@ -1966,6 +1966,8 @@ function FriendshipDayPhotoPage() {
   );
 }
 /* ---- Visit to YOur Home ---- */
+/* ---------------- Visit Your Home ---------------- */
+
 function VisitYourHomePage() {
   return (
     <PageShell>
@@ -1973,60 +1975,178 @@ function VisitYourHomePage() {
 
       <div className="relative flex h-full min-h-0 flex-col overflow-hidden">
 
+        {/* =====================================================
+            HEADER
+        ====================================================== */}
         <header className="relative z-10 shrink-0 text-center">
-          <p className="font-display text-[0.62rem] tracking-[0.28em] text-gold uppercase">
+          <p
+            className="
+              font-display
+              text-[0.62rem]
+              tracking-[0.28em]
+              text-gold
+              uppercase
+              max-sm:text-[0.55rem]
+            "
+          >
             A little visit
           </p>
 
-          <h2 className="mt-2 font-hand text-2xl text-maroon max-sm:text-xl">
+          <h2
+            className="
+              mt-2
+              font-hand
+              text-2xl
+              text-maroon
+              max-sm:mt-1.5
+              max-sm:text-xl
+            "
+          >
             Visiting Your Home
           </h2>
 
-          <p className="mt-1 font-deva text-base text-maroon/80 max-sm:text-sm">
+          <p
+            className="
+              mt-1
+              font-deva
+              text-base
+              text-maroon/80
+              max-sm:text-sm
+            "
+          >
             तुम्हारे घर की एक याद
           </p>
 
           <OrnamentDivider
-            className="mt-3"
+            className="mt-3 max-sm:mt-2"
             width="w-20 max-sm:w-14"
             tone="gold"
           />
         </header>
 
-        <main className="flex flex-1 items-center justify-center px-5 py-4">
-          <div className="max-w-[40ch] text-center">
+        {/* =====================================================
+            STORY
+        ====================================================== */}
+        <main
+          className="
+            flex
+            min-h-0
+            flex-1
+            items-center
+            justify-center
+            overflow-hidden
+            px-5
+            py-4
+            max-sm:px-3
+            max-sm:py-2
+          "
+        >
+          <div className="max-w-[43ch] text-center">
 
-            <p className="font-hand text-[1.05rem] leading-[1.65] text-ink max-sm:text-[0.82rem]">
-              One day, I got the chance to visit your home.
+            {/* First paragraph */}
+            <p
+              className="
+                font-hand
+                text-[1.02rem]
+                leading-[1.6]
+                text-ink
+                max-sm:text-[0.8rem]
+                max-sm:leading-[1.5]
+              "
+            >
+              On 22nd August, you invited me to Mumbai to visit your home.
+              After almost three months, we were meeting in person again.
             </p>
 
-            <p className="mt-4 font-hand text-[1.05rem] leading-[1.65] text-ink max-sm:mt-3 max-sm:text-[0.82rem]">
-              It was a simple visit, but somehow,
-              being there felt a little different.
+            {/* Second paragraph */}
+            <p
+              className="
+                mt-4
+                font-hand
+                text-[1.02rem]
+                leading-[1.6]
+                text-ink
+                max-sm:mt-3
+                max-sm:text-[0.8rem]
+                max-sm:leading-[1.5]
+              "
+            >
+              We had a little conversation, I met your parents, and spent
+              some time with your family. It was simple, comfortable, and
+              really nice to be there again.
             </p>
 
-            <p className="mt-4 font-hand text-[1.05rem] leading-[1.65] text-ink max-sm:mt-3 max-sm:text-[0.82rem]">
-              Your home, your family, the little things around you —
-              it gave me another glimpse into your world.
+            {/* Third paragraph */}
+            <p
+              className="
+                mt-4
+                font-hand
+                text-[1.02rem]
+                leading-[1.6]
+                text-ink
+                max-sm:mt-3
+                max-sm:text-[0.8rem]
+                max-sm:leading-[1.5]
+              "
+            >
+              And thank you for the Gujarati snacks —
+              dhokla and khandvi.
+              I genuinely enjoyed them. ♡
             </p>
 
+            {/* Divider */}
             <OrnamentDivider
               className="my-5 max-sm:my-4"
-              width="w-16 max-sm:w-12"
+              width="w-20 max-sm:w-14"
               tone="gold"
             />
 
-            <p className="font-hand text-[1.1rem] italic leading-relaxed text-maroon max-sm:text-[0.86rem]">
-              Another little memory,
+            {/* Emotional ending */}
+            <p
+              className="
+                font-hand
+                text-[1.15rem]
+                italic
+                leading-relaxed
+                text-maroon
+                max-sm:text-[0.88rem]
+              "
+            >
+              That day, for a little while,
               <br />
-              another step closer to knowing you.
+              your home felt like home to me.
             </p>
 
           </div>
         </main>
 
-        <footer className="relative z-10 shrink-0 pb-1 text-center">
-          <p className="font-hand text-[0.68rem] text-maroon max-sm:text-[0.52rem]">
+        {/* =====================================================
+            FOOTER
+        ====================================================== */}
+        <footer
+          className="
+            relative
+            z-10
+            shrink-0
+            pb-1
+            pt-0.5
+            text-center
+          "
+        >
+          <OrnamentDivider
+            className="mb-0.5"
+            width="w-16 max-sm:w-12"
+            tone="gold"
+          />
+
+          <p
+            className="
+              font-hand
+              text-[0.68rem]
+              text-maroon
+              max-sm:text-[0.52rem]
+            "
+          >
             A visit worth remembering.
           </p>
         </footer>
@@ -2035,6 +2155,7 @@ function VisitYourHomePage() {
     </PageShell>
   );
 }
+
 
 
 /* ---------------- 05 मुस्कान — tick list ---------------- */
