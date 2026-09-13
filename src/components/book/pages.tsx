@@ -860,27 +860,18 @@ function MomentsPage() {
               {/* =================================================
                   MEMORY TEXT
               ================================================== */}
-              <div
-                className="
-                  min-h-0
-                  flex-1
-                  overflow-hidden
-                "
-              >
-
-                <p
-                  className="
-                    mt-5
-                    max-w-[52ch]
-                    font-display
-                    text-[0.78rem]
-                    leading-[1.7]
-                    text-ink-soft
-                    max-sm:mt-4
-                    max-sm:text-[0.58rem]
-                    max-sm:leading-[1.6]
-                  "
-                >
+              <div className="mt-5 shrink-0 max-sm:mt-4">
+                  <p
+                    className="
+                      max-w-[52ch]
+                      font-display
+                      text-[0.78rem]
+                      leading-[1.7]
+                      text-ink-soft
+                      max-sm:text-[0.58rem]
+                      max-sm:leading-[1.6]
+                    "
+                  >
                   23 May 2026 was one of those simple days that didn't
                   seem very important while it was happening, but somehow
                   stayed with me afterwards. When I came to Mumbai for
