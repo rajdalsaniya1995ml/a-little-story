@@ -2219,63 +2219,6 @@ function SmilePage() {
     </PageShell>
   );
 }
-
-/* ---------------- 07 Mumbai — flipping postcard ---------------- */
-
-function PostcardPage() {
-  const [flipped, setFlipped] = useState(false);
-  return (
-    <PageShell>
-      <div className="flex h-full flex-col justify-center gap-5">
-        <ChapterMark number="07" deva="Mumbai" english="A postcard" />
-        <button
-          type="button"
-          onClick={(e) => {
-            e.stopPropagation();
-            setFlipped((f) => !f);
-          }}
-          aria-label="flip the postcard"
-          className="relative mx-1 aspect-[3/2] [perspective:1100px]"
-        >
-          <span
-            className="absolute inset-0 transition-transform duration-600 [transform-style:preserve-3d]"
-            style={{ transform: `rotateY(${flipped ? 180 : 0}deg)` }}
-          >
-            <span className="absolute inset-0 border border-brown/40 bg-linear-to-br from-saffron/35 to-maroon/25 [backface-visibility:hidden] shadow-[0_10px_24px_-14px_oklch(0_0_0/0.5)]">
-              <span className="font-display absolute right-0 bottom-3 left-0 text-center text-lg tracking-[0.3em] text-paper uppercase">
-                Mumbai
-              </span>
-            </span>
-            <span
-              className="absolute inset-0 grid grid-cols-2 gap-3 border border-brown/40 bg-paper p-3 [backface-visibility:hidden] shadow-[0_10px_24px_-14px_oklch(0_0_0/0.5)]"
-              style={{ transform: "rotateY(180deg)" }}
-            >
-              <span className="font-hand block text-left text-base leading-tight text-ink">
-                placeholder note from Mumbai
-              </span>
-              <span className="flex flex-col">
-                <span className="mb-2 flex justify-end">
-                  <span className="flex h-9 w-8 items-center justify-center border border-dashed border-maroon/50 text-[0.5rem] text-maroon">
-                    ₹5
-                  </span>
-                </span>
-                <span className="mt-auto block space-y-2">
-                  <span className="block h-px bg-paper-edge" />
-                  <span className="block h-px bg-paper-edge" />
-                  <span className="block h-px bg-paper-edge" />
-                </span>
-              </span>
-            </span>
-          </span>
-        </button>
-        <p className="font-sans text-center text-[0.6rem] tracking-[0.3em] text-brown/60 uppercase">
-          मुंबई · tap to turn it over
-        </p>
-      </div>
-    </PageShell>
-  );
-}
-
 /* ---------------- 08 थोड़ा सा मज़ा — quiz ---------------- */
 
 function QuizPage() {
@@ -2446,7 +2389,6 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <FriendshipDayPhotoPage /> },
   { node: <VisitYourHomePage /> },
   { node: <SmilePage /> },
-  { node: <PostcardPage /> },
   { node: <QuizPage /> },
   { node: <AboutYouPage /> },
   { node: <LetterPage /> },
