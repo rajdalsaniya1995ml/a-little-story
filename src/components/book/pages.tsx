@@ -2319,33 +2319,166 @@ function AboutYouPage() {
 }
 
 /* ---------------- 10 आगे... — letter ---------------- */
-
 function LetterPage() {
   const [open, setOpen] = useState(false);
+
   return (
     <PageShell>
       <PageBorder tone="maroon" />
-      <div className="flex h-full flex-col justify-center gap-5" onClick={stop}>
+
+      <div
+        className="flex h-full min-h-0 flex-col justify-center gap-5"
+        onClick={stop}
+      >
         <ChapterMark {...markProps(8)} />
+
         {open ? (
-          <div className="anim-unfold space-y-4 px-1">
-            <p className="font-hand text-lg leading-8 text-ink">
-              placeholder letter — the last page stays open for whatever you want to say next.
-            </p>
-            <p className="font-hand text-right text-xl text-maroon">— placeholder</p>
+          <div className="anim-unfold mx-auto w-full max-w-[38ch] px-2">
+            <div
+              className="
+                relative
+                border
+                border-paper-edge/70
+                bg-paper
+                px-6
+                py-5
+                shadow-[2px_6px_16px_-10px_rgba(60,40,20,0.5)]
+                max-sm:px-4
+                max-sm:py-4
+              "
+            >
+              {/* Decoration */}
+              <span className="absolute right-3 top-2 font-hand text-lg text-gold/40">
+                ❧
+              </span>
+
+              {/* Letter */}
+              <div className="space-y-3">
+                <p className="font-hand text-lg text-maroon max-sm:text-base">
+                  Dear Urvi,
+                </p>
+
+                <p className="font-hand text-base leading-[1.55] text-ink max-sm:text-[0.78rem]">
+                  I don't really know how to put everything we've shared over
+                  these few months into words.
+                </p>
+
+                <p className="font-hand text-base leading-[1.55] text-ink max-sm:text-[0.78rem]">
+                  Four months may not sound like a very long time, but somehow
+                  they have given me so many little memories to keep. From our
+                  first meeting to our conversations, the little surprises,
+                  the laughter, and the moments we've spent together — each one
+                  has quietly become a part of my story.
+                </p>
+
+                <p className="font-hand text-base leading-[1.55] text-ink max-sm:text-[0.78rem]">
+                  I am genuinely glad that I got the chance to know you. I
+                  appreciate the way you talk, the way you share your thoughts,
+                  and the comfort that slowly grew between us.
+                </p>
+
+                <p className="font-hand text-base leading-[1.55] text-ink max-sm:text-[0.78rem]">
+                  I don't know exactly what the future will look like, and
+                  perhaps that's okay. Some stories are better when they are
+                  allowed to unfold naturally, one little moment at a time.
+                </p>
+
+                <p className="font-hand text-base leading-[1.55] text-maroon max-sm:text-[0.78rem]">
+                  For now, I just wanted you to know that these little memories
+                  mean something to me.
+                </p>
+
+                <p className="font-hand text-base leading-[1.55] text-ink max-sm:text-[0.78rem]">
+                  Thank you for being a part of them.
+                </p>
+
+                <div className="pt-2 text-right">
+                  <p className="font-hand text-base italic text-ink-soft max-sm:text-sm">
+                    With a smile,
+                  </p>
+
+                  <p className="font-hand text-xl text-maroon max-sm:text-lg">
+                    Raj ♡
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Close / fold again */}
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              className="
+                mx-auto
+                mt-3
+                block
+                font-sans
+                text-[0.55rem]
+                tracking-[0.25em]
+                text-ink-soft
+                uppercase
+                hover:text-maroon
+              "
+            >
+              fold the letter
+            </button>
           </div>
         ) : (
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="relative mx-auto flex h-32 w-4/5 items-end justify-center bg-paper-deep pb-4 shadow-[0_10px_20px_-12px_oklch(0_0_0/0.45)] transition-transform hover:-translate-y-0.5"
+            className="
+              relative
+              mx-auto
+              flex
+              h-36
+              w-4/5
+              max-w-[22rem]
+              items-end
+              justify-center
+              bg-paper-deep
+              pb-4
+              shadow-[0_10px_20px_-12px_oklch(0_0_0/0.45)]
+              transition-transform
+              hover:-translate-y-1
+              max-sm:h-32
+            "
           >
+            {/* Envelope lines */}
             <span className="absolute inset-x-0 top-1/3 h-px bg-paper-edge/70" />
             <span className="absolute inset-x-0 top-2/3 h-px bg-paper-edge/70" />
-            <span className="absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-maroon text-gold-soft shadow-[0_4px_10px_-4px_oklch(0_0_0/0.6)]">
+
+            {/* Seal */}
+            <span
+              className="
+                absolute
+                left-1/2
+                top-1/2
+                flex
+                h-11
+                w-11
+                -translate-x-1/2
+                -translate-y-1/2
+                items-center
+                justify-center
+                rounded-full
+                bg-maroon
+                text-gold-soft
+                shadow-[0_4px_10px_-4px_oklch(0_0_0/0.6)]
+              "
+            >
               <span className="font-deva text-sm">क</span>
             </span>
-            <span className="font-sans text-[0.58rem] tracking-[0.3em] text-brown/70 uppercase">
+
+            <span
+              className="
+                font-sans
+                text-[0.58rem]
+                tracking-[0.3em]
+                text-brown/70
+                uppercase
+              "
+            >
               unfold the letter
             </span>
           </button>
@@ -2354,6 +2487,7 @@ function LetterPage() {
     </PageShell>
   );
 }
+
 
 function EndPage() {
   return (
