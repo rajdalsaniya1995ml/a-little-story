@@ -670,7 +670,6 @@ function MomentsPage() {
 
           <ChapterMark {...markProps(3)} />
 
-          {/* Intro */}
           <p
             className="
               mx-auto
@@ -714,7 +713,7 @@ function MomentsPage() {
         >
 
           {/* =================================================
-              LITTLE DECORATIVE FLOWER - TOP LEFT
+              LITTLE DECORATIVE FLOWER
           ================================================== */}
           <div
             className="
@@ -734,7 +733,7 @@ function MomentsPage() {
 
 
           {/* =================================================
-              FIRST MEMORY — CCD
+              CCD MEMORY
           ================================================== */}
           <article
             className="
@@ -755,7 +754,6 @@ function MomentsPage() {
             }}
           >
 
-            {/* Shadow / paper */}
             <div
               className="
                 relative
@@ -895,32 +893,7 @@ function MomentsPage() {
                 </p>
               </div>
 
-            </div>
-          </article>
-
-
-          {/* =================================================
-              LITTLE FLOWER BETWEEN CARDS
-          ================================================== */}
-          <span
-            className="
-              absolute
-              left-[61%]
-              top-[44%]
-              z-30
-              font-hand
-              text-[1.2rem]
-              text-gold/80
-              max-sm:left-[66%]
-              max-sm:top-[45%]
-              max-sm:text-[0.85rem]
-            "
-          >
-            ✦
-          </span>
-
-
-                        {/* Heart */}
+              {/* Heart belongs INSIDE the card */}
               <Heart
                 className="
                   absolute
@@ -939,6 +912,27 @@ function MomentsPage() {
 
             </div>
           </article>
+
+
+          {/* =================================================
+              LITTLE FLOWER
+          ================================================== */}
+          <span
+            className="
+              absolute
+              left-[61%]
+              top-[44%]
+              z-30
+              font-hand
+              text-[1.2rem]
+              text-gold/80
+              max-sm:left-[66%]
+              max-sm:top-[45%]
+              max-sm:text-[0.85rem]
+            "
+          >
+            ✦
+          </span>
 
 
           {/* =================================================
@@ -966,7 +960,16 @@ function MomentsPage() {
         {/* =====================================================
             FOOTER
         ====================================================== */}
-        <footer className="relative z-10 shrink-0 pb-1 pt-1 text-center">
+        <footer
+          className="
+            relative
+            z-10
+            shrink-0
+            pb-1
+            pt-1
+            text-center
+          "
+        >
 
           <OrnamentDivider
             className="mb-1"
@@ -991,6 +994,9 @@ function MomentsPage() {
     </PageShell>
   );
 }
+
+
+
 /* ---------------- 04 पल — little moments ---------------- */
 
 
