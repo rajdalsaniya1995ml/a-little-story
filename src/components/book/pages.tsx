@@ -661,140 +661,524 @@ function MomentsPage() {
     <PageShell>
       <PageBorder />
 
-      <div className="flex h-full min-h-0 flex-col overflow-hidden">
+      <div className="relative flex h-full min-h-0 flex-col overflow-hidden">
 
-        {/* ================= HEADER ================= */}
-        <div className="shrink-0 text-center">
+        {/* =====================================================
+            HEADER
+        ====================================================== */}
+        <header className="relative z-10 shrink-0 text-center">
+
           <ChapterMark {...markProps(3)} />
 
-          <p className="mt-1.5 font-hand text-[0.82rem] leading-[1.25] text-ink-soft max-sm:text-[0.64rem]">
+          {/* Hindi title */}
+          <h1
+            className="
+              font-hand
+              text-[2.1rem]
+              leading-none
+              text-maroon
+              max-sm:text-[1.55rem]
+            "
+          >
+            पल
+          </h1>
+
+          {/* English subtitle */}
+          <p
+            className="
+              mt-1
+              font-display
+              text-[0.85rem]
+              italic
+              text-ink
+              max-sm:text-[0.68rem]
+            "
+          >
+            Little moments
+          </p>
+
+          {/* Intro */}
+          <p
+            className="
+              mx-auto
+              mt-2
+              max-w-[32ch]
+              font-hand
+              text-[0.88rem]
+              leading-[1.3]
+              text-ink-soft
+              max-sm:mt-1
+              max-sm:text-[0.68rem]
+            "
+          >
             Some moments are small,
             <br />
             but they stay with you forever.
           </p>
 
           <OrnamentDivider
-            className="my-2"
+            className="mt-2"
             width="w-24 max-sm:w-16"
             tone="gold"
           />
-        </div>
 
-        {/* ================= MEMORIES ================= */}
-        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-4 py-1 max-sm:px-2">
+        </header>
 
-          {/* ================= CCD ================= */}
+
+        {/* =====================================================
+            SCRAPBOOK AREA
+        ====================================================== */}
+        <main
+          className="
+            relative
+            min-h-0
+            flex-1
+            px-3
+            py-3
+            max-sm:px-1
+            max-sm:py-2
+          "
+        >
+
+          {/* =================================================
+              LITTLE DECORATIVE FLOWER - TOP LEFT
+          ================================================== */}
           <div
-            className="relative min-h-[210px] w-[92%] max-w-[34rem] sm:min-h-[235px] max-sm:w-[94%]"
-            style={{ transform: "rotate(-1.2deg)" }}
+            className="
+              pointer-events-none
+              absolute
+              left-2
+              top-5
+              text-gold/50
+              max-sm:left-0
+              max-sm:top-3
+            "
           >
-            <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-6 py-5 shadow-[0_8px_18px_-12px_oklch(0_0_0/0.55)] max-sm:px-4 max-sm:py-3.5">
+            <span className="font-hand text-2xl max-sm:text-lg">
+              ❋
+            </span>
+          </div>
 
-              {/* tape */}
-              <span className="absolute -top-1.5 left-1/2 z-20 h-5 w-16 -translate-x-1/2 rotate-[-2deg] bg-saffron/30" />
 
-              {/* icon */}
-              <Coffee className="h-8 w-8 shrink-0 stroke-[1.3] text-maroon max-sm:h-6 max-sm:w-6" />
+          {/* =================================================
+              FIRST MEMORY — CCD
+          ================================================== */}
+          <article
+            className="
+              absolute
+              left-[4%]
+              top-[4%]
+              z-20
+              h-[43%]
+              w-[63%]
+              max-w-[370px]
+              max-sm:left-[2%]
+              max-sm:top-[3%]
+              max-sm:h-[44%]
+              max-sm:w-[72%]
+            "
+            style={{
+              transform: "rotate(-1.6deg)",
+            }}
+          >
 
-              {/* date */}
-              <p className="mt-1 font-display text-[0.46rem] tracking-[0.18em] text-gold uppercase max-sm:text-[0.36rem]">
+            {/* Shadow / paper */}
+            <div
+              className="
+                relative
+                flex
+                h-full
+                w-full
+                flex-col
+                overflow-visible
+                border
+                border-paper-edge/70
+                bg-paper
+                px-5
+                py-4
+                shadow-[3px_7px_14px_-9px_rgba(60,40,20,0.65)]
+                max-sm:px-3
+                max-sm:py-2.5
+              "
+            >
+
+              {/* Tape */}
+              <span
+                className="
+                  absolute
+                  -top-3
+                  left-1/2
+                  z-30
+                  h-6
+                  w-[72px]
+                  -translate-x-1/2
+                  rotate-[1deg]
+                  bg-saffron/25
+                  shadow-[0_1px_2px_rgba(0,0,0,0.08)]
+                  max-sm:-top-2
+                  max-sm:h-4
+                  max-sm:w-12
+                "
+              />
+
+              {/* Coffee icon */}
+              <Coffee
+                className="
+                  h-8
+                  w-8
+                  shrink-0
+                  stroke-[1.25]
+                  text-maroon
+                  max-sm:h-6
+                  max-sm:w-6
+                "
+              />
+
+              {/* Date */}
+              <p
+                className="
+                  mt-1.5
+                  shrink-0
+                  font-display
+                  text-[0.48rem]
+                  tracking-[0.18em]
+                  text-gold
+                  uppercase
+                  max-sm:mt-1
+                  max-sm:text-[0.36rem]
+                "
+              >
                 23 MAY 2026
               </p>
 
-              {/* title */}
-              <h2 className="mt-1 font-hand text-[1.65rem] leading-none text-maroon max-sm:text-[1.2rem]">
+              {/* Title */}
+              <h2
+                className="
+                  mt-1
+                  shrink-0
+                  font-hand
+                  text-[1.65rem]
+                  leading-[1.05]
+                  text-maroon
+                  max-sm:text-[1.18rem]
+                "
+              >
                 The CCD Meet
               </h2>
 
-              {/* underline */}
-              <div className="mt-2 h-px w-14 bg-gold/70 max-sm:mt-1.5 max-sm:w-10" />
+              {/* Decorative underline */}
+              <div
+                className="
+                  mt-2
+                  h-px
+                  w-14
+                  shrink-0
+                  bg-gold/70
+                  max-sm:mt-1.5
+                  max-sm:w-10
+                "
+              />
 
-              {/* actual description */}
-              <p className="mt-2.5 max-w-[90%] font-display text-[0.67rem] leading-[1.5] text-ink-soft max-sm:mt-2 max-sm:text-[0.49rem]">
+              {/* Main text */}
+              <p
+                className="
+                  mt-2.5
+                  max-w-[30ch]
+                  font-display
+                  text-[0.68rem]
+                  leading-[1.5]
+                  text-ink-soft
+                  max-sm:mt-2
+                  max-sm:text-[0.48rem]
+                  max-sm:leading-[1.45]
+                "
+              >
                 A small afternoon that somehow became one of those moments
                 I still remember.
               </p>
 
-              {/* note */}
-              <div className="mt-auto border-t border-paper-edge/70 pt-2">
-                <p className="font-hand text-[0.9rem] italic text-ink max-sm:text-[0.65rem]">
+              {/* Bottom note */}
+              <div
+                className="
+                  mt-auto
+                  shrink-0
+                  border-t
+                  border-paper-edge/70
+                  pt-2
+                  max-sm:pt-1.5
+                "
+              >
+                <p
+                  className="
+                    font-hand
+                    text-[0.9rem]
+                    italic
+                    leading-tight
+                    text-ink
+                    max-sm:text-[0.62rem]
+                  "
+                >
                   A little time together.
                 </p>
               </div>
 
             </div>
-          </div>
+          </article>
 
-          {/* little connector */}
-          <div className="-my-1 shrink-0 font-hand text-sm text-gold">
-            ✦
-          </div>
 
-          {/* ================= BIRTHDAY ================= */}
-          <div
-            className="relative min-h-[190px] w-[92%] max-w-[34rem] sm:min-h-[215px] max-sm:w-[94%]"
-            style={{ transform: "rotate(1.2deg)" }}
+          {/* =================================================
+              LITTLE FLOWER BETWEEN CARDS
+          ================================================== */}
+          <span
+            className="
+              absolute
+              left-[61%]
+              top-[44%]
+              z-30
+              font-hand
+              text-[1.2rem]
+              text-gold/80
+              max-sm:left-[66%]
+              max-sm:top-[45%]
+              max-sm:text-[0.85rem]
+            "
           >
-            <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-6 py-5 shadow-[0_8px_18px_-12px_oklch(0_0_0/0.55)] max-sm:px-4 max-sm:py-3.5">
+            ✦
+          </span>
 
-              {/* tape */}
-              <span className="absolute -top-1.5 left-1/2 z-20 h-5 w-16 -translate-x-1/2 rotate-[1deg] bg-saffron/30" />
 
-              {/* icon */}
-              <Cake className="h-8 w-8 shrink-0 stroke-[1.3] text-maroon max-sm:h-6 max-sm:w-6" />
+          {/* =================================================
+              SECOND MEMORY — BIRTHDAY
+          ================================================== */}
+          <article
+            className="
+              absolute
+              bottom-[5%]
+              right-[4%]
+              z-20
+              h-[43%]
+              w-[63%]
+              max-w-[370px]
+              max-sm:bottom-[4%]
+              max-sm:right-[2%]
+              max-sm:h-[43%]
+              max-sm:w-[72%]
+            "
+            style={{
+              transform: "rotate(1.7deg)",
+            }}
+          >
 
-              {/* date */}
-              <p className="mt-1 font-display text-[0.46rem] tracking-[0.18em] text-gold uppercase max-sm:text-[0.36rem]">
+            <div
+              className="
+                relative
+                flex
+                h-full
+                w-full
+                flex-col
+                overflow-visible
+                border
+                border-paper-edge/70
+                bg-paper
+                px-5
+                py-4
+                shadow-[-3px_7px_14px_-9px_rgba(60,40,20,0.65)]
+                max-sm:px-3
+                max-sm:py-2.5
+              "
+            >
+
+              {/* Tape */}
+              <span
+                className="
+                  absolute
+                  -top-3
+                  left-1/2
+                  z-30
+                  h-6
+                  w-[72px]
+                  -translate-x-1/2
+                  rotate-[-1deg]
+                  bg-saffron/25
+                  shadow-[0_1px_2px_rgba(0,0,0,0.08)]
+                  max-sm:-top-2
+                  max-sm:h-4
+                  max-sm:w-12
+                "
+              />
+
+              {/* Cake icon */}
+              <Cake
+                className="
+                  h-8
+                  w-8
+                  shrink-0
+                  stroke-[1.25]
+                  text-maroon
+                  max-sm:h-6
+                  max-sm:w-6
+                "
+              />
+
+              {/* Date */}
+              <p
+                className="
+                  mt-1.5
+                  shrink-0
+                  font-display
+                  text-[0.48rem]
+                  tracking-[0.18em]
+                  text-gold
+                  uppercase
+                  max-sm:mt-1
+                  max-sm:text-[0.36rem]
+                "
+              >
                 4 JULY 2026
               </p>
 
-              {/* title */}
-              <h2 className="mt-1 font-hand text-[1.65rem] leading-none text-maroon max-sm:text-[1.2rem]">
+              {/* Title */}
+              <h2
+                className="
+                  mt-1
+                  shrink-0
+                  font-hand
+                  text-[1.65rem]
+                  leading-[1.05]
+                  text-maroon
+                  max-sm:text-[1.18rem]
+                "
+              >
                 Your Birthday
               </h2>
 
-              {/* underline */}
-              <div className="mt-2 h-px w-14 bg-gold/70 max-sm:mt-1.5 max-sm:w-10" />
+              {/* Decorative underline */}
+              <div
+                className="
+                  mt-2
+                  h-px
+                  w-14
+                  shrink-0
+                  bg-gold/70
+                  max-sm:mt-1.5
+                  max-sm:w-10
+                "
+              />
 
-              {/* description */}
-              <p className="mt-2.5 max-w-[90%] font-display text-[0.67rem] leading-[1.5] text-ink-soft max-sm:mt-2 max-sm:text-[0.49rem]">
+              {/* Main text */}
+              <p
+                className="
+                  mt-2.5
+                  max-w-[30ch]
+                  font-display
+                  text-[0.68rem]
+                  leading-[1.5]
+                  text-ink-soft
+                  max-sm:mt-2
+                  max-sm:text-[0.48rem]
+                  max-sm:leading-[1.45]
+                "
+              >
                 I wanted to make your birthday a little different,
                 so I made something especially for you.
               </p>
 
-              {/* note */}
-              <div className="mt-auto border-t border-paper-edge/70 pt-2">
-                <p className="font-hand text-[0.9rem] italic text-ink max-sm:text-[0.65rem]">
+              {/* Bottom note */}
+              <div
+                className="
+                  mt-auto
+                  shrink-0
+                  border-t
+                  border-paper-edge/70
+                  pt-2
+                  max-sm:pt-1.5
+                "
+              >
+                <p
+                  className="
+                    font-hand
+                    text-[0.9rem]
+                    italic
+                    leading-tight
+                    text-ink
+                    max-sm:text-[0.62rem]
+                  "
+                >
                   Made with a lot of thought.
                 </p>
               </div>
 
-              {/* heart */}
-              <Heart className="absolute bottom-3 right-4 h-6 w-6 stroke-[1.2] text-maroon/75 max-sm:bottom-2 max-sm:right-3 max-sm:h-5 max-sm:w-5" />
+              {/* Heart */}
+              <Heart
+                className="
+                  absolute
+                  bottom-3
+                  right-4
+                  h-6
+                  w-6
+                  stroke-[1.15]
+                  text-maroon/75
+                  max-sm:bottom-2
+                  max-sm:right-2.5
+                  max-sm:h-5
+                  max-sm:w-5
+                "
+              />
 
             </div>
+          </article>
+
+
+          {/* =================================================
+              SMALL BOTANICAL DECORATION
+          ================================================== */}
+          <div
+            className="
+              pointer-events-none
+              absolute
+              bottom-2
+              left-2
+              rotate-[-12deg]
+              font-hand
+              text-xl
+              text-leafgreen/60
+              max-sm:text-base
+            "
+          >
+            ❧
           </div>
 
-        </div>
+        </main>
 
-        {/* ================= FOOTER ================= */}
-        <div className="shrink-0 pb-1 pt-1 text-center">
+
+        {/* =====================================================
+            FOOTER
+        ====================================================== */}
+        <footer className="relative z-10 shrink-0 pb-1 pt-1 text-center">
+
           <OrnamentDivider
             className="mb-1"
             width="w-20 max-sm:w-14"
             tone="gold"
           />
 
-          <p className="font-hand text-[0.7rem] text-maroon max-sm:text-[0.55rem]">
+          <p
+            className="
+              font-hand
+              text-[0.72rem]
+              text-maroon
+              max-sm:text-[0.56rem]
+            "
+          >
             Little moments. Part of our story.
           </p>
-        </div>
+
+        </footer>
 
       </div>
     </PageShell>
   );
 }
-
 /* ---------------- 04 पल — little moments ---------------- */
 
 
