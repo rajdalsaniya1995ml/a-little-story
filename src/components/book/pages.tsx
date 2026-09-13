@@ -71,8 +71,15 @@ function CoverPage() {
       <p className="font-display max-w-[22ch] text-[0.82rem] leading-[1.8] tracking-[0.04em] text-gold-soft/60 italic">
         Four months. A few conversations. Many little memories.
       </p>
+
+      <p className="font-hand mt-5 text-[0.92rem] leading-relaxed text-gold/90 max-sm:text-[0.78rem]">
+        for <span className="font-display not-italic tracking-[0.12em]">[Her Name]</span>
+      </p>
+      <p className="font-hand mt-0.5 text-[0.78rem] italic text-gold/60 max-sm:text-[0.68rem]">
+        from [Your Name]
+      </p>
     
-      <p className="gold-foil font-guj mt-10 text-[0.72rem] tracking-[0.16em] opacity-80">
+      <p className="gold-foil font-guj mt-8 text-[0.72rem] tracking-[0.16em] opacity-80 max-sm:mt-6">
         એક નાની યાદોની ડાયરી
       </p>
     </div>
