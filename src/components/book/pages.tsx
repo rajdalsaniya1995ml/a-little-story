@@ -1475,7 +1475,7 @@ function FriendshipDayPage() {
             HEADER
         ====================================================== */}
         <header className="relative z-10 shrink-0 text-center">
-          <ChapterMark {...markProps(6)} />
+          <ChapterMark {...markProps(5)} />
 
           <p
             className="
