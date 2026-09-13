@@ -1024,10 +1024,8 @@ function MomentsPage() {
   );
 }
 
-
-
-
 /* ---------------- 04 पल — little moments ---------------- */
+
 function BirthdayPage() {
   return (
     <PageShell>
@@ -1039,7 +1037,6 @@ function BirthdayPage() {
             HEADER
         ====================================================== */}
         <header className="relative z-10 shrink-0 text-center">
-
           <ChapterMark {...markProps(4)} />
 
           <p
@@ -1065,7 +1062,6 @@ function BirthdayPage() {
             width="w-20 max-sm:w-14"
             tone="gold"
           />
-
         </header>
 
 
@@ -1085,7 +1081,9 @@ function BirthdayPage() {
           "
         >
 
-          {/* Small decoration */}
+          {/* =================================================
+              TOP LEFT DECORATION
+          ================================================== */}
           <div
             className="
               pointer-events-none
@@ -1166,10 +1164,11 @@ function BirthdayPage() {
 
 
               {/* =================================================
-                  BIRTHDAY ICON
+                  BIRTHDAY HEADER
               ================================================== */}
               <div className="shrink-0">
 
+                {/* Heart / birthday decoration */}
                 <div
                   className="
                     font-hand
@@ -1181,6 +1180,7 @@ function BirthdayPage() {
                 >
                   ♡
                 </div>
+
 
                 {/* Date */}
                 <p
@@ -1198,6 +1198,7 @@ function BirthdayPage() {
                   04 JULY 2026
                 </p>
 
+
                 {/* Title */}
                 <h2
                   className="
@@ -1211,6 +1212,7 @@ function BirthdayPage() {
                 >
                   Your Birthday
                 </h2>
+
 
                 {/* Underline */}
                 <div
@@ -1230,7 +1232,13 @@ function BirthdayPage() {
               {/* =================================================
                   BIRTHDAY STORY
               ================================================== */}
-              <div className="mt-2 shrink-0 max-sm:mt-1.5">
+              <div
+                className="
+                  mt-2
+                  shrink-0
+                  max-sm:mt-1.5
+                "
+              >
 
                 <p
                   className="
@@ -1243,33 +1251,37 @@ function BirthdayPage() {
                     max-sm:leading-[1.5]
                   "
                 >
-                We had only met a few days earlier, in the middle of May, and
-                your birthday came just 15–20 days later. At that point, we
-                didn't even know each other very well. We were still getting
-                to know each other, so I wasn't really sure what to do for
-                your birthday. But I still wanted to do something a little
-                different for you, something that would make your day feel
-                special.
-                <br />
-                When I shared the website I had created for your birthday,
-                seeing your reaction and knowing that you loved the surprise
-                really put a smile on my face.
+                  We had only met a few days earlier, in the middle
+                  of May, and your birthday came just 15–20 days
+                  later. At that point, we didn't even know each
+                  other very well. We were still getting to know
+                  each other, so I wasn't really sure what to do
+                  for your birthday. But I still wanted to do
+                  something a little different for you, something
+                  that would make your day feel special.
+
+                  <br />
+
+                  When I shared the website I had created for your
+                  birthday, seeing your reaction and knowing that
+                  you loved the surprise really put a smile on my
+                  face.
                 </p>
 
               </div>
 
 
               {/* =================================================
-                  OPTIONAL PHOTO / MEMORY SPACE
+                  BIRTHDAY MEMORY BOX
               ================================================== */}
               <div
                 className="
                   mx-auto
-                  mt-5
+                  mt-4
                   flex
-                  h-[24%]
-                  min-h-[100px]
-                  w-[72%]
+                  h-[120px]
+                  w-[70%]
+                  shrink-0
                   rotate-[-1deg]
                   items-center
                   justify-center
@@ -1277,11 +1289,12 @@ function BirthdayPage() {
                   border-paper-edge/80
                   bg-paper-deep/50
                   shadow-[2px_4px_10px_-7px_rgba(60,40,20,0.55)]
-                  max-sm:mt-4
-                  max-sm:h-[22%]
-                  max-sm:w-[78%]
+                  max-sm:mt-3
+                  max-sm:h-[85px]
+                  max-sm:w-[76%]
                 "
               >
+
                 <div className="text-center">
 
                   <div
@@ -1309,6 +1322,7 @@ function BirthdayPage() {
                   </p>
 
                 </div>
+
               </div>
 
 
@@ -1342,7 +1356,9 @@ function BirthdayPage() {
               </div>
 
 
-              {/* Heart */}
+              {/* =================================================
+                  HEART
+              ================================================== */}
               <Heart
                 className="
                   absolute
@@ -1360,7 +1376,9 @@ function BirthdayPage() {
               />
 
 
-              {/* Botanical decoration */}
+              {/* =================================================
+                  BOTANICAL DECORATION
+              ================================================== */}
               <span
                 className="
                   absolute
@@ -1382,7 +1400,9 @@ function BirthdayPage() {
           </article>
 
 
-          {/* Decorative star */}
+          {/* =================================================
+              OUTSIDE DECORATION
+          ================================================== */}
           <span
             className="
               pointer-events-none
@@ -1441,7 +1461,6 @@ function BirthdayPage() {
     </PageShell>
   );
 }
-
 
 /* ---------------- 05 मुस्कान — tick list ---------------- */
 
