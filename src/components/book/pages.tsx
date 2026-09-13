@@ -2156,21 +2156,37 @@ function VisitYourHomePage() {
   );
 }
 
-
-
 /* ---------------- 05 मुस्कान — tick list ---------------- */
-
 function SmilePage() {
   const [ticked, setTicked] = useState<number[]>([]);
+
   const toggle = (i: number) =>
-    setTicked((t) => (t.includes(i) ? t.filter((x) => x !== i) : [...t, i]));
+    setTicked((t) =>
+      t.includes(i) ? t.filter((x) => x !== i) : [...t, i]
+    );
+
+  const smiles = [
+    "Your random messages that somehow made my day better",
+    "Calling me “gadhedo” 😄 when I gave you the Friendship Day gift",
+    "The way you made me feel at home when I visited Mumbai",
+    "Sharing those Gujarati snacks — dhokla & khandvi — with you",
+  ];
+
   return (
     <PageShell>
       <PageBorder tone="maroon" />
+
       <div className="flex h-full flex-col justify-center gap-5">
         <ChapterMark {...markProps(4)} />
+
+        <p className="font-hand px-4 text-center text-lg text-ink-soft">
+          Some smiles came from the smallest things.
+          <br />
+          These are a few I still remember. ❤️
+        </p>
+
         <ul className="space-y-3 px-2" onClick={stop}>
-          {Array.from({ length: 5 }).map((_, i) => (
+          {smiles.map((smile, i) => (
             <li key={i}>
               <button
                 type="button"
@@ -2178,16 +2194,23 @@ function SmilePage() {
                 className="flex w-full items-baseline gap-3 text-left"
               >
                 <span
-                  className={`font-hand w-4 text-lg ${ticked.includes(i) ? "text-maroon" : "text-gold/50"}`}
+                  className={`font-hand w-4 text-lg ${
+                    ticked.includes(i)
+                      ? "text-maroon"
+                      : "text-gold/50"
+                  }`}
                 >
                   {ticked.includes(i) ? "✓" : "✧"}
                 </span>
+
                 <span
                   className={`font-hand flex-1 border-b border-dotted border-paper-edge pb-1 text-lg transition-colors ${
-                    ticked.includes(i) ? "text-ink-soft line-through decoration-maroon/50" : "text-ink"
+                    ticked.includes(i)
+                      ? "text-ink-soft line-through decoration-maroon/50"
+                      : "text-ink"
                   }`}
                 >
-                  placeholder — something that made me smile
+                  {smile}
                 </span>
               </button>
             </li>
@@ -2197,6 +2220,8 @@ function SmilePage() {
     </PageShell>
   );
 }
+
+
 
 /* ---------------- 06 एक याद खोलो — envelopes ---------------- */
 
