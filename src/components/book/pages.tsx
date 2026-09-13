@@ -2220,58 +2220,6 @@ function SmilePage() {
   );
 }
 
-
-
-/* ---------------- 06 एक याद खोलो — envelopes ---------------- */
-
-function HiddenMemoriesPage() {
-  const [open, setOpen] = useState<number | null>(null);
-  return (
-    <PageShell>
-      <div className="flex h-full flex-col justify-center gap-5">
-        <ChapterMark {...markProps(5)} />
-        <p className="font-sans text-center text-[0.66rem] tracking-wide text-ink-soft">
-          एक लिफ़ाफ़ा खोलो — open an envelope
-        </p>
-        <div className="grid grid-cols-2 gap-4 px-1" onClick={stop}>
-          {[0, 1, 2, 3].map((i) => {
-            const isOpen = open === i;
-            return (
-              <button
-                key={i}
-                type="button"
-                onClick={() => setOpen(isOpen ? null : i)}
-                className="relative aspect-[4/3] [perspective:700px]"
-                aria-label={isOpen ? "close envelope" : "open envelope"}
-              >
-                {isOpen && (
-                  <span className="anim-card-out absolute inset-x-2 top-0 z-0 flex h-[86%] items-center justify-center bg-paper px-2 text-center shadow-[0_10px_18px_-12px_oklch(0_0_0/0.5)]">
-                    <span className="font-hand text-sm leading-snug text-ink">
-                      placeholder memory {i + 1}
-                    </span>
-                  </span>
-                )}
-                <span className="absolute inset-0 z-10 border border-brown/35 bg-paper-deep shadow-[0_6px_14px_-10px_oklch(0_0_0/0.5)]">
-                  <span className="absolute inset-x-0 bottom-0 h-[62%] bg-linear-to-t from-brown/12 to-transparent" />
-                  {!isOpen && (
-                    <span className="font-sans absolute right-0 bottom-2 left-0 text-center text-[0.55rem] tracking-[0.3em] text-brown/70 uppercase">
-                      open
-                    </span>
-                  )}
-                </span>
-                <span
-                  className="absolute inset-x-0 top-0 z-20 h-1/2 origin-top border-b border-brown/25 bg-linear-to-b from-saffron/25 to-paper-deep transition-transform duration-500 [clip-path:polygon(0_0,100%_0,50%_100%)]"
-                  style={{ transform: `rotateX(${isOpen ? -172 : 0}deg)` }}
-                />
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    </PageShell>
-  );
-}
-
 /* ---------------- 07 Mumbai — flipping postcard ---------------- */
 
 function PostcardPage() {
@@ -2498,7 +2446,6 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <FriendshipDayPhotoPage /> },
   { node: <VisitYourHomePage /> },
   { node: <SmilePage /> },
-  { node: <HiddenMemoriesPage /> },
   { node: <PostcardPage /> },
   { node: <QuizPage /> },
   { node: <AboutYouPage /> },
