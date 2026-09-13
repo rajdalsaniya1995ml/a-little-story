@@ -206,7 +206,7 @@ function BeginningPage() {
     <PageShell>
       <PageBorder />
 
-      <div className="flex h-full min-h-0 flex-col justify-center">
+      <div className="flex h-full min-h-0 flex-col justify-start pt-3 sm:pt-5">
         <ChapterMark {...markProps(0)} />
 
         <div className="mx-auto mt-2 max-w-[38ch] text-center max-sm:mt-1">
