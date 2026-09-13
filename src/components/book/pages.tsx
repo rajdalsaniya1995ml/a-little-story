@@ -334,7 +334,7 @@ function ConversationsPage() {
         </div>
 
         {/* Story */}
-        <div className="mx-auto mt-5 min-h-0 max-w-[37ch] overflow-hidden max-sm:mt-3">
+        <div className="mx-auto mt-5 min-h-0 max-w-[37ch] overflow-hidden px-4 max-sm:mt-3 max-sm:px-2">
           <div className="space-y-3 max-sm:space-y-2">
             <p className="font-hand text-[1.02rem] leading-[1.55] text-ink max-sm:text-[0.86rem] max-sm:leading-[1.4]">
               I still remember that first meeting.
