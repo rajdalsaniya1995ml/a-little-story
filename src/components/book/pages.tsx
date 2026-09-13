@@ -845,12 +845,12 @@ function MomentsPage() {
                 {/* Underline */}
                 <div
                   className="
-                    mt-1.5
+                    mt-1
                     h-px
-                    w-14
+                    w-12
                     bg-gold/70
-                    max-sm:mt-1
-                    max-sm:w-10
+                    max-sm:mt-0.5
+                    max-sm:w-9
                   "
                 />
 
