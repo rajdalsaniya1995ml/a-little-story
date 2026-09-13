@@ -1687,22 +1687,14 @@ function FriendshipDayPage() {
                     max-sm:leading-[1.5]
                   "
                 >
-                  By the time Friendship Day came around, we had
-                  known each other a little longer. Things had
-                  started to feel more comfortable, and our
-                  conversations had become easier and more natural.
-
+                  By the time Friendship Day came around, we had known each other
+                  a little longer. Things had started to feel more comfortable,
+                  and our conversations had become easier and more natural.
                   <br />
-
-                  I wanted to do a small surprise for you. It wasn't
-                  anything huge, but I wanted to make the day a little
-                  different and give you something to remember.
-
+                  A few days before, you had told me that you weren&apos;t really
+                  in the mood to connect with anyone and that you were going
+                  through a tough phase.
                   <br />
-
-                  Seeing your reaction made all the effort worth it.
-                  Sometimes, it is the smallest surprises that end
-                  up becoming the memories we remember the most.
                 </p>
               </div>
 
