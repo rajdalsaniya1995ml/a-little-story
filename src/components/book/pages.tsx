@@ -32,9 +32,8 @@ const CHAPTERS = [
   { n: "05", deva: "मुस्कान", en: "Things that made me smile" },
   { n: "06", deva: "दोस्ती का दिन", en: "Friendship Day" },
   { n: "07", deva: "तुम्हारे घर की मुलाक़ात", en: "A visit to your home" },
-  { n: "08", deva: "थोड़ा सा मज़ा", en: "A playful quiz" },
-  { n: "09", deva: "ख़ास", en: "Things I remember about you" },
-  { n: "10", deva: "आगे...", en: "A letter" },
+  { n: "08", deva: "ख़ास", en: "Things I remember about you" },
+  { n: "09", deva: "आगे...", en: "A letter" },
 ];
 
 function markProps(i: number) {
