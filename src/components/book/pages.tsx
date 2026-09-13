@@ -2156,7 +2156,7 @@ function VisitYourHomePage() {
   );
 }
 
-/* ---------------- 05 मुस्कान — tick list ---------------- */
+/* ---------------- 08 मुस्कान — tick list ---------------- */
 function SmilePage() {
   const [ticked, setTicked] = useState<number[]>([]);
 
