@@ -22,6 +22,7 @@ import firstMeetingPlace from "@/assets/First_Meeting_Place.jpg";
 import ccdAfternoon from "@/assets/CCD_Afternoon.jpeg";
 import birthdayWebsite from "@/assets/Birthday_Website.png";
 import ganpatiBlessing from "@/assets/ganpati-blessing.png";
+import friendshipDay from "@/assets/Friendship_Day.jpg";
 
 const CHAPTERS = [
   { n: "01", deva: "शुरुआत", en: "The beginning" },
@@ -1746,7 +1747,7 @@ function FriendshipDayPage() {
 
                 {/* Actual photo */}
                 <img
-                  src="/friendship-day.jpg"
+                  src={friendshipDay}
                   alt="Friendship Day memory"
                   className="
                     block
