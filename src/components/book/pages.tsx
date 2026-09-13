@@ -2498,44 +2498,6 @@ function EndPage() {
       <div className="pointer-events-none absolute inset-5 border border-gold/30" />
       <div className="pointer-events-none absolute inset-[27px] border border-gold/14" />
 
-      {/* Main content */}
-      <div className="relative flex flex-col items-center">
-        
-        <OrnamentDivider
-          width="w-36 max-sm:w-28"
-          tone="gold"
-        />
-
-        <p className="gold-foil mt-8 font-deva text-[2rem] leading-[1.35] sm:text-[2.5rem]">
-          आगे...
-        </p>
-
-        <p className="gold-foil mt-4 font-display text-[0.8rem] tracking-[0.28em] uppercase sm:text-[0.9rem]">
-          TO BE CONTINUED
-        </p>
-
-        <OrnamentDivider
-          className="my-7"
-          width="w-28 max-sm:w-20"
-          tone="gold"
-        />
-
-        <p className="max-w-[25ch] font-hand text-[1rem] leading-relaxed text-gold-soft/75 sm:text-[1.1rem]">
-          Some stories don't really end.
-          <br />
-          They simply leave a little space
-          <br />
-          for what comes next.
-        </p>
-
-        <p className="mt-8 font-hand text-base text-gold/90">
-          — Raj
-        </p>
-
-        <p className="gold-foil mt-10 font-guj text-[0.68rem] tracking-[0.16em] opacity-80">
-          એક નાની યાદોની ડાયરી
-        </p>
-      </div>
     </div>
   );
 }
