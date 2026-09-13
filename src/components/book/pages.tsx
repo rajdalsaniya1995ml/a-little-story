@@ -106,7 +106,7 @@ function BlessingPage() {
     <PageShell>
       <PageBorder tone="gold" />
 
-      <div className="flex h-full min-h-0 flex-col items-center justify-center px-2 text-center">
+      <div className="flex h-full min-h-10 flex-col items-center justify-center px-2 text-center">
         <p
           className="font-deva text-[2rem] leading-none text-maroon max-sm:text-[1.6rem]"
           aria-label="Om"
