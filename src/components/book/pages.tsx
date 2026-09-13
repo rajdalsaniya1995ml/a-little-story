@@ -860,7 +860,7 @@ function MomentsPage() {
               {/* =================================================
                   MEMORY TEXT
               ================================================== */}
-              <div className="mt-2 shrink-0 max-sm:mt-1.5">
+              <div className="mt-1 shrink-0 max-sm:mt-1.5">
                   <p
                     className="
                       max-w-[52ch]
