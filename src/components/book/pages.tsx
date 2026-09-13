@@ -698,10 +698,8 @@ function MomentsPage() {
         </div>
 
         {/* 2 × 2 memory grid */}
-        <div
-            className="relative flex h-full min-h-0 w-full flex-col justify-center overflow-hidden bg-paper-deep/70 px-5 py-4 shadow-[0_7px_18px_-12px_oklch(0_0_0/0.5)] max-sm:px-3 max-sm:py-3"
-            style={{ transform: `rotate(${moment.rotate})` }}
-          >
+        <div className="relative grid min-h-0 w-full flex-1 grid-cols-2 gap-3 px-5 py-4 max-sm:grid-cols-1 max-sm:gap-2 max-sm:px-3 max-sm:py-3">
+
           {moments.map((moment, index) => (
             <article
               key={index}
