@@ -880,7 +880,6 @@ function MomentsPage() {
                   little things, laughing, and just enjoying the
                   afternoon.
                   <br />
-                  <br />
                   There wasn't anything extraordinary about it, and maybe
                   that's what made it special. It was comfortable, easy,
                   and genuinely nice to spend that little bit of time
