@@ -1243,18 +1243,17 @@ function BirthdayPage() {
                     max-sm:leading-[1.5]
                   "
                 >
-                  I wanted to make your birthday a little different,
-                  so I made something especially for you. It wasn't
-                  about making something perfect. I just wanted to
-                  put a little thought and effort into making your
-                  day feel a bit more special.
-
-                  <br />
-
-                  I don't know if I managed to make the day as special
-                  as I had imagined, but creating something for you
-                  felt special to me too. Sometimes, the little things
-                  we do for someone say more than we realize.
+                We had only met a few days earlier, in the middle of May, and
+                your birthday came just 15–20 days later. At that point, we
+                didn't even know each other very well. We were still getting
+                to know each other, so I wasn't really sure what to do for
+                your birthday. But I still wanted to do something a little
+                different for you, something that would make your day feel
+                special.
+                <br />
+                When I shared the website I had created for your birthday,
+                seeing your reaction and knowing that you loved the surprise
+                really put a smile on my face.
                 </p>
 
               </div>
