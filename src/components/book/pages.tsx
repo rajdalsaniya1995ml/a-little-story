@@ -879,12 +879,11 @@ function MomentsPage() {
                   time together, talking, laughing, and simply enjoying the
                   afternoon.
                   <br />
-                  There wasn't anything extraordinary about it, and maybe
-                  that's what made it special. It was comfortable, easy,
-                  and genuinely nice to spend that little bit of time
-                  together. Looking back, I think these are the moments
-                  that quietly become part of a story without us even
-                  realizing it at the time.
+                  There was nothing extraordinary about it, and maybe that's
+                  what made it special. It was comfortable, easy, and genuinely
+                  nice to spend that little time together. Looking back, I think
+                  these are the moments that quietly become part of a story
+                  without us even realizing it.
                 </p>
 
               </div>
