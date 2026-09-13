@@ -1028,6 +1028,420 @@ function MomentsPage() {
 
 
 /* ---------------- 04 पल — little moments ---------------- */
+function BirthdayPage() {
+  return (
+    <PageShell>
+      <PageBorder />
+
+      <div className="relative flex h-full min-h-0 flex-col overflow-hidden">
+
+        {/* =====================================================
+            HEADER
+        ====================================================== */}
+        <header className="relative z-10 shrink-0 text-center">
+
+          <ChapterMark {...markProps(4)} />
+
+          <p
+            className="
+              mx-auto
+              mt-1
+              max-w-[40ch]
+              font-hand
+              text-[0.82rem]
+              leading-[1.25]
+              text-ink-soft
+              max-sm:mt-0.5
+              max-sm:text-[0.62rem]
+            "
+          >
+            Some days are special,
+            <br />
+            simply because of the person.
+          </p>
+
+          <OrnamentDivider
+            className="mt-1.5"
+            width="w-20 max-sm:w-14"
+            tone="gold"
+          />
+
+        </header>
+
+
+        {/* =====================================================
+            SCRAPBOOK AREA
+        ====================================================== */}
+        <main
+          className="
+            relative
+            min-h-0
+            flex-1
+            overflow-hidden
+            px-2
+            py-2
+            max-sm:px-1
+            max-sm:py-1.5
+          "
+        >
+
+          {/* Small decoration */}
+          <div
+            className="
+              pointer-events-none
+              absolute
+              left-2
+              top-3
+              z-10
+              font-hand
+              text-2xl
+              text-gold/45
+              max-sm:left-0
+              max-sm:top-2
+              max-sm:text-lg
+            "
+          >
+            ✿
+          </div>
+
+
+          {/* =================================================
+              BIRTHDAY PAPER
+          ================================================== */}
+          <article
+            className="
+              absolute
+              inset-x-2
+              top-1
+              bottom-1
+              z-20
+              max-sm:inset-x-1
+              max-sm:top-1
+              max-sm:bottom-1
+            "
+            style={{
+              transform: "rotate(1.1deg)",
+            }}
+          >
+
+            <div
+              className="
+                relative
+                flex
+                min-h-full
+                w-full
+                flex-col
+                overflow-visible
+                border
+                border-paper-edge/70
+                bg-paper
+                px-9
+                py-7
+                shadow-[4px_9px_20px_-10px_rgba(60,40,20,0.6)]
+                max-sm:px-5
+                max-sm:py-4
+              "
+            >
+
+              {/* =================================================
+                  TAPE
+              ================================================== */}
+              <span
+                className="
+                  absolute
+                  -top-3
+                  left-1/2
+                  z-30
+                  h-6
+                  w-[80px]
+                  -translate-x-1/2
+                  rotate-[-2deg]
+                  bg-saffron/25
+                  shadow-[0_1px_2px_rgba(0,0,0,0.08)]
+                  max-sm:-top-2
+                  max-sm:h-5
+                  max-sm:w-14
+                "
+              />
+
+
+              {/* =================================================
+                  BIRTHDAY ICON
+              ================================================== */}
+              <div className="shrink-0">
+
+                <div
+                  className="
+                    font-hand
+                    text-3xl
+                    leading-none
+                    text-maroon
+                    max-sm:text-2xl
+                  "
+                >
+                  ♡
+                </div>
+
+                {/* Date */}
+                <p
+                  className="
+                    mt-2
+                    font-display
+                    text-[0.55rem]
+                    tracking-[0.2em]
+                    text-gold
+                    uppercase
+                    max-sm:mt-1.5
+                    max-sm:text-[0.42rem]
+                  "
+                >
+                  04 JULY 2026
+                </p>
+
+                {/* Title */}
+                <h2
+                  className="
+                    mt-1
+                    font-hand
+                    text-[2rem]
+                    leading-none
+                    text-maroon
+                    max-sm:text-[1.45rem]
+                  "
+                >
+                  Your Birthday
+                </h2>
+
+                {/* Underline */}
+                <div
+                  className="
+                    mt-1.5
+                    h-px
+                    w-14
+                    bg-gold/70
+                    max-sm:mt-1
+                    max-sm:w-10
+                  "
+                />
+
+              </div>
+
+
+              {/* =================================================
+                  BIRTHDAY STORY
+              ================================================== */}
+              <div className="mt-2 shrink-0 max-sm:mt-1.5">
+
+                <p
+                  className="
+                    max-w-[52ch]
+                    font-display
+                    text-[0.78rem]
+                    leading-[1.6]
+                    text-ink-soft
+                    max-sm:text-[0.58rem]
+                    max-sm:leading-[1.5]
+                  "
+                >
+                  I wanted to make your birthday a little different,
+                  so I made something especially for you. It wasn't
+                  about making something perfect. I just wanted to
+                  put a little thought and effort into making your
+                  day feel a bit more special.
+
+                  <br />
+
+                  I don't know if I managed to make the day as special
+                  as I had imagined, but creating something for you
+                  felt special to me too. Sometimes, the little things
+                  we do for someone say more than we realize.
+                </p>
+
+              </div>
+
+
+              {/* =================================================
+                  OPTIONAL PHOTO / MEMORY SPACE
+              ================================================== */}
+              <div
+                className="
+                  mx-auto
+                  mt-5
+                  flex
+                  h-[24%]
+                  min-h-[100px]
+                  w-[72%]
+                  rotate-[-1deg]
+                  items-center
+                  justify-center
+                  border
+                  border-paper-edge/80
+                  bg-paper-deep/50
+                  shadow-[2px_4px_10px_-7px_rgba(60,40,20,0.55)]
+                  max-sm:mt-4
+                  max-sm:h-[22%]
+                  max-sm:w-[78%]
+                "
+              >
+                <div className="text-center">
+
+                  <div
+                    className="
+                      font-hand
+                      text-2xl
+                      text-gold/60
+                      max-sm:text-xl
+                    "
+                  >
+                    ✿
+                  </div>
+
+                  <p
+                    className="
+                      mt-1
+                      font-hand
+                      text-sm
+                      italic
+                      text-ink-soft
+                      max-sm:text-[0.62rem]
+                    "
+                  >
+                    A little birthday memory
+                  </p>
+
+                </div>
+              </div>
+
+
+              {/* =================================================
+                  BOTTOM NOTE
+              ================================================== */}
+              <div
+                className="
+                  mt-auto
+                  shrink-0
+                  border-t
+                  border-paper-edge/70
+                  pt-3
+                  max-sm:pt-2
+                "
+              >
+
+                <p
+                  className="
+                    font-hand
+                    text-[1.05rem]
+                    italic
+                    leading-tight
+                    text-ink
+                    max-sm:text-[0.72rem]
+                  "
+                >
+                  Made with a lot of thought.
+                </p>
+
+              </div>
+
+
+              {/* Heart */}
+              <Heart
+                className="
+                  absolute
+                  bottom-5
+                  right-6
+                  h-7
+                  w-7
+                  stroke-[1.15]
+                  text-maroon/70
+                  max-sm:bottom-3
+                  max-sm:right-3
+                  max-sm:h-5
+                  max-sm:w-5
+                "
+              />
+
+
+              {/* Botanical decoration */}
+              <span
+                className="
+                  absolute
+                  bottom-4
+                  left-5
+                  rotate-[-12deg]
+                  font-hand
+                  text-xl
+                  text-leafgreen/45
+                  max-sm:bottom-2
+                  max-sm:left-2.5
+                  max-sm:text-sm
+                "
+              >
+                ❧
+              </span>
+
+            </div>
+          </article>
+
+
+          {/* Decorative star */}
+          <span
+            className="
+              pointer-events-none
+              absolute
+              bottom-4
+              right-5
+              z-30
+              font-hand
+              text-xl
+              text-gold/60
+              max-sm:bottom-2
+              max-sm:right-2
+              max-sm:text-base
+            "
+          >
+            ✦
+          </span>
+
+        </main>
+
+
+        {/* =====================================================
+            FOOTER
+        ====================================================== */}
+        <footer
+          className="
+            relative
+            z-10
+            shrink-0
+            pb-1
+            pt-0.5
+            text-center
+          "
+        >
+
+          <OrnamentDivider
+            className="mb-0.5"
+            width="w-16 max-sm:w-12"
+            tone="gold"
+          />
+
+          <p
+            className="
+              font-hand
+              text-[0.68rem]
+              text-maroon
+              max-sm:text-[0.52rem]
+            "
+          >
+            Another little memory worth keeping.
+          </p>
+
+        </footer>
+
+      </div>
+    </PageShell>
+  );
+}
 
 
 /* ---------------- 05 मुस्कान — tick list ---------------- */
@@ -1341,6 +1755,7 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
    { node: <LittleThingsPage  /> },
   { node: <MemoriesPage /> },
   { node: <MomentsPage /> },
+  { node: <BirthdayPage /> },
   { node: <SmilePage /> },
   { node: <HiddenMemoriesPage /> },
   { node: <PostcardPage /> },
