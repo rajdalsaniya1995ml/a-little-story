@@ -1951,7 +1951,7 @@ function FriendshipDayPhotoPage() {
           />
 
           <p className="mt-3 text-center font-hand text-base italic text-ink max-sm:mt-2 max-sm:text-sm">
-            A little surprise, made with a lot of thought.
+            A little surprise, picked just for you.
           </p>
         </div>
 
