@@ -12,6 +12,7 @@ import {
 import firstMeetingPlace from "@/assets/First_Meeting_Place.jpg";
 import ccdAfternoon from "@/assets/CCD_Afternoon.jpeg";
 import birthdayWebsite from "@/assets/Birthday_Website.png";
+import ganpatiBlessing from "@/assets/ganpati-blessing.png";
 
 const CHAPTERS = [
   { n: "01", deva: "शुरुआत", en: "The beginning" },
@@ -81,70 +82,6 @@ function CoverPage() {
 
 /* ---------------- front matter ---------------- */
 
-function GaneshaIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 80 80"
-      className={className}
-      fill="none"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* crown / tilak base */}
-      <path
-        d="M40 6c-8 0-14 4-16 10 4-2 8-3 16-3s12 1 16 3C54 10 48 6 40 6Z"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* head outline */}
-      <path
-        d="M24 20c-6 4-10 12-10 22 0 14 10 26 26 26s26-12 26-26c0-10-4-18-10-22"
-        stroke="currentColor"
-        strokeWidth="1.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* ear */}
-      <path
-        d="M24 26c-8 2-14 10-14 18 0 6 4 10 10 10"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-      />
-      <path
-        d="M56 26c8 2 14 10 14 18 0 6-4 10-10 10"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-      />
-      {/* trunk */}
-      <path
-        d="M40 42c0 6-2 10-6 14-2 2-2 6 2 8 4 2 10 0 12-4"
-        stroke="currentColor"
-        strokeWidth="1.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* tusk */}
-      <path
-        d="M44 46c4 2 8 2 10-2"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-      />
-      {/* eye */}
-      <path
-        d="M34 34c2-1 6-1 8 0"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-      />
-      <circle cx="38" cy="36" r="1.2" fill="currentColor" />
-    </svg>
-  );
-}
 
 function BlessingPage() {
   return (
@@ -160,7 +97,11 @@ function BlessingPage() {
         </p>
 
         <div className="relative mt-4 max-sm:mt-2">
-          <GaneshaIcon className="mx-auto h-14 w-14 text-gold max-sm:h-11 max-sm:w-11" />
+          <img
+            src={ganpatiBlessing}
+            alt="Illustration of Lord Ganesha in antique gold line art, blessing the beginning of the book"
+            className="mx-auto h-36 w-auto max-sm:h-28"
+          />
 
           <div
             className="absolute -inset-3 rounded-full border border-gold/20 max-sm:-inset-2"
