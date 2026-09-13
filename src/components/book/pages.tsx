@@ -656,8 +656,6 @@ function MemoriesPage() {
 }
 
 /* ---------------- 04 पल — timeline ---------------- */
-/* ---------------- 04 पल — little moments ---------------- */
-
 function MomentsPage() {
   const moments = [
     {
@@ -665,9 +663,9 @@ function MomentsPage() {
       title: "The CCD Meet",
       text: "A small afternoon that somehow became one of those moments I still remember.",
       note: "A little time together.",
-      rotate: "-1.5deg",
+      rotate: "-1.2deg",
       icon: Coffee,
-      iconClass: "text-maroon",
+      color: "text-maroon",
       tape: "bg-saffron/30",
     },
     {
@@ -675,33 +673,10 @@ function MomentsPage() {
       title: "Your Birthday",
       text: "I wanted to make your birthday a little different, so I made something especially for you.",
       note: "Made with a lot of thought.",
-      rotate: "1.5deg",
+      rotate: "1.2deg",
       icon: Cake,
-      iconClass: "text-maroon",
+      color: "text-maroon",
       tape: "bg-saffron/30",
-      heart: true,
-    },
-    {
-      date: "FRIENDSHIP DAY",
-      title: "A Little Surprise",
-      text: "I had a small surprise planned for you. Seeing your reaction made the whole thing worth it.",
-      note: "A surprise from me to you.",
-      rotate: "-1deg",
-      icon: Gift,
-      iconClass: "text-gold",
-      tape: "bg-leafgreen/30",
-      heart: true,
-    },
-    {
-      date: "THE INVITATION",
-      title: "My Visit to Your Home",
-      text: "Thank you for inviting me to your home. It was really nice meeting you and your parents again after so long. It was a simple visit, somehow, it really felt like home to me.",
-      note: "A moment I'm glad to experience.",
-      rotate: "1.5deg",
-      icon: House,
-      iconClass: "text-maroon",
-      tape: "bg-saffron/25",
-      leaf: true,
     },
   ];
 
@@ -709,176 +684,72 @@ function MomentsPage() {
     <PageShell>
       <PageBorder />
 
-      <div className="relative flex h-full min-h-0 flex-col">
-        {/* -------------------------------- */}
-        {/* Chapter heading                   */}
-        {/* -------------------------------- */}
+      <div className="flex h-full min-h-0 flex-col overflow-hidden">
 
-        <div className="shrink-0">
+        {/* HEADER */}
+        <div className="shrink-0 text-center">
           <ChapterMark {...markProps(3)} />
-        </div>
 
-        {/* -------------------------------- */}
-        {/* Intro                             */}
-        {/* -------------------------------- */}
+          <h1 className="font-hand text-[2rem] leading-none text-maroon max-sm:text-[1.5rem]">
+            पल
+          </h1>
 
-        <div className="mx-auto mt-1 shrink-0 text-center max-sm:mt-0">
-          <p className="font-hand text-[1.05rem] leading-tight text-ink max-sm:text-[0.9rem]">
-            Some moments are small,
+          <p className="mt-0.5 font-display text-[0.85rem] italic text-ink max-sm:text-[0.68rem]">
+            Little moments
           </p>
 
-          <p className="font-hand text-[1.05rem] leading-tight text-ink max-sm:text-[0.9rem]">
+          <p className="mt-1.5 font-hand text-[0.82rem] leading-tight text-ink-soft max-sm:text-[0.65rem]">
+            Some moments are small,
+            <br />
             but they stay with you forever.
           </p>
-        </div>
 
-        {/* -------------------------------- */}
-        {/* Divider                           */}
-        {/* -------------------------------- */}
-
-        <OrnamentDivider
-          className="my-3 max-sm:my-2"
-          width="w-36 max-sm:w-24"
-          tone="gold"
-        />
-
-        {/* -------------------------------- */}
-        {/* 2 × 2 memory cards               */}
-        {/* -------------------------------- */}
-
-        <div className="relative mx-auto grid min-h-0 w-full max-w-[39rem] flex-1 grid-cols-2 gap-4 px-2 pb-1 max-sm:gap-2 max-sm:px-1">
-          {moments.map((moment, index) => {
-            const Icon = moment.icon;
-
-            return (
-              <article
-                key={moment.title}
-                className="relative flex min-h-0 items-center justify-center"
-              >
-                <div
-                  className="page-imperfections deckle-edge relative flex h-full min-h-0 w-full flex-col overflow-hidden bg-paper px-4 py-3 shadow-[0_9px_22px_-14px_oklch(0_0_0/0.6)] transition-transform duration-300 max-sm:px-2.5 max-sm:py-2"
-                  style={{
-                    transform: `rotate(${moment.rotate})`,
-                  }}
-                >
-                  {/* -------------------------------- */}
-                  {/* Tape                               */}
-                  {/* -------------------------------- */}
-
-                  <span
-                    className={`absolute -top-1 left-1/2 z-20 h-6 w-16 -translate-x-1/2 rotate-[-2deg] shadow-[0_1px_3px_oklch(0_0_0/0.12)] ${moment.tape}`}
-                  />
-
-                  {/* -------------------------------- */}
-                  {/* Icon                               */}
-                  {/* -------------------------------- */}
-
-                  <div className="relative z-10 flex shrink-0 items-center">
-                    <Icon
-                      className={`h-8 w-8 stroke-[1.35] ${moment.iconClass} max-sm:h-6 max-sm:w-6`}
-                    />
-                  </div>
-
-                  {/* -------------------------------- */}
-                  {/* Date                               */}
-                  {/* -------------------------------- */}
-
-                  <p className="relative z-10 mt-1 font-display text-[0.5rem] font-medium tracking-[0.19em] text-gold uppercase max-sm:text-[0.39rem]">
-                    {moment.date}
-                  </p>
-
-                  {/* -------------------------------- */}
-                  {/* Title                              */}
-                  {/* -------------------------------- */}
-
-                  <h3 className="relative z-10 mt-1 font-hand text-[1.5rem] leading-[1.05] text-maroon max-sm:text-[1.05rem]">
-                    {moment.title}
-                  </h3>
-
-                  {/* -------------------------------- */}
-                  {/* Small underline                   */}
-                  {/* -------------------------------- */}
-
-                  <span className="mt-1.5 h-px w-12 shrink-0 bg-gold/70 max-sm:mt-1 max-sm:w-9" />
-
-                  {/* -------------------------------- */}
-                  {/* Description                        */}
-                  {/* -------------------------------- */}
-
-                  <p className="relative z-10 mt-2 font-display text-[0.69rem] leading-[1.48] text-ink-soft max-sm:mt-1.5 max-sm:text-[0.49rem] max-sm:leading-[1.38]">
-                    {moment.text}
-                  </p>
-
-                  {/* -------------------------------- */}
-                  {/* Bottom handwritten note           */}
-                  {/* -------------------------------- */}
-
-                  <div className="relative z-10 mt-auto pt-2">
-                    <div className="border-t border-paper-edge/70 pt-1.5 max-sm:pt-1">
-                      <p className="font-hand text-[0.9rem] italic leading-snug text-ink max-sm:text-[0.65rem]">
-                        {moment.note}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* -------------------------------- */}
-                  {/* Heart decoration                  */}
-                  {/* -------------------------------- */}
-
-                  {moment.heart && (
-                    <Heart
-                      className="absolute right-3 bottom-3 h-6 w-6 rotate-[-8deg] stroke-[1.2] text-maroon/80 max-sm:right-2 max-sm:bottom-2 max-sm:h-4 max-sm:w-4"
-                    />
-                  )}
-
-                  {/* -------------------------------- */}
-                  {/* Leaf decoration                   */}
-                  {/* -------------------------------- */}
-
-                  {moment.leaf && (
-                    <Leaf
-                      className="absolute bottom-2 left-3 h-8 w-8 rotate-[-25deg] stroke-[1.2] text-leafgreen/80 max-sm:left-2 max-sm:bottom-1 max-sm:h-5 max-sm:w-5"
-                    />
-                  )}
-
-                  {/* -------------------------------- */}
-                  {/* Paperclip on final card           */}
-                  {/* -------------------------------- */}
-
-                  {index === 3 && (
-                    <Paperclip
-                      className="absolute -top-1 right-1 z-30 h-12 w-7 rotate-[10deg] stroke-[1.25] text-gold max-sm:h-9 max-sm:w-5"
-                    />
-                  )}
-                </div>
-              </article>
-            );
-          })}
-        </div>
-
-        {/* -------------------------------- */}
-        {/* Closing line                      */}
-        {/* -------------------------------- */}
-
-        <div className="shrink-0 pt-1 text-center">
           <OrnamentDivider
-            className="mb-1 max-sm:mb-0.5"
-            width="w-28 max-sm:w-20"
+            className="my-2"
+            width="w-24 max-sm:w-16"
+            tone="gold"
+          />
+        </div>
+
+        {/* TWO MEMORIES */}
+        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-5 max-sm:px-3">
+
+          {/* CCD */}
+          <MemoryCard
+            moment={moments[0]}
+            featured
+          />
+
+          <div className="shrink-0 font-hand text-gold">
+            ✦
+          </div>
+
+          {/* BIRTHDAY */}
+          <MemoryCard
+            moment={moments[1]}
+          />
+
+        </div>
+
+        {/* FOOTER */}
+        <div className="shrink-0 pb-1 pt-1 text-center">
+          <OrnamentDivider
+            className="mb-1"
+            width="w-20 max-sm:w-14"
             tone="gold"
           />
 
-          <p className="font-hand text-[0.95rem] text-maroon max-sm:text-[0.7rem]">
+          <p className="font-hand text-[0.7rem] text-maroon max-sm:text-[0.56rem]">
             Little moments. Part of our story.
           </p>
-
-          <div className="mt-0.5 font-display text-[0.75rem] text-gold max-sm:text-[0.55rem]">
-            ✦
-          </div>
         </div>
+
       </div>
     </PageShell>
   );
 }
+/* ---------------- 04 पल — little moments ---------------- */
+
 
 /* ---------------- 05 मुस्कान — tick list ---------------- */
 
