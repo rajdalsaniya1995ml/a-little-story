@@ -673,14 +673,14 @@ function MomentsPage() {
           <p
             className="
               mx-auto
-              mt-2
-              max-w-[32ch]
+              mt-1
+              max-w-[40ch]
               font-hand
-              text-[0.88rem]
-              leading-[1.3]
+              text-[0.82rem]
+              leading-[1.25]
               text-ink-soft
-              max-sm:mt-1
-              max-sm:text-[0.68rem]
+              max-sm:mt-0.5
+              max-sm:text-[0.62rem]
             "
           >
             Some moments are small,
@@ -689,8 +689,8 @@ function MomentsPage() {
           </p>
 
           <OrnamentDivider
-            className="mt-2"
-            width="w-24 max-sm:w-16"
+            className="mt-1.5"
+            width="w-20 max-sm:w-14"
             tone="gold"
           />
 
@@ -705,265 +705,299 @@ function MomentsPage() {
             relative
             min-h-0
             flex-1
-            px-3
-            py-3
+            overflow-hidden
+            px-2
+            py-2
             max-sm:px-1
-            max-sm:py-2
+            max-sm:py-1.5
           "
         >
 
           {/* =================================================
-              LITTLE DECORATIVE FLOWER
+              TOP LEFT DECORATION
           ================================================== */}
           <div
             className="
               pointer-events-none
               absolute
               left-2
-              top-5
-              text-gold/50
+              top-3
+              z-0
+              font-hand
+              text-2xl
+              text-gold/45
               max-sm:left-0
-              max-sm:top-3
+              max-sm:top-2
+              max-sm:text-lg
             "
           >
-            <span className="font-hand text-2xl max-sm:text-lg">
-              ❋
-            </span>
+            ❋
           </div>
 
 
           {/* =================================================
-              CCD MEMORY
+              MAIN CCD PAPER
           ================================================== */}
-         <article
-  className="
-    absolute
-    left-1/2
-    top-1/2
-    z-20
-    h-[88%]
-    w-[92%]
-    max-w-[620px]
-    -translate-x-1/2
-    -translate-y-1/2
-    max-sm:h-[84%]
-    max-sm:w-[94%]
-  "
-  style={{
-    transform: "translate(-50%, -50%) rotate(-1.2deg)",
-  }}
->
-  <div
-    className="
-      relative
-      flex
-      h-full
-      w-full
-      flex-col
-      overflow-visible
-      border
-      border-paper-edge/70
-      bg-paper
-      px-9
-      py-8
-      shadow-[4px_9px_20px_-10px_rgba(60,40,20,0.6)]
-      max-sm:px-5
-      max-sm:py-5
-    "
-  >
+          <article
+            className="
+              absolute
+              inset-2
+              z-20
+              max-sm:inset-1
+            "
+            style={{
+              transform: "rotate(-1.2deg)",
+            }}
+          >
 
-    {/* Tape */}
-    <span
-      className="
-        absolute
-        -top-3
-        left-1/2
-        z-30
-        h-6
-        w-[80px]
-        -translate-x-1/2
-        rotate-[1deg]
-        bg-saffron/25
-        shadow-[0_1px_2px_rgba(0,0,0,0.08)]
-        max-sm:-top-2
-        max-sm:h-5
-        max-sm:w-14
-      "
-    />
+            {/* =================================================
+                WHITE PAPER
+            ================================================== */}
+            <div
+              className="
+                relative
+                flex
+                h-full
+                w-full
+                flex-col
+                overflow-hidden
+                border
+                border-paper-edge/70
+                bg-paper
+                px-9
+                py-7
+                shadow-[4px_9px_20px_-10px_rgba(60,40,20,0.6)]
+                max-sm:px-5
+                max-sm:py-4
+              "
+            >
 
-    {/* Coffee */}
-    <Coffee
-      className="
-        h-9
-        w-9
-        shrink-0
-        stroke-[1.25]
-        text-maroon
-        max-sm:h-7
-        max-sm:w-7
-      "
-    />
+              {/* =================================================
+                  TAPE
+              ================================================== */}
+              <span
+                className="
+                  absolute
+                  -top-3
+                  left-1/2
+                  z-30
+                  h-6
+                  w-[80px]
+                  -translate-x-1/2
+                  rotate-[1deg]
+                  bg-saffron/25
+                  shadow-[0_1px_2px_rgba(0,0,0,0.08)]
+                  max-sm:-top-2
+                  max-sm:h-5
+                  max-sm:w-14
+                "
+              />
 
-    {/* Date */}
-    <p
-      className="
-        mt-2
-        shrink-0
-        font-display
-        text-[0.55rem]
-        tracking-[0.2em]
-        text-gold
-        uppercase
-        max-sm:mt-1.5
-        max-sm:text-[0.42rem]
-      "
-    >
-      23 MAY 2026
-    </p>
 
-    {/* Title */}
-    <h2
-      className="
-        mt-2
-        shrink-0
-        font-hand
-        text-[2rem]
-        leading-none
-        text-maroon
-        max-sm:text-[1.45rem]
-      "
-    >
-      The CCD Meet
-    </h2>
+              {/* =================================================
+                  HEADER INSIDE PAPER
+              ================================================== */}
+              <div className="shrink-0">
 
-    {/* Underline */}
-    <div
-      className="
-        mt-3
-        h-px
-        w-16
-        shrink-0
-        bg-gold/70
-        max-sm:mt-2
-        max-sm:w-11
-      "
-    />
+                {/* Coffee icon */}
+                <Coffee
+                  className="
+                    h-9
+                    w-9
+                    stroke-[1.25]
+                    text-maroon
+                    max-sm:h-7
+                    max-sm:w-7
+                  "
+                />
 
-    {/* =================================================
-        LONG MEMORY TEXT
-    ================================================== */}
-    <p
-      className="
-        mt-5
-        max-w-[52ch]
-        font-display
-        text-[0.78rem]
-        leading-[1.7]
-        text-ink-soft
-        max-sm:mt-4
-        max-sm:text-[0.58rem]
-        max-sm:leading-[1.6]
-      "
-    >
-      23 May 2026 was one of those simple days that didn't seem very
-      important while it was happening, but somehow stayed with me
-      afterwards. When I came to Mumbai for the annual meet at my
-      company, we planned to meet. We met at CCD and spent some time
-      together, talking about little things, laughing, and just enjoying
-      the afternoon.
+                {/* Date */}
+                <p
+                  className="
+                    mt-2
+                    font-display
+                    text-[0.55rem]
+                    tracking-[0.2em]
+                    text-gold
+                    uppercase
+                    max-sm:mt-1.5
+                    max-sm:text-[0.42rem]
+                  "
+                >
+                  23 MAY 2026
+                </p>
 
-      <br />
-      <br />
+                {/* Title */}
+                <h2
+                  className="
+                    mt-2
+                    font-hand
+                    text-[2rem]
+                    leading-none
+                    text-maroon
+                    max-sm:mt-1
+                    max-sm:text-[1.45rem]
+                  "
+                >
+                  The CCD Meet
+                </h2>
 
-      There wasn't anything extraordinary about it, and maybe that's what
-      made it special. It was comfortable, easy, and genuinely nice to
-      spend that little bit of time together. Looking back, I think these
-      are the moments that quietly become part of a story without us even
-      realizing it at the time.
-    </p>
+                {/* Underline */}
+                <div
+                  className="
+                    mt-3
+                    h-px
+                    w-16
+                    bg-gold/70
+                    max-sm:mt-2
+                    max-sm:w-11
+                  "
+                />
 
-    {/* Bottom note */}
-    <div
-      className="
-        mt-auto
-        border-t
-        border-paper-edge/70
-        pt-4
-        max-sm:pt-3
-      "
-    >
-      <p
-        className="
-          font-hand
-          text-[1.05rem]
-          italic
-          leading-tight
-          text-ink
-          max-sm:text-[0.72rem]
-        "
-      >
-        A little time together.
-      </p>
-    </div>
+              </div>
 
-    {/* Heart */}
-    <Heart
-      className="
-        absolute
-        bottom-5
-        right-6
-        h-7
-        w-7
-        stroke-[1.15]
-        text-maroon/70
-        max-sm:bottom-3
-        max-sm:right-3
-        max-sm:h-5
-        max-sm:w-5
-      "
-    />
 
-  </div>
-</article>
+              {/* =================================================
+                  MEMORY TEXT
+              ================================================== */}
+              <div
+                className="
+                  min-h-0
+                  flex-1
+                  overflow-hidden
+                "
+              >
+
+                <p
+                  className="
+                    mt-5
+                    max-w-[52ch]
+                    font-display
+                    text-[0.78rem]
+                    leading-[1.7]
+                    text-ink-soft
+                    max-sm:mt-4
+                    max-sm:text-[0.58rem]
+                    max-sm:leading-[1.6]
+                  "
+                >
+                  23 May 2026 was one of those simple days that didn't
+                  seem very important while it was happening, but somehow
+                  stayed with me afterwards. When I came to Mumbai for
+                  the annual meet at my company, we planned to meet. We
+                  met at CCD and spent some time together, talking about
+                  little things, laughing, and just enjoying the
+                  afternoon.
+
+                  <br />
+                  <br />
+
+                  There wasn't anything extraordinary about it, and maybe
+                  that's what made it special. It was comfortable, easy,
+                  and genuinely nice to spend that little bit of time
+                  together. Looking back, I think these are the moments
+                  that quietly become part of a story without us even
+                  realizing it at the time.
+                </p>
+
+              </div>
+
+
+              {/* =================================================
+                  BOTTOM NOTE
+              ================================================== */}
+              <div
+                className="
+                  mt-4
+                  shrink-0
+                  border-t
+                  border-paper-edge/70
+                  pt-3
+                  max-sm:mt-3
+                  max-sm:pt-2
+                "
+              >
+
+                <p
+                  className="
+                    font-hand
+                    text-[1.05rem]
+                    italic
+                    leading-tight
+                    text-ink
+                    max-sm:text-[0.72rem]
+                  "
+                >
+                  A little time together.
+                </p>
+
+              </div>
+
+
+              {/* =================================================
+                  HEART
+              ================================================== */}
+              <Heart
+                className="
+                  absolute
+                  bottom-5
+                  right-6
+                  h-7
+                  w-7
+                  stroke-[1.15]
+                  text-maroon/70
+                  max-sm:bottom-3
+                  max-sm:right-3
+                  max-sm:h-5
+                  max-sm:w-5
+                "
+              />
+
+
+              {/* =================================================
+                  SMALL BOTANICAL
+              ================================================== */}
+              <span
+                className="
+                  absolute
+                  bottom-4
+                  left-5
+                  rotate-[-12deg]
+                  font-hand
+                  text-xl
+                  text-leafgreen/45
+                  max-sm:bottom-2
+                  max-sm:left-2.5
+                  max-sm:text-sm
+                "
+              >
+                ❧
+              </span>
+
+            </div>
+          </article>
+
+
           {/* =================================================
-              LITTLE FLOWER
+              SMALL GOLD DECORATION
           ================================================== */}
           <span
             className="
+              pointer-events-none
               absolute
-              left-[61%]
-              top-[44%]
+              bottom-4
+              right-5
               z-30
               font-hand
-              text-[1.2rem]
-              text-gold/80
-              max-sm:left-[66%]
-              max-sm:top-[45%]
-              max-sm:text-[0.85rem]
+              text-xl
+              text-gold/60
+              max-sm:bottom-2
+              max-sm:right-2
+              max-sm:text-base
             "
           >
             ✦
           </span>
-
-
-          {/* =================================================
-              SMALL BOTANICAL DECORATION
-          ================================================== */}
-          <div
-            className="
-              pointer-events-none
-              absolute
-              bottom-2
-              left-2
-              rotate-[-12deg]
-              font-hand
-              text-xl
-              text-leafgreen/60
-              max-sm:text-base
-            "
-          >
-            ❧
-          </div>
 
         </main>
 
@@ -977,23 +1011,23 @@ function MomentsPage() {
             z-10
             shrink-0
             pb-1
-            pt-1
+            pt-0.5
             text-center
           "
         >
 
           <OrnamentDivider
-            className="mb-1"
-            width="w-20 max-sm:w-14"
+            className="mb-0.5"
+            width="w-16 max-sm:w-12"
             tone="gold"
           />
 
           <p
             className="
               font-hand
-              text-[0.72rem]
+              text-[0.68rem]
               text-maroon
-              max-sm:text-[0.56rem]
+              max-sm:text-[0.52rem]
             "
           >
             Little moments. Part of our story.
@@ -1005,6 +1039,7 @@ function MomentsPage() {
     </PageShell>
   );
 }
+
 
 
 
