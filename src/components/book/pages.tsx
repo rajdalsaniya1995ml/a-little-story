@@ -735,197 +735,196 @@ function MomentsPage() {
           {/* =================================================
               CCD MEMORY
           ================================================== */}
-          <article
-            className="
-              absolute
-              left-[4%]
-              top-[4%]
-              z-20
-              h-[43%]
-              w-[63%]
-              max-w-[370px]
-              max-sm:left-[2%]
-              max-sm:top-[3%]
-              max-sm:h-[44%]
-              max-sm:w-[72%]
-            "
-            style={{
-              transform: "rotate(-1.6deg)",
-            }}
-          >
+         <article
+  className="
+    absolute
+    left-1/2
+    top-1/2
+    z-20
+    h-[88%]
+    w-[92%]
+    max-w-[620px]
+    -translate-x-1/2
+    -translate-y-1/2
+    max-sm:h-[84%]
+    max-sm:w-[94%]
+  "
+  style={{
+    transform: "translate(-50%, -50%) rotate(-1.2deg)",
+  }}
+>
+  <div
+    className="
+      relative
+      flex
+      h-full
+      w-full
+      flex-col
+      overflow-visible
+      border
+      border-paper-edge/70
+      bg-paper
+      px-9
+      py-8
+      shadow-[4px_9px_20px_-10px_rgba(60,40,20,0.6)]
+      max-sm:px-5
+      max-sm:py-5
+    "
+  >
 
-            <div
-              className="
-                relative
-                flex
-                h-full
-                w-full
-                flex-col
-                overflow-visible
-                border
-                border-paper-edge/70
-                bg-paper
-                px-5
-                py-4
-                shadow-[3px_7px_14px_-9px_rgba(60,40,20,0.65)]
-                max-sm:px-3
-                max-sm:py-2.5
-              "
-            >
+    {/* Tape */}
+    <span
+      className="
+        absolute
+        -top-3
+        left-1/2
+        z-30
+        h-6
+        w-[80px]
+        -translate-x-1/2
+        rotate-[1deg]
+        bg-saffron/25
+        shadow-[0_1px_2px_rgba(0,0,0,0.08)]
+        max-sm:-top-2
+        max-sm:h-5
+        max-sm:w-14
+      "
+    />
 
-              {/* Tape */}
-              <span
-                className="
-                  absolute
-                  -top-3
-                  left-1/2
-                  z-30
-                  h-6
-                  w-[72px]
-                  -translate-x-1/2
-                  rotate-[1deg]
-                  bg-saffron/25
-                  shadow-[0_1px_2px_rgba(0,0,0,0.08)]
-                  max-sm:-top-2
-                  max-sm:h-4
-                  max-sm:w-12
-                "
-              />
+    {/* Coffee */}
+    <Coffee
+      className="
+        h-9
+        w-9
+        shrink-0
+        stroke-[1.25]
+        text-maroon
+        max-sm:h-7
+        max-sm:w-7
+      "
+    />
 
-              {/* Coffee icon */}
-              <Coffee
-                className="
-                  h-8
-                  w-8
-                  shrink-0
-                  stroke-[1.25]
-                  text-maroon
-                  max-sm:h-6
-                  max-sm:w-6
-                "
-              />
+    {/* Date */}
+    <p
+      className="
+        mt-2
+        shrink-0
+        font-display
+        text-[0.55rem]
+        tracking-[0.2em]
+        text-gold
+        uppercase
+        max-sm:mt-1.5
+        max-sm:text-[0.42rem]
+      "
+    >
+      23 MAY 2026
+    </p>
 
-              {/* Date */}
-              <p
-                className="
-                  mt-1.5
-                  shrink-0
-                  font-display
-                  text-[0.48rem]
-                  tracking-[0.18em]
-                  text-gold
-                  uppercase
-                  max-sm:mt-1
-                  max-sm:text-[0.36rem]
-                "
-              >
-                23 MAY 2026
-              </p>
+    {/* Title */}
+    <h2
+      className="
+        mt-2
+        shrink-0
+        font-hand
+        text-[2rem]
+        leading-none
+        text-maroon
+        max-sm:text-[1.45rem]
+      "
+    >
+      The CCD Meet
+    </h2>
 
-              {/* Title */}
-              <h2
-                className="
-                  mt-1
-                  shrink-0
-                  font-hand
-                  text-[1.65rem]
-                  leading-[1.05]
-                  text-maroon
-                  max-sm:text-[1.18rem]
-                "
-              >
-                The CCD Meet
-              </h2>
+    {/* Underline */}
+    <div
+      className="
+        mt-3
+        h-px
+        w-16
+        shrink-0
+        bg-gold/70
+        max-sm:mt-2
+        max-sm:w-11
+      "
+    />
 
-              {/* Decorative underline */}
-              <div
-                className="
-                  mt-2
-                  h-px
-                  w-14
-                  shrink-0
-                  bg-gold/70
-                  max-sm:mt-1.5
-                  max-sm:w-10
-                "
-              />
+    {/* =================================================
+        LONG MEMORY TEXT
+    ================================================== */}
+    <p
+      className="
+        mt-5
+        max-w-[52ch]
+        font-display
+        text-[0.78rem]
+        leading-[1.7]
+        text-ink-soft
+        max-sm:mt-4
+        max-sm:text-[0.58rem]
+        max-sm:leading-[1.6]
+      "
+    >
+      23 May 2026 was one of those simple days that didn't seem very
+      important while it was happening, but somehow stayed with me
+      afterwards. When I came to Mumbai for the annual meet at my
+      company, we planned to meet. We met at CCD and spent some time
+      together, talking about little things, laughing, and just enjoying
+      the afternoon.
 
-              {/* Main text */}
-              <p
-                className="
-                  mt-2.5
-                  max-w-[30ch]
-                  font-display
-                  text-[0.68rem]
-                  leading-[1.5]
-                  text-ink-soft
-                  max-sm:mt-2
-                  max-sm:text-[0.48rem]
-                  max-sm:leading-[1.45]
-                "
-              >
-              23 May 2026 was one of those simple days that didn't seem
-              very important while it was happening, but somehow stayed
-              with me afterwards. When I came to Mumbai for annual meet of my company
-              we planned to meet. We met at CCD and spent some time
-              together, talking about little things, laughing, and just
-              enjoying the afternoon. 
-              <br />
-              <br />
-              There wasn't anything extraordinary
-              about it, and maybe that's what made it special. It was
-              comfortable, easy, and genuinely nice to spend that little
-              bit of time together. Looking back, I think these are the
-              moments that quietly become part of a story without us
-              even realizing it at the time.
-              </p>
+      <br />
+      <br />
 
-              {/* Bottom note */}
-              <div
-                className="
-                  mt-auto
-                  shrink-0
-                  border-t
-                  border-paper-edge/70
-                  pt-2
-                  max-sm:pt-1.5
-                "
-              >
-                <p
-                  className="
-                    font-hand
-                    text-[0.9rem]
-                    italic
-                    leading-tight
-                    text-ink
-                    max-sm:text-[0.62rem]
-                  "
-                >
-                  A little time together.
-                </p>
-              </div>
+      There wasn't anything extraordinary about it, and maybe that's what
+      made it special. It was comfortable, easy, and genuinely nice to
+      spend that little bit of time together. Looking back, I think these
+      are the moments that quietly become part of a story without us even
+      realizing it at the time.
+    </p>
 
-              {/* Heart belongs INSIDE the card */}
-              <Heart
-                className="
-                  absolute
-                  bottom-3
-                  right-4
-                  h-6
-                  w-6
-                  stroke-[1.15]
-                  text-maroon/75
-                  max-sm:bottom-2
-                  max-sm:right-2.5
-                  max-sm:h-5
-                  max-sm:w-5
-                "
-              />
+    {/* Bottom note */}
+    <div
+      className="
+        mt-auto
+        border-t
+        border-paper-edge/70
+        pt-4
+        max-sm:pt-3
+      "
+    >
+      <p
+        className="
+          font-hand
+          text-[1.05rem]
+          italic
+          leading-tight
+          text-ink
+          max-sm:text-[0.72rem]
+        "
+      >
+        A little time together.
+      </p>
+    </div>
 
-            </div>
-          </article>
+    {/* Heart */}
+    <Heart
+      className="
+        absolute
+        bottom-5
+        right-6
+        h-7
+        w-7
+        stroke-[1.15]
+        text-maroon/70
+        max-sm:bottom-3
+        max-sm:right-3
+        max-sm:h-5
+        max-sm:w-5
+      "
+    />
 
-
+  </div>
+</article>
           {/* =================================================
               LITTLE FLOWER
           ================================================== */}
