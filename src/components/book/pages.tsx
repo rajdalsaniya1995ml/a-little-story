@@ -1461,7 +1461,7 @@ function BirthdayPage() {
     </PageShell>
   );
 }
-
+/* -------------------  Friendship day page  --------------------------*/
 function FriendshipDayPage() {
   return (
     <PageShell>
@@ -2216,10 +2216,10 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <BeginningPhotosPage /> },
   { node: <ConversationsPage /> },
   { node: <ConversationsQuotePage /> },
-   { node: <LittleThingsPage  /> },
+  { node: <LittleThingsPage  /> },
   { node: <MemoriesPage /> },
   { node: <MomentsPage /> },
-  { node: <BirthdayPage /> 
+  { node: <BirthdayPage />,
   { node: <FriendshipDayPage /> },
   { node: <SmilePage /> },
   { node: <HiddenMemoriesPage /> },
