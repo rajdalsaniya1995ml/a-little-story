@@ -672,9 +672,9 @@ function MomentsPage() {
       rotate: "-1deg",
     },
     {
-      date: "One More Moment",
-      title: "Something to Remember",
-      text: "Some moments don't need a big reason to stay memorable. They simply become part of the story.",
+      date: "The Invitation",
+      title: "My Visit to Your Home",
+      text: "Thank you for inviting me to your home. It was really nice meeting you and your parents again after so long. It was a simple visit, but a moment I’m really glad I got to experience. Somehow, it really felt like home to me.",
       note: "And this one stayed.",
       rotate: "1.5deg",
     },
