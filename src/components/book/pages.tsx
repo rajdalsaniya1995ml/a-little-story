@@ -864,8 +864,20 @@ function MomentsPage() {
                   max-sm:leading-[1.45]
                 "
               >
-                A small afternoon that somehow became one of those moments
-                I still remember.
+              23 May 2026 was one of those simple days that didn't seem
+              very important while it was happening, but somehow stayed
+              with me afterwards. When I came to Mumbai for annual meet of my company
+              we planned to meet. We met at CCD and spent some time
+              together, talking about little things, laughing, and just
+              enjoying the afternoon. 
+              <br />
+              <br />
+              There wasn't anything extraordinary
+              about it, and maybe that's what made it special. It was
+              comfortable, easy, and genuinely nice to spend that little
+              bit of time together. Looking back, I think these are the
+              moments that quietly become part of a story without us
+              even realizing it at the time.
               </p>
 
               {/* Bottom note */}
