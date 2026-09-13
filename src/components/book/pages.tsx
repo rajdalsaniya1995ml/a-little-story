@@ -830,12 +830,12 @@ function MomentsPage() {
                 {/* Title */}
                 <h2
                   className="
-                    mt-2
+                    mt-1
                     font-hand
                     text-[2rem]
                     leading-none
                     text-maroon
-                    max-sm:mt-1
+                    max-sm:mt-0.5
                     max-sm:text-[1.45rem]
                   "
                 >
@@ -845,12 +845,12 @@ function MomentsPage() {
                 {/* Underline */}
                 <div
                   className="
-                    mt-3
+                    mt-1.5
                     h-px
-                    w-16
+                    w-14
                     bg-gold/70
-                    max-sm:mt-2
-                    max-sm:w-11
+                    max-sm:mt-1
+                    max-sm:w-10
                   "
                 />
 
