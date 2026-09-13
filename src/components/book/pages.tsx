@@ -2220,7 +2220,7 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <LittleThingsPage  /> },
   { node: <MemoriesPage /> },
   { node: <MomentsPage /> },
-  { node: <BirthdayPage />,
+  { node: <BirthdayPage />},
   { node: <FriendshipDayPage /> },
   { node: <SmilePage /> },
   { node: <HiddenMemoriesPage /> },
