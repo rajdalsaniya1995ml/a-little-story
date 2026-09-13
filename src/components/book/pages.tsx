@@ -2169,7 +2169,6 @@ function SmilePage() {
     "Your random messages that somehow made my day better",
     "Calling me “gadhedo” 😄 when I gave you the Friendship Day gift",
     "The way you made me feel at home when I visited Mumbai",
-    "Sharing those Gujarati snacks — dhokla & khandvi — with you",
   ];
 
   return (
