@@ -114,7 +114,7 @@ function BlessingPage() {
           ॐ
         </p>
         
-        <div className="relative mt-4 max-sm:mt-2">
+        <div className="relative mt-3 max-sm:mt-1.5">
           <img
             src={ganpatiBlessing}
             alt="Illustration of Lord Ganesha in antique gold line art, blessing the beginning of the book"
