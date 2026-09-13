@@ -2490,6 +2490,53 @@ function LetterPage() {
   );
 }
 
+function FutureMemoriesPage() {
+  return (
+    <PageShell>
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col">
+        {/* Chapter heading */}
+        <div className="shrink-0">
+          <ChapterMark {...markProps(10)} />
+        </div>
+
+        {/* Main content */}
+        <div className="flex min-h-0 flex-1 flex-col items-center text-center px-2">
+
+          <OrnamentDivider
+            className="mt-5"
+            width="w-28 max-sm:w-20"
+            tone="gold"
+          />
+
+          <p className="gold-foil mt-7 font-hand text-[1.05rem] leading-relaxed sm:text-[1.15rem]">
+            Some pages are left blank
+            <br />
+            for memories that are yet to come.
+          </p>
+
+          {/* Intentionally blank area */}
+          <div className="flex-1 w-full" />
+
+          <div className="shrink-0 pb-3">
+            <OrnamentDivider
+              className="mb-4"
+              width="w-20 max-sm:w-16"
+              tone="gold"
+            />
+
+            <p className="font-hand text-[0.9rem] italic text-gold-soft/70 sm:text-base">
+              A little space for what comes next.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
 function EndPage() {
   return (
     <div className="cover-surface relative flex h-full flex-col items-center justify-center px-10 text-center">
@@ -2524,6 +2571,8 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <SmilePage /> },
   { node: <AboutYouPage /> },
   { node: <LetterPage /> },
+  { node: <FutureMemoriesPage /> },
+  
   { node: <EndPage /> },
   
 ];
