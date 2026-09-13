@@ -670,33 +670,6 @@ function MomentsPage() {
 
           <ChapterMark {...markProps(3)} />
 
-          {/* Hindi title */}
-          <h1
-            className="
-              font-hand
-              text-[2.1rem]
-              leading-none
-              text-maroon
-              max-sm:text-[1.55rem]
-            "
-          >
-            पल
-          </h1>
-
-          {/* English subtitle */}
-          <p
-            className="
-              mt-1
-              font-display
-              text-[0.85rem]
-              italic
-              text-ink
-              max-sm:text-[0.68rem]
-            "
-          >
-            Little moments
-          </p>
-
           {/* Intro */}
           <p
             className="
