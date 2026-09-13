@@ -698,7 +698,7 @@ function MomentsPage() {
         </div>
 
         {/* 2 × 2 memory grid */}
-        <div className="mx-auto mt-3 grid min-h-0 w-full max-w-[38rem] flex-1 grid-cols-2 grid-rows-2 gap-3 px-2 max-sm:mt-2 max-sm:gap-2">
+        <div className="mx-auto mt-3 grid min-h-0 w-full max-w-[38rem] flex-1 grid-cols-3 grid-rows-3 gap-3 px-2 max-sm:mt-2 max-sm:gap-2">
           {moments.map((moment, index) => (
             <article
               key={index}
