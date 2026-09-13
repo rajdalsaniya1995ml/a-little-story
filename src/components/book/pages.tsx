@@ -674,7 +674,7 @@ function MomentsPage() {
     {
       date: "The Invitation",
       title: "My Visit to Your Home",
-      text: "Thank you for inviting me to your home. It was really nice meeting you and your parents again after so long. It was a simple visit, but a moment I’m really glad I got to experience. Somehow, it really felt like home to me.",
+      text: "Thank you for inviting me to your home. It was really nice meeting you and your parents again after so long. It was a simple visit, Somehow, it really felt like home to me.",
       note: "And this one stayed.",
       rotate: "1.5deg",
     },
