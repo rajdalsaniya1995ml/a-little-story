@@ -2234,7 +2234,7 @@ function AboutYouPage() {
   return (
     <PageShell>
       <div className="flex h-full flex-col justify-center gap-5">
-        <ChapterMark {...markProps(8)} />
+        <ChapterMark {...markProps(7)} />
 
         <div className="relative mx-auto h-44 w-11/12" onClick={stop}>
           {Array.from({ length: total }).map((_, i) => {
@@ -2291,7 +2291,7 @@ function LetterPage() {
     <PageShell>
       <PageBorder tone="maroon" />
       <div className="flex h-full flex-col justify-center gap-5" onClick={stop}>
-        <ChapterMark {...markProps(9)} />
+        <ChapterMark {...markProps(8)} />
         {open ? (
           <div className="anim-unfold space-y-4 px-1">
             <p className="font-hand text-lg leading-8 text-ink">
