@@ -29,9 +29,9 @@ const CHAPTERS = [
   { n: "02", deva: "बातें", en: "Our conversations" },
   { n: "03", deva: "यादें", en: "Little memories" },
   { n: "04", deva: "पल", en: "Little moments" },
-  { n: "05", deva: "मुस्कान", en: "Things that made me smile" },
-  { n: "06", deva: "दोस्ती का दिन", en: "Friendship Day" },
-  { n: "07", deva: "तुम्हारे घर की मुलाक़ात", en: "A visit to your home" },
+  { n: "05", deva: "दोस्ती का दिन", en: "Friendship Day" },
+  { n: "06", deva: "तुम्हारे घर की मुलाक़ात", en: "A visit to your home" },
+  { n: "07", deva: "मुस्कान", en: "Things that made me smile" },
   { n: "08", deva: "ख़ास", en: "Things I remember about you" },
   { n: "09", deva: "एक चिट्ठी", en: "A letter" },
   { n: "10", deva: "आगे...", en: "To be continued..." },
@@ -1474,7 +1474,7 @@ function FriendshipDayPage() {
             HEADER
         ====================================================== */}
         <header className="relative z-10 shrink-0 text-center">
-          <ChapterMark {...markProps(5)} />
+          <ChapterMark {...markProps(6)} />
 
           <p
             className="
@@ -2175,7 +2175,7 @@ function SmilePage() {
       <PageBorder tone="maroon" />
 
       <div className="flex h-full flex-col justify-center gap-5">
-        <ChapterMark {...markProps(4)} />
+        <ChapterMark {...markProps(7)} />
 
         <p className="font-hand px-4 text-center text-lg text-ink-soft">
           Some smiles came from the smallest things.
@@ -2234,7 +2234,7 @@ function AboutYouPage() {
       <PageBorder />
 
       <div className="flex h-full min-h-0 flex-col">
-        <ChapterMark {...markProps(7)} />
+        <ChapterMark {...markProps(8)} />
 
         <div className="mx-auto mt-4 grid w-full max-w-[38rem] min-h-0 flex-1 grid-cols-2 gap-3 px-2 max-sm:mt-3 max-sm:gap-2">
           
@@ -2331,7 +2331,7 @@ function LetterPage() {
         className="flex h-full min-h-0 flex-col justify-center gap-5"
         onClick={stop}
       >
-        <ChapterMark {...markProps(8)} />
+        <ChapterMark {...markProps(9)} />
 
         {open ? (
           <div className="anim-unfold mx-auto w-full max-w-[38ch] px-2">
