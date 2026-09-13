@@ -224,31 +224,31 @@ function BeginningPage() {
               I still remember how unexpectedly our story began.
             </p>
 
-            <p className="mt-3 max-sm:mt-2">
+            <p className="mt-2 max-sm:mt-1">
               It wasn&apos;t a movie-like meeting or some extraordinary moment.
               It started with something as simple as a biodata.
             </p>
 
-            <p className="mt-3 max-sm:mt-2">
+            <p className="mt-2 max-sm:mt-1">
               One of my relatives shared your biodata with my parents, and mine
               was shared with your parents. My parents already knew your family
               quite well, but I didn&apos;t know you.
             </p>
 
-            <p className="mt-3 max-sm:mt-2">
+            <p className="mt-2 max-sm:mt-1">
               At that time, you were just a name on a biodata.
             </p>
 
-            <p className="mt-3 max-sm:mt-2">
+            <p className="mt-2 max-sm:mt-1">
               I had no idea who you were, what you were like, or what it would
               feel like to actually meet you.
             </p>
 
-            <p className="mt-3 max-sm:mt-2 font-hand text-base leading-relaxed text-maroon max-sm:text-[0.9rem]">
+            <p className="mt-2 max-sm:mt-1 font-hand text-base leading-relaxed text-maroon max-sm:text-[0.9rem]">
               Then came <span className="font-display">17 May 2026.</span>
             </p>
 
-            <p className="mt-3 max-sm:mt-2">
+            <p className="mt-2 max-sm:mt-1">
               You and your parents came to Pune, and we met at your
               relative&apos;s place.
             </p>
