@@ -657,36 +657,25 @@ function MemoriesPage() {
 
 /* ---------------- 04 पल — timeline ---------------- */
 function MomentsPage() {
-  const moments = [
-    {
-      date: "23 MAY 2026",
-      title: "The CCD Meet",
-      text: "A small afternoon that somehow became one of those moments I still remember.",
-      note: "A little time together.",
-      rotate: "-1deg",
-      icon: Coffee,
-    },
-    {
-      date: "4 JULY 2026",
-      title: "Your Birthday",
-      text: "I wanted to make your birthday a little different, so I made something especially for you.",
-      note: "Made with a lot of thought.",
-      rotate: "1deg",
-      icon: Cake,
-    },
-  ];
-
   return (
     <PageShell>
       <PageBorder />
 
       <div className="flex h-full min-h-0 flex-col overflow-hidden">
 
-        {/* Header */}
+        {/* ================= HEADER ================= */}
         <div className="shrink-0 text-center">
           <ChapterMark {...markProps(3)} />
 
-          <p className="mt-1.5 font-hand text-[0.8rem] leading-tight text-ink-soft max-sm:text-[0.63rem]">
+          <h1 className="font-hand text-[2rem] leading-none text-maroon max-sm:text-[1.45rem]">
+            पल
+          </h1>
+
+          <p className="mt-0.5 font-display text-[0.82rem] italic text-ink max-sm:text-[0.65rem]">
+            Little moments
+          </p>
+
+          <p className="mt-1.5 font-hand text-[0.82rem] leading-[1.25] text-ink-soft max-sm:text-[0.64rem]">
             Some moments are small,
             <br />
             but they stay with you forever.
@@ -699,69 +688,104 @@ function MomentsPage() {
           />
         </div>
 
-        {/* Memories */}
-        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-4">
+        {/* ================= MEMORIES ================= */}
+        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-4 py-1 max-sm:px-2">
 
-          {moments.map((moment, index) => {
-            const Icon = moment.icon;
+          {/* ================= CCD ================= */}
+          <div
+            className="relative h-[45%] w-[92%] max-w-[34rem] max-sm:w-[94%]"
+            style={{ transform: "rotate(-1.2deg)" }}
+          >
+            <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-6 py-5 shadow-[0_8px_18px_-12px_oklch(0_0_0/0.55)] max-sm:px-4 max-sm:py-3.5">
 
-            return (
-              <div
-                key={moment.title}
-                className="relative h-[39%] w-full max-w-[30rem]"
-                style={{
-                  transform: `rotate(${moment.rotate})`,
-                }}
-              >
-                <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-5 py-4 shadow-[0_7px_16px_-11px_oklch(0_0_0/0.6)] max-sm:px-3 max-sm:py-2.5">
+              {/* tape */}
+              <span className="absolute -top-1.5 left-1/2 z-20 h-5 w-16 -translate-x-1/2 rotate-[-2deg] bg-saffron/30" />
 
-                  {/* Tape */}
-                  <span className="absolute -top-1.5 left-1/2 z-20 h-5 w-14 -translate-x-1/2 rotate-[-2deg] bg-saffron/30" />
+              {/* icon */}
+              <Coffee className="h-8 w-8 shrink-0 stroke-[1.3] text-maroon max-sm:h-6 max-sm:w-6" />
 
-                  {/* Icon */}
-                  <Icon className="h-7 w-7 shrink-0 stroke-[1.3] text-maroon max-sm:h-6 max-sm:w-6" />
+              {/* date */}
+              <p className="mt-1 font-display text-[0.46rem] tracking-[0.18em] text-gold uppercase max-sm:text-[0.36rem]">
+                23 MAY 2026
+              </p>
 
-                  {/* Date */}
-                  <p className="mt-1 shrink-0 font-display text-[0.45rem] tracking-[0.17em] text-gold uppercase max-sm:text-[0.36rem]">
-                    {moment.date}
-                  </p>
+              {/* title */}
+              <h2 className="mt-1 font-hand text-[1.65rem] leading-none text-maroon max-sm:text-[1.2rem]">
+                The CCD Meet
+              </h2>
 
-                  {/* Title */}
-                  <h2 className="mt-1 shrink-0 font-hand text-[1.55rem] leading-none text-maroon max-sm:text-[1.15rem]">
-                    {moment.title}
-                  </h2>
+              {/* underline */}
+              <div className="mt-2 h-px w-14 bg-gold/70 max-sm:mt-1.5 max-sm:w-10" />
 
-                  {/* Gold line */}
-                  <span className="mt-1.5 h-px w-12 shrink-0 bg-gold/70 max-sm:w-9" />
+              {/* actual description */}
+              <p className="mt-2.5 max-w-[90%] font-display text-[0.67rem] leading-[1.5] text-ink-soft max-sm:mt-2 max-sm:text-[0.49rem]">
+                A small afternoon that somehow became one of those moments
+                I still remember.
+              </p>
 
-                  {/* Description */}
-                  <p className="mt-2 min-h-0 overflow-hidden font-display text-[0.62rem] leading-[1.45] text-ink-soft max-sm:text-[0.48rem]">
-                    {moment.text}
-                  </p>
-
-                  {/* Note */}
-                  <div className="mt-auto shrink-0 pt-2">
-                    <div className="border-t border-paper-edge/70 pt-1.5">
-                      <p className="font-hand text-[0.82rem] italic leading-tight text-ink max-sm:text-[0.62rem]">
-                        {moment.note}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Heart */}
-                  {index === 1 && (
-                    <span className="absolute bottom-2 right-3 font-hand text-xl text-maroon/70 max-sm:text-base">
-                      ♡
-                    </span>
-                  )}
-                </div>
+              {/* note */}
+              <div className="mt-auto border-t border-paper-edge/70 pt-2">
+                <p className="font-hand text-[0.9rem] italic text-ink max-sm:text-[0.65rem]">
+                  A little time together.
+                </p>
               </div>
-            );
-          })}
+
+            </div>
+          </div>
+
+          {/* little connector */}
+          <div className="-my-1 shrink-0 font-hand text-sm text-gold">
+            ✦
+          </div>
+
+          {/* ================= BIRTHDAY ================= */}
+          <div
+            className="relative h-[37%] w-[92%] max-w-[34rem] max-sm:w-[94%]"
+            style={{ transform: "rotate(1.2deg)" }}
+          >
+            <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-6 py-5 shadow-[0_8px_18px_-12px_oklch(0_0_0/0.55)] max-sm:px-4 max-sm:py-3.5">
+
+              {/* tape */}
+              <span className="absolute -top-1.5 left-1/2 z-20 h-5 w-16 -translate-x-1/2 rotate-[1deg] bg-saffron/30" />
+
+              {/* icon */}
+              <Cake className="h-8 w-8 shrink-0 stroke-[1.3] text-maroon max-sm:h-6 max-sm:w-6" />
+
+              {/* date */}
+              <p className="mt-1 font-display text-[0.46rem] tracking-[0.18em] text-gold uppercase max-sm:text-[0.36rem]">
+                4 JULY 2026
+              </p>
+
+              {/* title */}
+              <h2 className="mt-1 font-hand text-[1.65rem] leading-none text-maroon max-sm:text-[1.2rem]">
+                Your Birthday
+              </h2>
+
+              {/* underline */}
+              <div className="mt-2 h-px w-14 bg-gold/70 max-sm:mt-1.5 max-sm:w-10" />
+
+              {/* description */}
+              <p className="mt-2.5 max-w-[90%] font-display text-[0.67rem] leading-[1.5] text-ink-soft max-sm:mt-2 max-sm:text-[0.49rem]">
+                I wanted to make your birthday a little different,
+                so I made something especially for you.
+              </p>
+
+              {/* note */}
+              <div className="mt-auto border-t border-paper-edge/70 pt-2">
+                <p className="font-hand text-[0.9rem] italic text-ink max-sm:text-[0.65rem]">
+                  Made with a lot of thought.
+                </p>
+              </div>
+
+              {/* heart */}
+              <Heart className="absolute bottom-3 right-4 h-6 w-6 stroke-[1.2] text-maroon/75 max-sm:bottom-2 max-sm:right-3 max-sm:h-5 max-sm:w-5" />
+
+            </div>
+          </div>
 
         </div>
 
-        {/* Footer */}
+        {/* ================= FOOTER ================= */}
         <div className="shrink-0 pb-1 pt-1 text-center">
           <OrnamentDivider
             className="mb-1"
@@ -778,6 +802,7 @@ function MomentsPage() {
     </PageShell>
   );
 }
+
 /* ---------------- 04 पल — little moments ---------------- */
 
 
