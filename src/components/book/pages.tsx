@@ -1894,6 +1894,78 @@ function FriendshipDayPage() {
     </PageShell>
   );
 }
+
+function FriendshipDayPhotoPage() {
+  return (
+    <PageShell>
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col items-center justify-center px-3">
+
+        <p className="font-display text-[0.62rem] tracking-[0.28em] text-gold uppercase">
+          Friendship Day
+        </p>
+
+        <h2 className="mt-2 font-hand text-2xl text-maroon max-sm:text-xl">
+          A little surprise ♡
+        </h2>
+
+        <OrnamentDivider
+          className="my-4 max-sm:my-3"
+          width="w-24 max-sm:w-20"
+          tone="gold"
+        />
+
+        {/* Photo */}
+        <div
+          className="
+            relative
+            w-[82%]
+            rotate-[-1.2deg]
+            bg-white
+            p-3
+            pb-5
+            shadow-[4px_10px_22px_-10px_rgba(60,40,20,0.6)]
+            max-sm:w-[88%]
+            max-sm:p-2
+            max-sm:pb-4
+          "
+        >
+          <WashiTape
+            className="-top-3 left-1/2 -translate-x-1/2"
+            tone="saffron"
+          />
+
+          <img
+            src={friendshipDay}
+            alt="Friendship Day memory"
+            className="
+              block
+              h-auto
+              max-h-[320px]
+              w-full
+              object-contain
+              object-center
+              max-sm:max-h-[230px]
+            "
+          />
+
+          <p className="mt-3 text-center font-hand text-base italic text-ink max-sm:mt-2 max-sm:text-sm">
+            A little surprise, made with a lot of thought.
+          </p>
+        </div>
+
+        <p className="mt-5 max-w-[30ch] text-center font-hand text-base leading-relaxed text-maroon max-sm:mt-4 max-sm:text-sm">
+          Some moments are small,
+          <br />
+          but they stay with us.
+        </p>
+
+      </div>
+    </PageShell>
+  );
+}
+
 /* ---------------- 05 मुस्कान — tick list ---------------- */
 
 function SmilePage() {
@@ -2207,6 +2279,7 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <MomentsPage /> },
   { node: <BirthdayPage />},
   { node: <FriendshipDayPage /> },
+  { node: <FriendshipDayPhotoPage /> },
   { node: <SmilePage /> },
   { node: <HiddenMemoriesPage /> },
   { node: <PostcardPage /> },
