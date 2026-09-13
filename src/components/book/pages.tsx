@@ -2220,9 +2220,6 @@ function SmilePage() {
 
 /* ---------------- 09 ख़ास — peel cards ---------------- */
 function AboutYouPage() {
-  const [peeled, setPeeled] = useState(0);
-  const total = 5;
-
   const memories = [
     "You are honest, and I really respect that about you.",
     "One thing I genuinely appreciate about you is how naturally you make people feel comfortable.",
@@ -2233,55 +2230,93 @@ function AboutYouPage() {
 
   return (
     <PageShell>
-      <div className="flex h-full flex-col justify-center gap-5">
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col">
         <ChapterMark {...markProps(7)} />
 
-        <div className="relative mx-auto h-44 w-11/12" onClick={stop}>
-          {Array.from({ length: total }).map((_, i) => {
-            const gone = i < peeled;
-
-            return (
-              <button
-                key={i}
-                type="button"
-                onClick={() => setPeeled(i + 1)}
-                disabled={gone || i !== peeled}
-                aria-label={`reveal card ${i + 1}`}
-                className="absolute inset-0 border border-brown/25 bg-paper p-5 text-left shadow-[0_10px_20px_-14px_oklch(0_0_0/0.5)] transition-all duration-500"
-                style={{
-                  zIndex: total - i,
-                  transform: gone
-                    ? "translate(-58%, -12%) rotate(-14deg)"
-                    : `translateY(${(i - peeled) * 6}px) rotate(${(i - peeled) * 1.2}deg)`,
-                  opacity: gone ? 0 : 1,
-                }}
-              >
-                <span className="font-display block text-lg text-gold">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-
-                <span className="font-hand mt-2 block text-lg leading-snug text-ink">
-                  {memories[i]}
-                </span>
-              </button>
-            );
-          })}
-
-          {peeled >= total && (
-            <button
-              type="button"
-              onClick={() => setPeeled(0)}
-              className="font-sans absolute inset-x-0 bottom-0 text-[0.6rem] tracking-[0.3em] text-ink-soft uppercase"
+        <div className="mx-auto mt-4 grid w-full max-w-[38rem] min-h-0 flex-1 grid-cols-2 gap-3 px-2 max-sm:mt-3 max-sm:gap-2">
+          
+          {memories.map((memory, i) => (
+            <article
+              key={i}
+              className={`
+                relative
+                flex
+                min-h-0
+                flex-col
+                justify-center
+                border
+                border-paper-edge/80
+                bg-paper
+                p-3
+                shadow-[2px_5px_12px_-8px_rgba(60,40,20,0.6)]
+                transition-transform
+                hover:-translate-y-1
+                max-sm:p-2.5
+                ${i === 0 ? "rotate-[-1deg]" : ""}
+                ${i === 1 ? "rotate-[1deg]" : ""}
+                ${i === 2 ? "rotate-[0.5deg]" : ""}
+                ${i === 3 ? "rotate-[-1.2deg]" : ""}
+                ${i === 4 ? "rotate-[1deg] col-span-2 mx-auto w-[60%] max-sm:w-[75%]" : ""}
+              `}
             >
-              stack them again
-            </button>
-          )}
+              {/* Small number */}
+              <span
+                className="
+                  absolute
+                  right-2
+                  top-2
+                  font-display
+                  text-[0.5rem]
+                  tracking-[0.15em]
+                  text-gold
+                  max-sm:text-[0.42rem]
+                "
+              >
+                {String(i + 1).padStart(2, "0")}
+              </span>
+
+              {/* Small decoration */}
+              <span className="mb-1 font-hand text-base text-maroon/60 max-sm:text-sm">
+                ♡
+              </span>
+
+              {/* Memory */}
+              <p
+                className="
+                  font-hand
+                  text-[0.82rem]
+                  leading-[1.35]
+                  text-ink
+                  max-sm:text-[0.68rem]
+                  max-sm:leading-[1.3]
+                "
+              >
+                {memory}
+              </p>
+
+              {/* Bottom line */}
+              <div className="mt-2 h-px w-8 bg-gold/40" />
+            </article>
+          ))}
+
+        </div>
+
+        <div className="shrink-0 pb-1 pt-3 text-center max-sm:pt-2">
+          <OrnamentDivider
+            width="w-16 max-sm:w-12"
+            tone="gold"
+          />
+
+          <p className="mt-1 font-hand text-[0.68rem] text-maroon max-sm:text-[0.55rem]">
+            A few things I remember about you.
+          </p>
         </div>
       </div>
     </PageShell>
   );
 }
-
 
 /* ---------------- 10 आगे... — letter ---------------- */
 
