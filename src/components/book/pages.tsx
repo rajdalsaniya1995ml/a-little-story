@@ -663,20 +663,16 @@ function MomentsPage() {
       title: "The CCD Meet",
       text: "A small afternoon that somehow became one of those moments I still remember.",
       note: "A little time together.",
-      rotate: "-1.2deg",
+      rotate: "-1deg",
       icon: Coffee,
-      color: "text-maroon",
-      tape: "bg-saffron/30",
     },
     {
       date: "4 JULY 2026",
       title: "Your Birthday",
       text: "I wanted to make your birthday a little different, so I made something especially for you.",
       note: "Made with a lot of thought.",
-      rotate: "1.2deg",
+      rotate: "1deg",
       icon: Cake,
-      color: "text-maroon",
-      tape: "bg-saffron/30",
     },
   ];
 
@@ -686,7 +682,7 @@ function MomentsPage() {
 
       <div className="flex h-full min-h-0 flex-col overflow-hidden">
 
-        {/* HEADER */}
+        {/* Header */}
         <div className="shrink-0 text-center">
           <ChapterMark {...markProps(3)} />
 
@@ -694,11 +690,11 @@ function MomentsPage() {
             पल
           </h1>
 
-          <p className="mt-0.5 font-display text-[0.85rem] italic text-ink max-sm:text-[0.68rem]">
+          <p className="mt-0.5 font-display text-[0.8rem] italic text-ink max-sm:text-[0.65rem]">
             Little moments
           </p>
 
-          <p className="mt-1.5 font-hand text-[0.82rem] leading-tight text-ink-soft max-sm:text-[0.65rem]">
+          <p className="mt-1.5 font-hand text-[0.8rem] leading-tight text-ink-soft max-sm:text-[0.63rem]">
             Some moments are small,
             <br />
             but they stay with you forever.
@@ -711,27 +707,69 @@ function MomentsPage() {
           />
         </div>
 
-        {/* TWO MEMORIES */}
-        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-5 max-sm:px-3">
+        {/* Memories */}
+        <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-4">
 
-          {/* CCD */}
-          <MemoryCard
-            moment={moments[0]}
-            featured
-          />
+          {moments.map((moment, index) => {
+            const Icon = moment.icon;
 
-          <div className="shrink-0 font-hand text-gold">
-            ✦
-          </div>
+            return (
+              <div
+                key={moment.title}
+                className="relative h-[39%] w-full max-w-[30rem]"
+                style={{
+                  transform: `rotate(${moment.rotate})`,
+                }}
+              >
+                <div className="page-imperfections deckle-edge relative flex h-full flex-col overflow-hidden bg-paper px-5 py-4 shadow-[0_7px_16px_-11px_oklch(0_0_0/0.6)] max-sm:px-3 max-sm:py-2.5">
 
-          {/* BIRTHDAY */}
-          <MemoryCard
-            moment={moments[1]}
-          />
+                  {/* Tape */}
+                  <span className="absolute -top-1.5 left-1/2 z-20 h-5 w-14 -translate-x-1/2 rotate-[-2deg] bg-saffron/30" />
+
+                  {/* Icon */}
+                  <Icon className="h-7 w-7 shrink-0 stroke-[1.3] text-maroon max-sm:h-6 max-sm:w-6" />
+
+                  {/* Date */}
+                  <p className="mt-1 shrink-0 font-display text-[0.45rem] tracking-[0.17em] text-gold uppercase max-sm:text-[0.36rem]">
+                    {moment.date}
+                  </p>
+
+                  {/* Title */}
+                  <h2 className="mt-1 shrink-0 font-hand text-[1.55rem] leading-none text-maroon max-sm:text-[1.15rem]">
+                    {moment.title}
+                  </h2>
+
+                  {/* Gold line */}
+                  <span className="mt-1.5 h-px w-12 shrink-0 bg-gold/70 max-sm:w-9" />
+
+                  {/* Description */}
+                  <p className="mt-2 min-h-0 overflow-hidden font-display text-[0.62rem] leading-[1.45] text-ink-soft max-sm:text-[0.48rem]">
+                    {moment.text}
+                  </p>
+
+                  {/* Note */}
+                  <div className="mt-auto shrink-0 pt-2">
+                    <div className="border-t border-paper-edge/70 pt-1.5">
+                      <p className="font-hand text-[0.82rem] italic leading-tight text-ink max-sm:text-[0.62rem]">
+                        {moment.note}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Heart */}
+                  {index === 1 && (
+                    <span className="absolute bottom-2 right-3 font-hand text-xl text-maroon/70 max-sm:text-base">
+                      ♡
+                    </span>
+                  )}
+                </div>
+              </div>
+            );
+          })}
 
         </div>
 
-        {/* FOOTER */}
+        {/* Footer */}
         <div className="shrink-0 pb-1 pt-1 text-center">
           <OrnamentDivider
             className="mb-1"
@@ -739,7 +777,7 @@ function MomentsPage() {
             tone="gold"
           />
 
-          <p className="font-hand text-[0.7rem] text-maroon max-sm:text-[0.56rem]">
+          <p className="font-hand text-[0.7rem] text-maroon max-sm:text-[0.55rem]">
             Little moments. Part of our story.
           </p>
         </div>
