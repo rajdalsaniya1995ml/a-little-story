@@ -1746,21 +1746,6 @@ function FriendshipDayPage() {
                     max-sm:w-10
                   "
                 />
-
-                {/* Actual photo */}
-                <img
-                  src={friendshipDay}
-                  alt="Friendship Day memory"
-                  className="
-                    block
-                    max-h-[145px]
-                    w-full
-                    object-cover
-                    object-center
-                    max-sm:max-h-[95px]
-                  "
-                />
-
                 {/* Caption */}
                 <p
                   className="
