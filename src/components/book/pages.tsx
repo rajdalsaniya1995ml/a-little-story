@@ -1695,6 +1695,15 @@ function FriendshipDayPage() {
                   in the mood to connect with anyone and that you were going
                   through a tough phase.
                   <br />
+                  Then Friendship Day came. I wanted to do something small for
+                  you — something that might bring a little smile to your day.
+                  <br />
+                  So I showed you the gift I had made for you. You loved it,
+                  and that honestly made me really happy. I even sent it to
+                  your home so that you could have it with you.
+                  <br />
+                  Sometimes, you don&apos;t need to do something big.
+                  Sometimes, just being there in a small way is enough.
                 </p>
               </div>
 
