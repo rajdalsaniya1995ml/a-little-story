@@ -2219,17 +2219,27 @@ function SmilePage() {
 }
 
 /* ---------------- 09 ख़ास — peel cards ---------------- */
-
 function AboutYouPage() {
   const [peeled, setPeeled] = useState(0);
-  const total = 4;
+  const total = 5;
+
+  const memories = [
+    "You are honest, and I really respect that about you.",
+    "One thing I genuinely appreciate about you is how naturally you make people feel comfortable.",
+    "I appreciate how openly you share what you think and feel.",
+    "You have a way of making even simple conversations feel special.",
+    "Even when you were going through a tough time, you still always talked to me so nicely.",
+  ];
+
   return (
     <PageShell>
       <div className="flex h-full flex-col justify-center gap-5">
         <ChapterMark {...markProps(8)} />
+
         <div className="relative mx-auto h-44 w-11/12" onClick={stop}>
           {Array.from({ length: total }).map((_, i) => {
             const gone = i < peeled;
+
             return (
               <button
                 key={i}
@@ -2249,12 +2259,14 @@ function AboutYouPage() {
                 <span className="font-display block text-lg text-gold">
                   {String(i + 1).padStart(2, "0")}
                 </span>
+
                 <span className="font-hand mt-2 block text-lg leading-snug text-ink">
-                  placeholder — something I remember about you
+                  {memories[i]}
                 </span>
               </button>
             );
           })}
+
           {peeled >= total && (
             <button
               type="button"
@@ -2269,6 +2281,7 @@ function AboutYouPage() {
     </PageShell>
   );
 }
+
 
 /* ---------------- 10 आगे... — letter ---------------- */
 
