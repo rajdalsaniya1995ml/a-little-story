@@ -883,7 +883,6 @@ function MomentsPage() {
                   what made it special. It was comfortable, easy, and genuinely
                   nice to spend that little time together. Looking back, I think
                   these are the moments that quietly become part of a story
-                  without us even realizing it.
                 </p>
 
               </div>
