@@ -40,8 +40,9 @@ const CHAPTERS = [
   { n: "11", deva: "आगे...", en: "To be continued..." },
 ];
 
-function markProps(i: nu6mber) {
+function markProps(i: number) {
   const c = CHAPTERS[i]!;
+
   return { number: c.n, deva: c.deva, english: c.en };
 }
 
