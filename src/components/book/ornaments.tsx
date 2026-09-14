@@ -250,3 +250,83 @@ export function Placeholder({ lines = 3 }: { lines?: number }) {
     </p>
   );
 }
+
+/** Small hand-drawn sketch-style doodle — a shy little creature holding a flower. */
+export function CuteDoodle({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 120 120"
+      className={`${className}`}
+      fill="none"
+      aria-hidden="true"
+    >
+      {/* sketchy body */}
+      <path
+        d="M38 88c-6-12-5-28 6-38 10-9 26-10 38-2 12 8 16 24 10 38-4 9-14 16-26 16-12 0-23-6-28-14Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity="0.85"
+      />
+      {/* ears */}
+      <path
+        d="M46 50c-4-10-2-18 4-22 4-2 8 2 10 10M78 50c4-10 2-18-4-22-4-2-8 2-10 10"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity="0.85"
+      />
+      {/* eyes */}
+      <circle cx="54" cy="62" r="2.6" fill="currentColor" opacity="0.8" />
+      <circle cx="72" cy="62" r="2.6" fill="currentColor" opacity="0.8" />
+      {/* shy smile */}
+      <path
+        d="M58 72c3 3 9 3 12 0"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      {/* blush */}
+      <ellipse cx="48" cy="68" rx="4" ry="2.4" fill="currentColor" opacity="0.12" />
+      <ellipse cx="78" cy="68" rx="4" ry="2.4" fill="currentColor" opacity="0.12" />
+      {/* paws holding flower stem */}
+      <path
+        d="M60 78v14M54 90c-3-2-5-5-3-8 2-2 6-1 8 2M72 88c3-2 4-5 2-7-2-2-6-1-8 2"
+        stroke="currentColor"
+        strokeWidth="1.1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity="0.8"
+      />
+      {/* flower */}
+      <path
+        d="M60 68c-4-4-4-10 0-14 4-4 10-4 14 0 4 4 4 10 0 14-4 4-10 4-14 0Z"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity="0.75"
+      />
+      <circle cx="60" cy="61" r="2.4" fill="currentColor" opacity="0.7" />
+      {/* little leaves */}
+      <path
+        d="M60 78c-4-3-8-2-10 2M60 80c4-3 8-2 10 2"
+        stroke="currentColor"
+        strokeWidth="0.9"
+        strokeLinecap="round"
+        opacity="0.65"
+      />
+      {/* ground sketch line */}
+      <path
+        d="M28 102c12-2 26-2 40 0 12 2 22 1 30-1"
+        stroke="currentColor"
+        strokeWidth="0.8"
+        strokeLinecap="round"
+        opacity="0.35"
+      />
+    </svg>
+  );
+}
+
