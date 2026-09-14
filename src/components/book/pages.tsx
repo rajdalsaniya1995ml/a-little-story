@@ -229,7 +229,7 @@ function BeginningPage() {
 
             <p className="mt-2 max-sm:mt-1">
               It wasn&apos;t a movie-like meeting or some extraordinary moment.
-              It started with something as simple.
+              It started with something as simple as biodata.
             </p>
 
             <p className="mt-2 max-sm:mt-1">
