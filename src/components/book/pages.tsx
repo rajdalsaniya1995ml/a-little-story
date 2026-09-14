@@ -2494,7 +2494,6 @@ function WishesPage() {
     "I wish you plenty of happiness — even on the most ordinary days.",
     "I wish you success in everything you genuinely care about.",
     "I wish you plenty of reasons to smile, laugh, and enjoy the little things.",
-    "I wish you peaceful days, good people, and moments that make life feel lighter.",
     "I wish you beautiful experiences, new places, and memories worth keeping.",
     "And most importantly, I wish you always stay exactly the person you are — genuine, kind, and wonderfully you.",
   ];
