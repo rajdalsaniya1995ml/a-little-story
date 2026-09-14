@@ -551,7 +551,7 @@ function LittleThingsPage() {
         {/* Closing */}
         <div className="shrink-0 pb-1 pt-6 text-center max-sm:pt-5">
           <OrnamentDivider
-            className="mb-3 max-sm:mb-2"
+            className="mb-1.5 max-sm:mb-1"
             width="w-20 max-sm:w-16"
             tone="gold"
           />
