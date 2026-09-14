@@ -2375,7 +2375,7 @@ function LetterPage() {
                 <p className="font-hand text-base leading-[1.55] text-ink max-sm:text-[0.78rem]">
                   I am genuinely glad that I got the chance to know you. I
                   appreciate the way you talk, the way you share your thoughts,
-                  and the comfort that slowly grew between us.
+                  and the comfort that slowly grown between us.
                 </p>
 
                 <p className="font-hand text-base leading-[1.55] text-ink max-sm:text-[0.78rem]">
