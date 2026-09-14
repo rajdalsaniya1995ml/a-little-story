@@ -2548,6 +2548,7 @@ function WishesPage() {
   );
 }
 
+
 function FutureMemoriesPage() {
   return (
     <PageShell>
@@ -2560,37 +2561,54 @@ function FutureMemoriesPage() {
         </div>
 
         {/* Main content */}
-        <div className="flex min-h-0 flex-1 flex-col items-center text-center px-2">
+        <div className="flex min-h-0 flex-1 flex-col items-center px-5 text-center">
 
           <OrnamentDivider
             className="mt-5"
-            width="w-28 max-sm:w-20"
+            width="w-24 max-sm:w-20"
             tone="gold"
           />
 
-          <p className="gold-foil mt-7 font-hand text-[1.05rem] leading-relaxed sm:text-[1.15rem]">
-            Some pages are left blank
-            <br />
-            for memories that are yet to come.
-          </p>
+          {/* Main thought */}
+          <div className="mt-8 max-w-md">
+            <p className="gold-foil font-hand text-[1.15rem] leading-relaxed sm:text-[1.25rem]">
+              Some pages are left blank
+              <br />
+              for memories that are yet to come.
+            </p>
 
-          {/* Intentionally blank area */}
-          <div className="flex-1 w-full" />
-
-
-          <div className="mt-3 flex flex-col items-center">
-          <CuteDoodle className="h-44 w-44 text-ink/60 max-sm:h-36 max-sm:w-36" />
-          <p className="font-hand mt-3 text-sm italic text-ink-soft/55 max-sm:text-xs">
-            a little doodle for you
-          </p>
-        </div>
+            <p className="mt-5 font-hand text-base italic leading-relaxed text-ink-soft/60 max-sm:text-sm">
+              No need to know what comes next.
+              <br />
+              Some of the nicest moments
+              <br />
+              are the ones we don't plan.
+            </p>
           </div>
 
+          {/* Open space — keeps the page feeling like a blank scrapbook page */}
+          <div className="flex-1 w-full" />
+
+          {/* Doodle + closing note */}
+          <div className="flex flex-col items-center pb-6">
+            <CuteDoodle className="h-36 w-36 text-ink/55 max-sm:h-28 max-sm:w-28" />
+
+            <OrnamentDivider
+              className="mt-4"
+              width="w-14 max-sm:w-12"
+              tone="gold"
+            />
+
+            <p className="mt-4 font-hand text-sm italic text-ink-soft/55 max-sm:text-xs">
+              A little space for whatever comes next...
+            </p>
+          </div>
         </div>
       </div>
     </PageShell>
   );
 }
+
 
 function EndPage() {
   return (
