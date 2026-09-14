@@ -265,14 +265,14 @@ function BeginningPage() {
 function BeginningPhotosPage() {
   return (
     <PageShell>
-      <div className="flex h-full min-h-0 flex-col items-center justify-center px-2">
+      <div className="flex h-full min-h-0 max-w-full flex-col items-center justify-center overflow-hidden px-2">
         {/* Date */}
         <p className="font-display text-[0.68rem] tracking-[0.28em] text-gold uppercase max-sm:text-[0.58rem]">
           17 May 2026 · Pune
         </p>
 
         {/* Place photo */}
-        <div className="relative mt-4 w-[78%] max-sm:mt-3 max-sm:w-[82%]">
+        <div className="relative mt-3 w-[68%] shrink-0 max-sm:mt-2 max-sm:w-[72%]">
           <WashiTape
             className="-top-2 left-1/2 -translate-x-1/2"
             tone="saffron"
@@ -292,13 +292,13 @@ function BeginningPhotosPage() {
         </div>
 
         {/* Story */}
-        <div className="mt-5 max-w-[34ch] text-center max-sm:mt-3">
-          <p className="font-hand text-lg leading-relaxed text-ink max-sm:text-base">
+        <div className="mt-3 max-w-[34ch] break-words text-center max-sm:mt-2">
+          <p className="font-hand text-base leading-snug text-ink max-sm:text-sm">
             You came with your parents, and I came knowing almost nothing
             about the person I was about to meet.
           </p>
 
-          <p className="font-display mt-3 text-[0.68rem] leading-relaxed text-ink-soft max-sm:mt-2 max-sm:text-[0.6rem]">
+          <p className="font-display mt-2 text-[0.64rem] leading-relaxed text-ink-soft max-sm:mt-1.5 max-sm:text-[0.58rem]">
             Until that day, we were just two names connected by a biodata.
             That afternoon, for the first time, we became two people sitting
             across from each other.
@@ -306,16 +306,16 @@ function BeginningPhotosPage() {
         </div>
 
         {/* Ending */}
-        <div className="mt-4 text-center max-sm:mt-3">
-          <p className="font-hand text-base text-maroon max-sm:text-sm">
+        <div className="mt-2 shrink-0 text-center max-sm:mt-1.5">
+          <p className="font-hand text-sm leading-snug text-maroon max-sm:text-xs">
             Two strangers.
           </p>
 
-          <p className="font-hand text-base text-maroon max-sm:text-sm">
+          <p className="font-hand text-sm leading-snug text-maroon max-sm:text-xs">
             One meeting.
           </p>
 
-          <p className="font-display mt-1 text-[0.58rem] tracking-[0.2em] text-gold uppercase">
+          <p className="font-display mt-1 max-w-full text-[0.54rem] leading-snug tracking-[0.14em] text-gold uppercase max-sm:text-[0.48rem]">
             And somehow, our story began here.
           </p>
         </div>
