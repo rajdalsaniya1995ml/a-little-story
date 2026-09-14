@@ -2489,6 +2489,66 @@ function LetterPage() {
   );
 }
 
+function WishesPage() {
+  const wishes = [
+    "I wish you plenty of happiness — even on the most ordinary days.",
+    "I wish you success in everything you genuinely care about.",
+    "I wish you plenty of reasons to smile, laugh, and enjoy the little things.",
+    "I wish you peaceful days, good people, and moments that make life feel lighter.",
+    "I wish you beautiful experiences, new places, and memories worth keeping.",
+    "And most importantly, I wish you always stay exactly the person you are — genuine, kind, and wonderfully you.",
+  ];
+
+  return (
+    <PageShell>
+      <PageBorder />
+
+      <div className="flex h-full min-h-0 flex-col items-center px-6 py-8 text-center">
+        <OrnamentDivider
+          width="w-20 max-sm:w-16"
+          tone="gold"
+        />
+
+        <h2 className="mt-5 font-hand text-3xl text-ink max-sm:text-2xl">
+          A Few Wishes for You
+        </h2>
+
+        <p className="mt-2 font-hand text-base italic text-ink-soft/60 max-sm:text-sm">
+          Just a few things I genuinely wish for you...
+        </p>
+
+        <div className="mt-7 w-full max-w-lg space-y-3 text-left">
+          {wishes.map((wish, index) => (
+            <div
+              key={index}
+              className="flex items-start gap-3 rounded-xl border border-gold/20 bg-paper/40 px-4 py-3"
+            >
+              <span className="mt-0.5 font-hand text-lg text-gold">
+                {["🌸", "✨", "😊", "🌿", "🌷", "💫"][index]}
+              </span>
+
+              <p className="font-hand text-base leading-6 text-ink-soft max-sm:text-sm">
+                {wish}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-auto pt-7">
+          <OrnamentDivider
+            width="w-16 max-sm:w-12"
+            tone="gold"
+          />
+
+          <p className="mt-4 font-hand text-sm italic text-ink-soft/55 max-sm:text-xs">
+            Just a few wishes, from someone who's genuinely glad to know you. 😊
+          </p>
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
 function FutureMemoriesPage() {
   return (
     <PageShell>
@@ -2598,6 +2658,8 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <SmilePage /> },
   { node: <AboutYouPage /> },
   { node: <LetterPage /> },
+  { node: <WishesPage /> },
+  
   { node: <FutureMemoriesPage /> },
    { node: <ClosingBlankPage /> },
   { node: <EndPage /> },
