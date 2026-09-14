@@ -2587,6 +2587,14 @@ function FutureMemoriesPage() {
             <p className="font-hand text-[0.9rem] italic text-gold-soft/70 sm:text-base">
               A little space for what comes next.
             </p>
+
+
+          <div className="mt-8 flex flex-col items-center">
+          <CuteDoodle className="h-44 w-44 text-ink/60 max-sm:h-36 max-sm:w-36" />
+          <p className="font-hand mt-3 text-sm italic text-ink-soft/55 max-sm:text-xs">
+            a little doodle for you
+          </p>
+        </div>
           </div>
 
         </div>
@@ -2594,34 +2602,6 @@ function FutureMemoriesPage() {
     </PageShell>
   );
 }
-
-function ClosingBlankPage() {
-  return (
-    <PageShell>
-      <PageBorder />
-
-      <div className="flex h-full min-h-0 flex-col items-center justify-center px-6 text-center">
-        <OrnamentDivider
-          width="w-20 max-sm:w-16"
-          tone="gold"
-        />
-
-        <p className="mt-5 font-hand text-base italic text-ink-soft/60 max-sm:text-sm">
-          Some stories are better left open...
-        </p>
-
-        <div className="mt-8 flex flex-col items-center">
-          <CuteDoodle className="h-44 w-44 text-ink/60 max-sm:h-36 max-sm:w-36" />
-          <p className="font-hand mt-3 text-sm italic text-ink-soft/55 max-sm:text-xs">
-            a little doodle for you
-          </p>
-        </div>
-
-      </div>
-    </PageShell>
-  );
-}
-
 
 function EndPage() {
   return (
@@ -2658,9 +2638,7 @@ export const PAGES: Array<{ node: ReactNode; cover?: boolean }> = [
   { node: <AboutYouPage /> },
   { node: <LetterPage /> },
   { node: <WishesPage /> },
-  
   { node: <FutureMemoriesPage /> },
-   { node: <ClosingBlankPage /> },
   { node: <EndPage /> },
   
 ];
