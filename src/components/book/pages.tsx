@@ -2489,6 +2489,7 @@ function LetterPage() {
   );
 }
 
+
 function WishesPage() {
   const wishes = [
     "I wish you plenty of happiness — even on the most ordinary days.",
@@ -2504,52 +2505,50 @@ function WishesPage() {
     <PageShell>
       <PageBorder />
 
-      <div className="flex h-full min-h-0 flex-col px-4 py-5 text-center sm:px-6 sm:py-7">
+      <div className="flex h-full min-h-0 flex-col px-4 py-4 sm:px-6 sm:py-7">
 
-        {/* Heading */}
-        <div className="shrink-0">
+        {/* Top decoration */}
+        <div className="shrink-0 text-center">
           <OrnamentDivider
-            width="w-16 max-sm:w-14"
+            width="w-16 max-sm:w-12"
             tone="gold"
           />
 
-          <h2 className="mt-3 font-hand text-2xl text-ink sm:mt-4 sm:text-3xl">
+          <h2 className="mt-3 font-hand text-2xl leading-tight text-ink sm:mt-5 sm:text-3xl">
             A Few Wishes for You
           </h2>
 
-          <p className="mt-1 font-hand text-sm italic text-ink-soft/60 sm:text-base">
+          <p className="mt-1 font-hand text-xs italic text-ink-soft/60 sm:text-base">
             Just a few things I genuinely wish for you...
           </p>
         </div>
 
         {/* Wishes */}
-        <div className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center gap-2.5 py-4 sm:gap-3 sm:py-6">
+        <div className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center py-2 sm:py-5">
+
           {wishes.map((wish, index) => (
             <div
               key={index}
-              className="flex items-start gap-2.5 rounded-xl border border-gold/20 bg-paper/40 px-3 py-2.5 text-left sm:gap-3 sm:px-4 sm:py-3"
+              className="flex items-start gap-2.5 border-b border-gold/15 px-1.5 py-2.5 last:border-b-0 sm:gap-3 sm:py-3.5"
             >
-              <span className="mt-0.5 shrink-0 text-base sm:text-lg">
+              <span className="mt-0.5 shrink-0 text-sm sm:text-lg">
                 {icons[index]}
               </span>
 
-              <p className="font-hand text-[0.88rem] leading-[1.35rem] text-ink-soft sm:text-base sm:leading-6">
+              <p className="font-hand text-[0.82rem] leading-[1.22rem] text-ink-soft sm:text-base sm:leading-6">
                 {wish}
               </p>
             </div>
           ))}
+
         </div>
 
-        {/* Closing */}
-        <div className="shrink-0">
+        {/* Small decorative ending */}
+        <div className="shrink-0 pb-1 text-center sm:pb-2">
           <OrnamentDivider
             width="w-12 max-sm:w-10"
             tone="gold"
           />
-
-          <p className="mt-2 font-hand text-xs italic text-ink-soft/50 sm:mt-3 sm:text-sm">
-            Just a few wishes, from someone who's genuinely glad to know you. 😊
-          </p>
         </div>
 
       </div>
