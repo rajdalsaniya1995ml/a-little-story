@@ -2498,56 +2498,64 @@ function WishesPage() {
     "And most importantly, I wish you always stay exactly the person you are — genuine, kind, and wonderfully you.",
   ];
 
+  const icons = ["🌸", "✨", "😊", "🌷", "💫"];
+
   return (
     <PageShell>
       <PageBorder />
 
-      <div className="flex h-full min-h-0 flex-col items-center px-6 py-8 text-center">
-        <OrnamentDivider
-          width="w-20 max-sm:w-16"
-          tone="gold"
-        />
+      <div className="flex h-full min-h-0 flex-col px-4 py-5 text-center sm:px-6 sm:py-7">
 
-        <h2 className="mt-5 font-hand text-3xl text-ink max-sm:text-2xl">
-          A Few Wishes for You
-        </h2>
+        {/* Heading */}
+        <div className="shrink-0">
+          <OrnamentDivider
+            width="w-16 max-sm:w-14"
+            tone="gold"
+          />
 
-        <p className="mt-2 font-hand text-base italic text-ink-soft/60 max-sm:text-sm">
-          Just a few things I genuinely wish for you...
-        </p>
+          <h2 className="mt-3 font-hand text-2xl text-ink sm:mt-4 sm:text-3xl">
+            A Few Wishes for You
+          </h2>
 
-        <div className="mt-7 w-full max-w-lg space-y-3 text-left">
+          <p className="mt-1 font-hand text-sm italic text-ink-soft/60 sm:text-base">
+            Just a few things I genuinely wish for you...
+          </p>
+        </div>
+
+        {/* Wishes */}
+        <div className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center gap-2.5 py-4 sm:gap-3 sm:py-6">
           {wishes.map((wish, index) => (
             <div
               key={index}
-              className="flex items-start gap-3 rounded-xl border border-gold/20 bg-paper/40 px-4 py-3"
+              className="flex items-start gap-2.5 rounded-xl border border-gold/20 bg-paper/40 px-3 py-2.5 text-left sm:gap-3 sm:px-4 sm:py-3"
             >
-              <span className="mt-0.5 font-hand text-lg text-gold">
-                {["🌸", "✨", "😊", "🌿", "🌷", "💫"][index]}
+              <span className="mt-0.5 shrink-0 text-base sm:text-lg">
+                {icons[index]}
               </span>
 
-              <p className="font-hand text-base leading-6 text-ink-soft max-sm:text-sm">
+              <p className="font-hand text-[0.88rem] leading-[1.35rem] text-ink-soft sm:text-base sm:leading-6">
                 {wish}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-auto pt-7">
+        {/* Closing */}
+        <div className="shrink-0">
           <OrnamentDivider
-            width="w-16 max-sm:w-12"
+            width="w-12 max-sm:w-10"
             tone="gold"
           />
 
-          <p className="mt-4 font-hand text-sm italic text-ink-soft/55 max-sm:text-xs">
+          <p className="mt-2 font-hand text-xs italic text-ink-soft/50 sm:mt-3 sm:text-sm">
             Just a few wishes, from someone who's genuinely glad to know you. 😊
           </p>
         </div>
+
       </div>
     </PageShell>
   );
 }
-
 
 function FutureMemoriesPage() {
   return (
