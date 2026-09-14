@@ -2542,10 +2542,18 @@ function ClosingBlankPage() {
         <p className="mt-5 font-hand text-base italic text-ink-soft/60 max-sm:text-sm">
           Some stories are better left open...
         </p>
+
+        <div className="mt-6 flex flex-col items-center">
+          <CuteDoodle className="h-24 w-24 text-ink/55 max-sm:h-20 max-sm:w-20" />
+          <p className="font-hand mt-2 text-xs italic text-ink-soft/45">
+            a little doodle for you
+          </p>
+        </div>
       </div>
     </PageShell>
   );
 }
+
 
 function EndPage() {
   return (
