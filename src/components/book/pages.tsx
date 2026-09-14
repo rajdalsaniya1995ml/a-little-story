@@ -458,7 +458,7 @@ function ConversationsQuotePage() {
           </div>
 
           {/* Closing thought */}
-          <div className="mt-7 text-center max-sm:mt-5">
+          <div className="mt-4 text-center max-sm:mt-3">
             <OrnamentDivider
               className="mb-2 max-sm:mb-1"
               width="w-20 max-sm:w-16"
