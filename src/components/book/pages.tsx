@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import {
   ChapterMark,
+  CuteDoodle,
   FlipPhoto,
   FoldedNote,
   OrnamentDivider,
@@ -18,6 +19,7 @@ import {
   Polaroid,
   WashiTape,
 } from "./ornaments";
+
 import firstMeetingPlace from "@/assets/First_Meeting_Place.jpg";
 import ccdAfternoon from "@/assets/CCD_Afternoon.jpeg";
 import birthdayWebsite from "@/assets/Birthday_Website.png";
