@@ -168,30 +168,37 @@ function ContentsPage() {
     <PageShell>
       <PageBorder tone="maroon" />
 
-      <div className="flex h-full min-h-0 flex-col justify-center px-1 sm:px-2">
-        <h2 className="font-display text-center text-xl tracking-[0.32em] text-maroon uppercase max-sm:text-lg">
+      <div className="flex h-full min-h-0 flex-col justify-center px-4 sm:px-7">
+        <h2 className="font-display text-center text-2xl tracking-[0.28em] text-maroon uppercase max-sm:text-xl">
           Contents
         </h2>
 
         <OrnamentDivider
-          className="mt-3 mb-5 max-sm:mt-2 max-sm:mb-3"
+          className="mt-4 mb-7 max-sm:mt-3 max-sm:mb-5"
           width="w-32 max-sm:w-24"
         />
 
-        <ol className="space-y-3.5 max-sm:space-y-1.5">
+        <ol className="mx-auto w-full max-w-[34rem] space-y-4 max-sm:space-y-2.5">
           {CHAPTERS.map((c) => (
-            <li key={c.n} className="flex min-w-0 items-baseline gap-4 pl-6">
-              <span className="font-sans shrink-0 text-[0.6rem] tracking-[0.2em] text-gold max-sm:text-[0.5rem]">
+            <li
+              key={c.n}
+              className="flex min-w-0 items-baseline gap-3 max-sm:gap-2"
+            >
+              {/* Chapter number */}
+              <span className="w-7 shrink-0 text-center font-sans text-[0.65rem] tracking-[0.15em] text-gold max-sm:w-6 max-sm:text-[0.5rem]">
                 {c.n}
               </span>
 
-              <span className="font-deva w-24 shrink-0 text-base text-maroon max-sm:w-18 max-sm:text-[0.78rem]">
+              {/* Hindi chapter name */}
+              <span className="font-deva shrink-0 text-lg leading-none text-maroon max-sm:w-[5.5rem] max-sm:text-[0.82rem]">
                 {c.deva}
               </span>
 
-              <span className="mx-1 h-px w-3 bg-paper-edge" />
+              {/* Flexible divider */}
+              <span className="h-px min-w-[1.5rem] flex-1 border-t border-dotted border-paper-edge" />
 
-              <span className="font-display shrink-0 text-xs text-ink-soft italic max-sm:text-[0.58rem]">
+              {/* English chapter name */}
+              <span className="font-display shrink-0 text-sm text-ink-soft italic max-sm:text-[0.62rem]">
                 {c.en}
               </span>
             </li>
