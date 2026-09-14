@@ -168,33 +168,30 @@ function ContentsPage() {
     <PageShell>
       <PageBorder tone="maroon" />
 
-      <div className="flex h-full min-h-0 max-w-full flex-col justify-center overflow-hidden px-3 sm:px-4">
-        <h2 className="font-display text-center text-lg tracking-[0.26em] text-maroon uppercase max-sm:text-base">
+      <div className="flex h-full min-h-0 flex-col justify-center px-1 sm:px-2">
+        <h2 className="font-display text-center text-xl tracking-[0.32em] text-maroon uppercase max-sm:text-lg">
           Contents
         </h2>
 
         <OrnamentDivider
-          className="mt-2 mb-3 max-sm:mt-1.5 max-sm:mb-2"
+          className="mt-3 mb-5 max-sm:mt-2 max-sm:mb-3"
           width="w-32 max-sm:w-24"
         />
 
-        <ol className="w-full space-y-2 max-sm:space-y-1">
+        <ol className="space-y-3.5 max-sm:space-y-1.5">
           {CHAPTERS.map((c) => (
-            <li
-              key={c.n}
-              className="grid min-w-0 grid-cols-[1.4rem_minmax(4.25rem,5.5rem)_0.6rem_minmax(0,1fr)] items-center gap-2"
-            >
+            <li key={c.n} className="flex min-w-0 items-baseline gap-4 pl-6">
               <span className="font-sans shrink-0 text-[0.6rem] tracking-[0.2em] text-gold max-sm:text-[0.5rem]">
                 {c.n}
               </span>
 
-              <span className="font-deva min-w-0 break-words text-sm leading-tight text-maroon max-sm:text-[0.7rem]">
+              <span className="font-deva w-24 shrink-0 text-base text-maroon max-sm:w-18 max-sm:text-[0.78rem]">
                 {c.deva}
               </span>
 
-              <span className="h-px w-full bg-paper-edge" />
+              <span className="mx-1 h-px w-3 bg-paper-edge" />
 
-              <span className="font-display min-w-0 break-words text-[0.68rem] leading-tight text-ink-soft italic max-sm:text-[0.54rem]">
+              <span className="font-display shrink-0 text-xs text-ink-soft italic max-sm:text-[0.58rem]">
                 {c.en}
               </span>
             </li>
