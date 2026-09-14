@@ -2464,7 +2464,7 @@ function LetterPage() {
                 shadow-[0_4px_10px_-4px_oklch(0_0_0/0.6)]
               "
             >
-              <span className="font-deva text-sm">क</span>
+              <span className="font-display text-sm text-gold/60">U</span>
             </span>
 
             <span
