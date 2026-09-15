@@ -2067,7 +2067,7 @@ function LetterPage() {
               </span>
 
               {/* Letter */}
-              <div className="space-y-2">
+              <div className="space-y-1.5">
                 <p className="font-hand text-lg text-maroon max-sm:text-base">
                   Dear Urvi,
                 </p>
