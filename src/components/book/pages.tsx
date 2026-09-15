@@ -1803,6 +1803,8 @@ function FriendshipDayPhotoPage() {
           <br />
           but they stay with us.
           <br/>
+        </p>
+        <p className="mx-auto max-w-[38ch] font-display text-[0.72rem] leading-[1.6] text-ink-soft max-sm:text-[0.62rem]">
           And thank you for being such a wonderful person.
           It’s amazing how much I’ve come to appreciate knowing you
           in just a few months. 😊
