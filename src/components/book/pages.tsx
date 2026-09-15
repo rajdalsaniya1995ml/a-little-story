@@ -1684,7 +1684,7 @@ function FriendshipDayPhotoPage() {
           <span className="text-xs">❋</span>
           <span>✿</span>
         </div>
-         <p className="mt-5 max-w-[30ch] text-center font-hand text-base leading-relaxed text-maroon max-sm:mt-4 max-sm:text-sm">
+         <p className="mt-3 max-w-[30ch] text-center font-hand text-base leading-relaxed text-maroon max-sm:mt-2 max-sm:text-sm">
           Thank you for being such a wonderful person.
           <br />
           It’s amazing how much I’ve come to appreciate knowing you
