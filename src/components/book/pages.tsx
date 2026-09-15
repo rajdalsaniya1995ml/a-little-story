@@ -1694,9 +1694,6 @@ function FriendshipDayPage() {
                   a little smile to your day. 🌸
                   <br />
 
-                  And thank you for being such a wonderful person.
-                  It’s amazing how much I’ve come to appreciate knowing you
-                  in just a few months. 😊
                 </p>
               </div>
 
@@ -1805,6 +1802,10 @@ function FriendshipDayPhotoPage() {
           Some moments are small,
           <br />
           but they stay with us.
+          <br/>
+          And thank you for being such a wonderful person.
+          It’s amazing how much I’ve come to appreciate knowing you
+          in just a few months. 😊
         </p>
 
       </div>
