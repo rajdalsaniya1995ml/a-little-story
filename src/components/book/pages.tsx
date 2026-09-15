@@ -1026,7 +1026,6 @@ function MomentsPage() {
 }
 
 /* ---------------- 04 पल — little moments ---------------- */
-
 function BirthdayPage() {
   return (
     <PageShell>
@@ -1065,7 +1064,6 @@ function BirthdayPage() {
           />
         </header>
 
-
         {/* =====================================================
             SCRAPBOOK AREA
         ====================================================== */}
@@ -1102,7 +1100,6 @@ function BirthdayPage() {
           >
             ✿
           </div>
-
 
           {/* =================================================
               BIRTHDAY PAPER
@@ -1163,7 +1160,6 @@ function BirthdayPage() {
                 "
               />
 
-
               {/* =================================================
                   BIRTHDAY HEADER
               ================================================== */}
@@ -1182,7 +1178,6 @@ function BirthdayPage() {
                   ♡
                 </div>
 
-
                 {/* Date */}
                 <p
                   className="
@@ -1199,7 +1194,6 @@ function BirthdayPage() {
                   04 JULY 2026
                 </p>
 
-
                 {/* Title */}
                 <h2
                   className="
@@ -1213,7 +1207,6 @@ function BirthdayPage() {
                 >
                   Your Birthday
                 </h2>
-
 
                 {/* Underline */}
                 <div
@@ -1229,7 +1222,6 @@ function BirthdayPage() {
 
               </div>
 
-
               {/* =================================================
                   BIRTHDAY STORY
               ================================================== */}
@@ -1240,7 +1232,6 @@ function BirthdayPage() {
                   max-sm:mt-1.5
                 "
               >
-
                 <p
                   className="
                     max-w-[52ch]
@@ -1268,138 +1259,10 @@ function BirthdayPage() {
                   you loved the surprise really put a smile on my
                   face.
                 </p>
-
               </div>
-
-
-              {/* =================================================
-                  BIRTHDAY MEMORY BOX
-              ================================================== */}
-              <div
-                className="
-                  mx-auto
-                  mt-4
-                  flex
-                  h-[120px]
-                  w-[70%]
-                  shrink-0
-                  rotate-[-1deg]
-                  items-center
-                  justify-center
-                  border
-                  border-paper-edge/80
-                  bg-paper-deep/50
-                  shadow-[2px_4px_10px_-7px_rgba(60,40,20,0.55)]
-                  max-sm:mt-3
-                  max-sm:h-[85px]
-                  max-sm:w-[76%]
-                "
-              >
-
-                <div className="text-center">
-
-                  <div
-                    className="
-                      font-hand
-                      text-2xl
-                      text-gold/60
-                      max-sm:text-xl
-                    "
-                  >
-                    ✿
-                  </div>
-
-                  <p
-                    className="
-                      mt-1
-                      font-hand
-                      text-sm
-                      italic
-                      text-ink-soft
-                      max-sm:text-[0.62rem]
-                    "
-                  >
-                    A little birthday memory
-                  </p>
-
-                </div>
-
-              </div>
-
-
-              {/* =================================================
-                  BOTTOM NOTE
-              ================================================== */}
-              <div
-                className="
-                  mt-auto
-                  shrink-0
-                  border-t
-                  border-paper-edge/70
-                  pt-3
-                  max-sm:pt-2
-                "
-              >
-
-                <p
-                  className="
-                    font-hand
-                    text-[1.05rem]
-                    italic
-                    leading-tight
-                    text-ink
-                    max-sm:text-[0.72rem]
-                  "
-                >
-                  Made with a lot of thought.
-                </p>
-
-              </div>
-
-
-              {/* =================================================
-                  HEART
-              ================================================== */}
-              <Heart
-                className="
-                  absolute
-                  bottom-5
-                  right-6
-                  h-7
-                  w-7
-                  stroke-[1.15]
-                  text-maroon/70
-                  max-sm:bottom-3
-                  max-sm:right-3
-                  max-sm:h-5
-                  max-sm:w-5
-                "
-              />
-
-
-              {/* =================================================
-                  BOTANICAL DECORATION
-              ================================================== */}
-              <span
-                className="
-                  absolute
-                  bottom-4
-                  left-5
-                  rotate-[-12deg]
-                  font-hand
-                  text-xl
-                  text-leafgreen/45
-                  max-sm:bottom-2
-                  max-sm:left-2.5
-                  max-sm:text-sm
-                "
-              >
-                ❧
-              </span>
 
             </div>
           </article>
-
 
           {/* =================================================
               OUTSIDE DECORATION
@@ -1423,7 +1286,6 @@ function BirthdayPage() {
           </span>
 
         </main>
-
 
         {/* =====================================================
             FOOTER
