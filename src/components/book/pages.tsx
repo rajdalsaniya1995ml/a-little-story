@@ -1462,6 +1462,7 @@ function BirthdayPage() {
     </PageShell>
   );
 }
+
 /* -------------------  Friendship day page  --------------------------*/
 function FriendshipDayPage() {
   return (
@@ -1501,7 +1502,6 @@ function FriendshipDayPage() {
           />
         </header>
 
-
         {/* =====================================================
             SCRAPBOOK AREA
         ====================================================== */}
@@ -1518,9 +1518,7 @@ function FriendshipDayPage() {
           "
         >
 
-          {/* =================================================
-              TOP LEFT DECORATION
-          ================================================== */}
+          {/* TOP LEFT DECORATION */}
           <div
             className="
               pointer-events-none
@@ -1538,7 +1536,6 @@ function FriendshipDayPage() {
           >
             ❋
           </div>
-
 
           {/* =================================================
               MAIN MEMORY PAPER
@@ -1558,7 +1555,6 @@ function FriendshipDayPage() {
               transform: "rotate(-1deg)",
             }}
           >
-
             <div
               className="
                 relative
@@ -1578,9 +1574,7 @@ function FriendshipDayPage() {
               "
             >
 
-              {/* =================================================
-                  TAPE ON TOP
-              ================================================== */}
+              {/* TAPE ON TOP */}
               <span
                 className="
                   absolute
@@ -1599,7 +1593,6 @@ function FriendshipDayPage() {
                 "
               />
 
-
               {/* =================================================
                   FRIENDSHIP HEADER
               ================================================== */}
@@ -1617,7 +1610,6 @@ function FriendshipDayPage() {
                   ♡
                 </div>
 
-
                 {/* Date */}
                 <p
                   className="
@@ -1634,7 +1626,6 @@ function FriendshipDayPage() {
                   FRIENDSHIP DAY
                 </p>
 
-
                 {/* Title */}
                 <h2
                   className="
@@ -1649,7 +1640,6 @@ function FriendshipDayPage() {
                   A Little Surprise
                 </h2>
 
-
                 {/* Underline */}
                 <div
                   className="
@@ -1663,7 +1653,6 @@ function FriendshipDayPage() {
                 />
 
               </div>
-
 
               {/* =================================================
                   FRIENDSHIP STORY
@@ -1690,24 +1679,31 @@ function FriendshipDayPage() {
                   a little longer. Things had started to feel more comfortable,
                   and our conversations had become easier and more natural.
                   <br />
-                  A few days before, you had shared that you were going through a 
+
+                  A few days before, you had shared that you were going through a
                   difficult phase and weren’t really in the mood to connect with anyone.
                   I just wanted to do something small that might bring a smile to your face.
                   <br />
+
                   So on Friendship Day, I showed you the gift I had taken for you. You loved it,
                   and that honestly made me really happy. I even sent it to
                   your home so that you could have it with you.
                   <br />
+
                   Thank you for accepting my little gift — I’m just glad it brought
                   a little smile to your day. 🌸
                   <br />
-                  And thank you for being such a wonderful person. 
-                  It’s amazing how much I’ve come to appreciate knowing you 
+
+                  And thank you for being such a wonderful person.
+                  It’s amazing how much I’ve come to appreciate knowing you
                   in just a few months. 😊
                 </p>
               </div>
-        </main>
 
+            </div>
+          </article>
+
+        </main>
 
         {/* =====================================================
             FOOTER
