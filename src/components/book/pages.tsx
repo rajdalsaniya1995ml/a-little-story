@@ -1669,7 +1669,7 @@ function FriendshipDayPhotoPage() {
         {/* Floral ornament */}
         <div
           className="
-            my-3
+            my-2
             flex
             items-center
             justify-center
@@ -1677,7 +1677,7 @@ function FriendshipDayPhotoPage() {
             font-hand
             text-sm
             text-gold/70
-            max-sm:my-2
+            max-sm:my-1
           "
         >
           <span>✿</span>
