@@ -305,7 +305,7 @@ function BeginningPhotosPage() {
             about the person I was about to meet.
           </p>
 
-          <p className="font-hand mt-2 text-[0.64rem] leading-relaxed text-ink-soft max-sm:mt-1.5 max-sm:text-[0.58rem]">
+          <p className="font-hand text-base leading-snug text-ink max-sm:text-sm">
             Until that day, we were just two names connected by a biodata.
             That afternoon, for the first time, we became two people sitting
             across from each other.
