@@ -1690,9 +1690,9 @@ function FriendshipDayPage() {
                   a little longer. Things had started to feel more comfortable,
                   and our conversations had become easier and more natural.
                   <br />
-                  A few days before, you had told me that you weren&apos;t really
-                  in the mood to connect with anyone and that you were going
-                  through a tough phase.
+                  A few days before, you had shared that you were going through a 
+                  difficult phase and weren’t really in the mood to connect with anyone.
+                  I just wanted to do something small that might bring a smile to your face.
                   <br />
                   Then Friendship Day came. I wanted to do something small for
                   you — something that might bring a little smile to your day.
