@@ -1694,13 +1694,16 @@ function FriendshipDayPage() {
                   difficult phase and weren’t really in the mood to connect with anyone.
                   I just wanted to do something small that might bring a smile to your face.
                   <br />
-                  Then Friendship Day came. I wanted to do something small for
-                  you — something that might bring a little smile to your day.
-                  <br />
-                  So I showed you the gift I had taken for you. You loved it,
+                  So on Friendship Day, I showed you the gift I had taken for you. You loved it,
                   and that honestly made me really happy. I even sent it to
                   your home so that you could have it with you.
                   <br />
+                  Thank you for accepting my little gift — I’m just glad it brought
+                  a little smile to your day. 🌸
+                  <br />
+                  And thank you for being such a wonderful person. 
+                  It’s amazing how much I’ve come to appreciate knowing you 
+                  in just a few months. 😊
                 </p>
               </div>
 
