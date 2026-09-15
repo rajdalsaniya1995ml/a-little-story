@@ -229,7 +229,7 @@ function BeginningPage() {
             width="w-24 max-sm:w-20"
           />
 
-          <div className="font-hand text-[0.82rem] leading-[1.8] text-ink/90 max-sm:text-[0.7rem] max-sm:leading-[1.6]">
+          <div className="font-hand text-[1rem] leading-[1.8] text-ink/90 max-sm:text-[0.82rem] max-sm:leading-[1.6]">
             <p>
               I still remember how unexpectedly our story began.
             </p>
