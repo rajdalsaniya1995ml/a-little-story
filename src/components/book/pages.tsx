@@ -2106,7 +2106,7 @@ function LetterPage() {
                   Thank you for being a part of them.
                 </p>
 
-                <div className="pt-2 text-right">
+                <div className="pt-1 text-right">
                   <p className="font-hand text-base italic text-ink-soft max-sm:text-sm">
                     With a smile,
                   </p>
