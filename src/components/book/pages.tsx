@@ -1804,7 +1804,7 @@ function FriendshipDayPhotoPage() {
           but they stay with us.
           <br/>
         </p>
-        <p className="mx-auto max-w-[38ch] font-display text-[0.72rem] leading-[1.6] text-ink-soft max-sm:text-[0.62rem]">
+         <p className="mt-5 max-w-[30ch] text-center font-hand text-base leading-relaxed text-maroon max-sm:mt-4 max-sm:text-sm">
           Thank you for being such a wonderful person.
           <br />
           It’s amazing how much I’ve come to appreciate knowing you
