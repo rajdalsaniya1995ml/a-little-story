@@ -1666,6 +1666,24 @@ function FriendshipDayPhotoPage() {
           but they stay with us.
           <br/>
         </p>
+        {/* Floral ornament */}
+        <div
+          className="
+            my-3
+            flex
+            items-center
+            justify-center
+            gap-2
+            font-hand
+            text-sm
+            text-gold/70
+            max-sm:my-2
+          "
+        >
+          <span>✿</span>
+          <span className="text-xs">❋</span>
+          <span>✿</span>
+        </div>
          <p className="mt-5 max-w-[30ch] text-center font-hand text-base leading-relaxed text-maroon max-sm:mt-4 max-sm:text-sm">
           Thank you for being such a wonderful person.
           <br />
